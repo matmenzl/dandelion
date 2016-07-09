@@ -23,6 +23,7 @@ function theme_js() {
 add_action ( 'wp_enqueue_scripts', 'theme_js' );
 
 add_theme_support( 'menus' );
+add_theme_support( 'post-thumbnails' );
 
 function register_theme_menus() {
 
