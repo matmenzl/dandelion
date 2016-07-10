@@ -53,10 +53,17 @@
           $thumbnail_url = wp_get_attachment_image_src( $thumbnail_id, 'thumbnail-size', true);
         ?>
 
-        <p><img src="<?php echo $thumbnail_url[0]; ?>" alt="<?php the_title();?>graphic"></p>
-          <h3><?php the_title(); ?></h3>
+        <p><a href="<?php the_permalink();?>"><img src="<?php echo $thumbnail_url[0]; ?>" alt="<?php the_title();?>graphic"></a></p>
+          <h3><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h3>
 
       </div>
+
+      <?php $portfolio_count = $the_query->current_post +1; ?>
+      <?php if ( $portfolio_count % 4 == 0): ?>
+
+        </div><div class="row">
+
+      <?php endif; ?>
 
     <?php endwhile; endif; ?>
 

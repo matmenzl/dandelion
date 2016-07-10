@@ -56,6 +56,11 @@ create_widget( 'Front Page Right', 'front-right', 'Displays on the right of the 
 create_widget( 'Page Sidebar', 'page', 'Displays the sidebar of a page' );
 create_widget( 'Blog Sidebar', 'blog', 'Displays the sidebar of a blog' );
 
+//enqueues our locally supplied font awesome stylesheet
+function enqueue_fontawesome(){
+  wp_enqueue_style('font-awesome', get_stylesheet_directory_uri() . '/css/font-awesome.min.css'); 
+}
+add_action('wp_enqueue_scripts','enqueue_fontawesome');
 
 
 
