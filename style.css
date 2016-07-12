@@ -78,6 +78,7 @@ body {
   margin: 10px 30px;
 }
 
+.featured-image img,
 .portfolio-piece img,
 .portfolio-image img {
   max-width: 100%;
