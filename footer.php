@@ -1,12 +1,21 @@
-      <hr>
- 
-       <footer>
-        <p>&copy; <?php bloginfo('name'); ?> <?php echo date('Y'); ?></p>
-      </footer>
-    </div> <!-- /container -->
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+
 
 
     <?php wp_footer(); ?>
+</body>
 
-  </body>
 </html>
