@@ -41,31 +41,59 @@ body {
 
   }
 
-  .sub-menu li {
-    margin-bottom: 10px;
-    list-style: none;
-  }
+.sub-menu li {
+  margin-bottom: 10px;
+  list-style: none;
+}
 
-  .sub-menu li:last-child {
-    margin-bottom: 0;
-  }
+.sub-menu li:last-child {
+  margin-bottom: 0;
+}
 
-  .sub-menu a  {
-    color: #999;
-    text-decoration: none;
-  }
+.sub-menu a  {
+  color: #999;
+  text-decoration: none;
+}
 
-  .sub-menu a:hover  {
-    color: #fff;  
-  } 
+.sub-menu a:hover  {
+  color: #fff;  
+} 
 
-  .current-menu-item > a, .current-menu-parent > a {
-    background: #000; 
-  }
-  .current-menu-parent li a {
-    background: inherit;
-  }
-  .current-menu-parent .current-menu-item a {
-    color: #fff;
-    font-weight: bold;
-  }
+.current-menu-item > a, .current-menu-parent > a {
+  background: #000; 
+}
+.current-menu-parent li a {
+  background: inherit;
+}
+.current-menu-parent .current-menu-item a {
+  color: #fff;
+  font-weight: bold;
+}
+
+.sidebar {
+  margin-top: 40px;
+  color: #444;
+}
+
+.sidebar h3 {
+  color: #888;
+}
+
+.widget {
+  margin: 10px 0 30px;
+}
+
+article.post {
+  margin: 20px 0 40px;
+}
+
+article div.left {
+  float: left;
+  width:33%;
+  padding:0 20px 20px 0;
+
+}
+
+article.right {
+  width:66%;
+}

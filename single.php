@@ -10,8 +10,15 @@
                 <div class="page-header">
                     <h1><?php the_title(); ?></h1>
                 </div>
+                <p><em>Von <?php the_author(); ?> am <?php echo the_time('l, F jS, Y');?>
+                in <?php the_category( ', '); ?></em></p>
+
+                <div class="img-responsive">
+                <?php the_post_thumbnail('medium_large', array('class' => 'img-responsive') ); ?>
+                </div>
 
                 <?php the_content(); ?>
+
 
             <?php endwhile; else: ?>
 
@@ -25,7 +32,7 @@
 
         </div>
 
-        <?php get_sidebar(); ?>
+        <?php get_sidebar( 'blog' ); ?>
 
     </div>
 
