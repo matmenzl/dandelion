@@ -1,8 +1,7 @@
 <?php 
 
+
 add_theme_support( 'post-thumbnails' );
-
-
 
 //enqueues our locally supplied font awesome stylesheet
 function enqueue_our_required_stylesheets(){
@@ -18,6 +17,8 @@ function theme_styles() {
   wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/css/bootstrap.min.css');
   wp_enqueue_style( 'modern_business', get_template_directory_uri() . '/css/modern-business.css');
   wp_enqueue_style( 'main_css', get_template_directory_uri() . '/style.css');
+  wp_enqueue_style( 'animate', get_template_directory_uri() . '/css/animate.css' );
+
 }
 
 add_action( 'wp_enqueue_scripts', 'theme_styles' );
@@ -36,6 +37,7 @@ function theme_js() {
   wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '', true );
   wp_enqueue_script( 'main_js', get_template_directory_uri() . '/main.js', array('jquery','bootstrap_js'), '', true );
   wp_enqueue_script( 'theme_js', get_template_directory_uri() . '/js/theme.js', array('jquery', 'bootstrap_js'), '', true );
+  wp_enqueue_script( 'jquery-easing', get_template_directory_uri() . '/js/jquery.easing.1.3.js', array() );
 }
 
 add_action( 'wp_enqueue_scripts', 'theme_js' );
@@ -81,6 +83,13 @@ create_widget( 'Blog Sidebar', 'blog', 'Blog Sidebar' );
 
 
 
+function google_fonts() {
+
+wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900', false ); 
+wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Vidaloka', false ); 
+}
+
+add_action( 'wp_enqueue_scripts', 'google_fonts' );
 
 
 

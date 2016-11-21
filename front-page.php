@@ -2,6 +2,25 @@
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
 
+    <div class="jumbotron1">
+      <div class="container">
+        
+        <?php $the_query = new WP_Query( 'page_id=43' ); ?>
+
+        <?php while ($the_query -> have_posts()) : $the_query -> the_post();  ?>
+
+        <?php the_excerpt(); ?>
+
+        <?php endwhile;?>
+
+        <a href="#intro" class="btn btn-circle scroll">
+            <i class="animated bounce fa fa-angle-double-down fa-4"></i>
+        </a>
+
+      </div>
+    </div>
+    
+    <div id="intro" data-speed="4" data-type="background">
 
      <div class="jumbotron">
        <div class="container">
@@ -11,9 +30,10 @@
         <?php the_content(); ?>
         
         <?php endwhile; endif; ?>
-
+        </div>
        </div>
-     </div>
+    </div>
+
 
      <div class="container">
         <!-- Example row of columns -->
@@ -44,13 +64,13 @@
            <!-- Wrapper for slides -->
            <div class="carousel-inner">
                <div class="item active">
-                   <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
+                   <div class="fill" style="background-image:url('./images/photo-1457978535446-dcd58011ea54.jpeg&text=Slide One');"></div>
                    <div class="carousel-caption">
                        <h2>Caption 1</h2>
                    </div>
                </div>
                <div class="item">
-                   <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
+                   <div class="fill" style="background-image:url('./images/index.jpeg&text=Slide Two');"></div>
                    <div class="carousel-caption">
                        <h2>Caption 2</h2>
                    </div>
@@ -78,43 +98,46 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">
-                    Welcome to Modern Business
-                </h1>
+                    Schule DANDELION                
+                    </h1>
             </div>
+
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-check"></i> Bootstrap v3.3.7</h4>
+                    <?php $page = get_page_by_title( 'Über Schule DANDELION' ); ?>
+                        <h4><i class="fa fa-fw fa-check"></i><?php echo get_the_title( $page->ID ); ?></h4>
                     </div>
                     <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="#" class="btn btn-default">Learn More</a>
+                        <p><?php $content = apply_filters('the_content', $page->post_content); echo wp_trim_words( $content, 100, ''); ?></p>
+                        <a href="<?php  echo get_permalink( $page->ID ); ?>" title="Read the whole post" class="btn btn-default">Read More</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-gift"></i> Free &amp; Open Source</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="#" class="btn btn-default">Learn More</a>
-                    </div>
-                </div>
-            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                <?php $page = get_page_by_title( 'Konzept Schule DANDELION' ); ?>
+                                    <h4><i class="fa fa-fw fa-check"></i><?php echo get_the_title( $page->ID ); ?></h4>
+                                </div>
+                                <div class="panel-body">
+                                    <p><?php $content = apply_filters('the_content', $page->post_content); echo wp_trim_words( $content, 100, ''); ?></p>
+                                    <a href="<?php  echo get_permalink( $page->ID ); ?>" title="Read the whole post" class="btn btn-default">Read More</a>
+                                </div>
+                            </div>
+                        </div>
             <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-compass"></i> Easy to Use</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="#" class="btn btn-default">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                <?php $page = get_page_by_title( 'Kosten Schule DANDELION' ); ?>
+                                    <h4><i class="fa fa-fw fa-check"></i><?php echo get_the_title( $page->ID ); ?></h4>
+                                </div>
+                                <div class="panel-body">
+                                    <p><?php $content = apply_filters('the_content', $page->post_content); echo wp_trim_words( $content, 100, ''); ?></p>
+                                    <a href="<?php  echo get_permalink( $page->ID ); ?>" title="Read the whole post" class="btn btn-default">Read More</a>
+                                </div>
+                            </div>
+                        </div>
         <!-- /.row -->
 
         <!-- Portfolio Section -->

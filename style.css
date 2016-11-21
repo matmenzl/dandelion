@@ -14,6 +14,51 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 
 body {
+  font-family: 'Playfair Display';
+}
+
+div.jumbotron1 p{
+  font-weight: 900;
+  font-size: 48px;
+  color: #fff;
+  text-shadow: rgba(0,0,0,0.5) 0 0 0.75rem;
+  text-align:center;
+}
+
+div.jumbotron1 .container {
+  text-align:center;
+
+}
+
+
+/*Navigation Bar Start*/
+
+.navbar-inverse {
+  background: #03a9f4;
+  border: none;
+}
+
+.navbar-inverse .navbar-brand {
+  color: white;
+  font-family: Vidaloka;
+}
+.navbar-inverse .navbar-nav>li>a {
+  color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover  {
+  color: #03a9f4;
+} 
+
+.navbar-inverse .navbar-nav>li>a:hover {
+  background: #fff;
+}
+
+/*Navigation Bar End*/
+
+
+/*Admin Bar Start*/
+body {
   padding-top: 50px;
   padding-bottom: 20px;
 }
@@ -41,6 +86,11 @@ body {
 
   }
 
+/*Admin Bar End*/
+
+
+
+/*Second Level Navigation Start*/
 .sub-menu li {
   margin-bottom: 10px;
   list-style: none;
@@ -50,23 +100,32 @@ body {
   margin-bottom: 0;
 }
 
+.sub-menu {
+  background:#03a9f4;
+  border: 1px solid #03a9f4;
+}
+
 .sub-menu a  {
-  color: #999;
+  color: #fff;
   text-decoration: none;
 }
 
-.sub-menu a:hover  {
-  color: #fff;  
+.sub-menu>li>a:hover  {
+  color: #03a9f4;
 } 
 
+.sub-menu:hover {
+  background: #fff;
+}
+
 .current-menu-item > a, .current-menu-parent > a {
-  background: #000; 
+  background: #03a9f4; 
 }
 .current-menu-parent li a {
   background: inherit;
 }
 .current-menu-parent .current-menu-item a {
-  color: #fff;
+  color: #03a9f4;
   font-weight: bold;
 }
 
@@ -79,9 +138,21 @@ body {
   color: #888;
 }
 
+/*Second Level Navigation End*/
+
+
+
+/*Widget Start*/
+
 .widget {
   margin: 10px 0 30px;
 }
+
+/*Widget Ende*/
+
+
+
+/*Article Post Start*/
 
 article.post {
   margin: 20px 0 40px;
@@ -96,4 +167,46 @@ article div.left {
 
 article.right {
   width:66%;
+}
+
+/*Article Post Ende*/
+
+
+
+
+div.jumbotron1 {
+    background: url(./images/atlas.jpeg) 50% 0 fixed;
+    height: 500px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    padding: 100px 0;
+ 
+}
+ 
+.bg-image {
+    border-radius: 6px 6px 6px 6px;
+    color: #f5f5f5;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 30px;
+    padding: 60px;
+    text-align: center;
+}
+
+.fa.fa-angle-double-down {
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite; 
+  -ms-animation-iteration-count: infinite; 
+  -o-animation-iteration-count: infinite;
+  -webkit-animation-delay: 2s; 
+  -moz-animation-delay: 2s; 
+  -ms-animation-delay: 2s; 
+  -o-animation-delay: 2s; 
+}
+
+a.btn.btn-circle.scroll {
+  margin-bottom:20px;
+  font-size:40px;
+  color:white;
 }
