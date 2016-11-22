@@ -34,7 +34,7 @@ div.jumbotron1 .container {
 /*Navigation Bar Start*/
 
 .navbar-inverse {
-  background: #03a9f4;
+  background: #2196f3;
   border: none;
 }
 
@@ -47,7 +47,7 @@ div.jumbotron1 .container {
 }
 
 .navbar-inverse .navbar-nav>li>a:hover  {
-  color: #03a9f4;
+  color: #2196f3;
 } 
 
 .navbar-inverse .navbar-nav>li>a:hover {
@@ -101,8 +101,8 @@ body {
 }
 
 .sub-menu {
-  background:#03a9f4;
-  border: 1px solid #03a9f4;
+  background:#2196f3;
+  border: 1px solid #2196f3;
 }
 
 .sub-menu a  {
@@ -111,7 +111,7 @@ body {
 }
 
 .sub-menu>li>a:hover  {
-  color: #03a9f4;
+  color: #2196f3;
 } 
 
 .sub-menu:hover {
@@ -119,13 +119,13 @@ body {
 }
 
 .current-menu-item > a, .current-menu-parent > a {
-  background: #03a9f4; 
+  background: #2196f3; 
 }
 .current-menu-parent li a {
   background: inherit;
 }
 .current-menu-parent .current-menu-item a {
-  color: #03a9f4;
+  color: #2196f3;
   font-weight: bold;
 }
 
@@ -209,4 +209,18 @@ a.btn.btn-circle.scroll {
   margin-bottom:20px;
   font-size:40px;
   color:white;
+}
+
+.panel-default>.panel-heading {
+  background: #FFEB3B;
+  border:none;
+}
+
+.panel-body {
+  background:#FFEB3B;
+  border:none;
+}
+
+.panel-default {
+  border:none;
 }

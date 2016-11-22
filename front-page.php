@@ -110,7 +110,8 @@
                     </div>
                     <div class="panel-body">
                         <p><?php $content = apply_filters('the_content', $page->post_content); echo wp_trim_words( $content, 100, ''); ?></p>
-                        <a href="<?php  echo get_permalink( $page->ID ); ?>" title="Read the whole post" class="btn btn-default">Read More</a>
+                        <a href="<?php echo get_page_link(33); ?>">Map</a>
+                        <a href="<?php echo get_page_link(33); ?>" title="Read the whole post" class="btn btn-default">Read More</a>
                     </div>
                 </div>
             </div>
@@ -122,7 +123,7 @@
                                 </div>
                                 <div class="panel-body">
                                     <p><?php $content = apply_filters('the_content', $page->post_content); echo wp_trim_words( $content, 100, ''); ?></p>
-                                    <a href="<?php  echo get_permalink( $page->ID ); ?>" title="Read the whole post" class="btn btn-default">Read More</a>
+                                    <a href="<?php echo get_permalink( $page->ID ); ?>" title="Read the whole post" class="btn btn-default">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -134,11 +135,11 @@
                                 </div>
                                 <div class="panel-body">
                                     <p><?php $content = apply_filters('the_content', $page->post_content); echo wp_trim_words( $content, 100, ''); ?></p>
-                                    <a href="<?php  echo get_permalink( $page->ID ); ?>" title="Read the whole post" class="btn btn-default">Read More</a>
+                                    <a href="<?php echo get_permalink( $page->ID ); ?>" title="Read the whole post" class="btn btn-default">Read More</a>
                                 </div>
                             </div>
                         </div>
-        <!-- /.row -->
+        </div><!-- /.row -->
 
         <!-- Portfolio Section -->
         <div class="row">
