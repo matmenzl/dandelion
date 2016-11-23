@@ -1,5 +1,8 @@
 <?php 
 
+show_admin_bar( false );
+
+
 
 add_theme_support( 'post-thumbnails' );
 

@@ -13,10 +13,10 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-body {
+/*body {
   font-family: 'Playfair Display';
 }
-
+*/
 div.jumbotron1 p{
   font-weight: 900;
   font-size: 48px;
@@ -101,8 +101,8 @@ body {
 }
 
 .sub-menu {
-  background:#2196f3;
-  border: 1px solid #2196f3;
+  background:#25353a;
+  border: 1px solid #25353a;
 }
 
 .sub-menu a  {
@@ -115,7 +115,7 @@ body {
 } 
 
 .sub-menu:hover {
-  background: #fff;
+  background: #25353a;
 }
 
 .current-menu-item > a, .current-menu-parent > a {
@@ -125,7 +125,7 @@ body {
   background: inherit;
 }
 .current-menu-parent .current-menu-item a {
-  color: #2196f3;
+  color: #fff;
   font-weight: bold;
 }
 
@@ -183,6 +183,12 @@ div.jumbotron1 {
     padding: 100px 0;
  
 }
+
+div.jumbotron {
+  margin: 0 auto 20px auto;
+  text-align: center;
+}
+
  
 .bg-image {
     border-radius: 6px 6px 6px 6px;
@@ -223,4 +229,28 @@ a.btn.btn-circle.scroll {
 
 .panel-default {
   border:none;
+}
+
+#mc-embedded-subscribe {
+  margin:0px;
+}
+
+input[type="email"] {
+  width:100%;
+  height:25px;
+  margin-bottom:20px;
+}
+
+div.carousel-inner {
+  height:450px;
+}
+
+.carousel-indicators {
+  display:none;
+}
+
+div.heroimage {
+  width:100%;
+  margin: 0 auto;
+  height:200px;
 }

@@ -33,116 +33,123 @@
         </div>
        </div>
     </div>
+</header>
 
 
-     <div class="container">
-        <!-- Example row of columns -->
-        <div class="row">
-            <div class="col-md-4">
-                <?php if ( dynamic_sidebar( 'front-left' ) ); ?>
-            </div>
-            <div class="col-md-4">
-                <?php if ( dynamic_sidebar( 'front-center' ) ); ?>
-            </div>
-            <div class="col-md-4">
-                <?php if ( dynamic_sidebar( 'front-right' ) ); ?>
-            </div>
+<!-- Page Content -->
+<div class="container">
+
+    <!-- Marketing Icons Section -->
+    <div class="row">
+        <div class="col-lg-12">
+<!--             <h1 class="page-header">
+                Schule DANDELION                
+                </h1> -->
         </div>
-    </div>
 
-       <hr>
-
-       <!-- Header Carousel -->
-       <header id="myCarousel" class="carousel slide">
-           <!-- Indicators -->
-           <ol class="carousel-indicators">
-               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-               <li data-target="#myCarousel" data-slide-to="1"></li>
-               <li data-target="#myCarousel" data-slide-to="2"></li>
-           </ol>
-
-           <!-- Wrapper for slides -->
-           <div class="carousel-inner">
-               <div class="item active">
-                   <div class="fill" style="background-image:url('./images/photo-1457978535446-dcd58011ea54.jpeg&text=Slide One');"></div>
-                   <div class="carousel-caption">
-                       <h2>Caption 1</h2>
-                   </div>
-               </div>
-               <div class="item">
-                   <div class="fill" style="background-image:url('./images/index.jpeg&text=Slide Two');"></div>
-                   <div class="carousel-caption">
-                       <h2>Caption 2</h2>
-                   </div>
-               </div>
-               <div class="item">
-                   <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
-                   <div class="carousel-caption">
-                       <h2>Caption 3</h2>
-                   </div>
-               </div>
-           </div>
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
-    </header>
-
-    <!-- Page Content -->
-    <div class="container">
-
-        <!-- Marketing Icons Section -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">
-                    Schule DANDELION                
-                    </h1>
-            </div>
-
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                    <?php $page = get_page_by_title( 'Über Schule DANDELION' ); ?>
-                        <h4><i class="fa fa-fw fa-check"></i><?php echo get_the_title( $page->ID ); ?></h4>
-                    </div>
-                    <div class="panel-body">
-                        <p><?php $content = apply_filters('the_content', $page->post_content); echo wp_trim_words( $content, 100, ''); ?></p>
-                        <a href="<?php echo get_page_link(33); ?>">Map</a>
-                        <a href="<?php echo get_page_link(33); ?>" title="Read the whole post" class="btn btn-default">Read More</a>
-                    </div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><i class="fa fa-fw fa-book"></i><?php echo get_the_title( 38 ); ?></h4>
+                </div>
+                <div class="panel-body">
+                    <p><?php echo apply_filters('the_content', get_post_field('post_content', 38)); ?></p>
+                    <a href="<?php echo get_page_link(38); ?>" title="Read the whole post" class="btn btn-primary">Mehr Informationen</a>
                 </div>
             </div>
-            <div class="col-md-4">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                <?php $page = get_page_by_title( 'Konzept Schule DANDELION' ); ?>
-                                    <h4><i class="fa fa-fw fa-check"></i><?php echo get_the_title( $page->ID ); ?></h4>
-                                </div>
-                                <div class="panel-body">
-                                    <p><?php $content = apply_filters('the_content', $page->post_content); echo wp_trim_words( $content, 100, ''); ?></p>
-                                    <a href="<?php echo get_permalink( $page->ID ); ?>" title="Read the whole post" class="btn btn-default">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-            <div class="col-md-4">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                <?php $page = get_page_by_title( 'Kosten Schule DANDELION' ); ?>
-                                    <h4><i class="fa fa-fw fa-check"></i><?php echo get_the_title( $page->ID ); ?></h4>
-                                </div>
-                                <div class="panel-body">
-                                    <p><?php $content = apply_filters('the_content', $page->post_content); echo wp_trim_words( $content, 100, ''); ?></p>
-                                    <a href="<?php echo get_permalink( $page->ID ); ?>" title="Read the whole post" class="btn btn-default">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-        </div><!-- /.row -->
+        </div>
 
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><i class="fa fa-fw fa-folder-open"></i><?php echo get_the_title( 36 ); ?></h4>
+                </div>
+                <div class="panel-body">
+                    <p><?php echo apply_filters('the_content', get_post_field('post_content', 36)); ?></p>
+                    <a href="<?php echo get_page_link(36); ?>" title="Read the whole post" class="btn btn-primary">Mehr Informationen</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><i class="fa fa-fw fa-check"></i><?php echo get_the_title( 33 ); ?></h4>
+                </div>
+                <div class="panel-body">
+                    <p><?php echo apply_filters('the_content', get_post_field('post_content', 38)); ?></p>
+                    <a href="<?php echo get_page_link(33); ?>" title="Read the whole post" class="btn btn-primary">Mehr Informationen</a>
+                </div>
+            </div>
+        </div>
+    </div><!-- /.row -->
+
+</div><!-- /.container -->
+
+
+
+
+
+       <!-- Carousel -->
+       <?php 
+
+         $args = array(
+           'post_type'     => 'post',
+           'category_name' => 'Slider'
+           );
+
+           $the_query = new WP_Query( $args );
+
+       ?>
+
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+             <?php if ( have_posts() ) : while ($the_query->have_posts() ) : $the_query-> the_post(); ?>
+
+            <li data-target="#carousel-example-generic" data-slide-to="<?php echo $the_query->current_post; ?>" class="<?php if ( $the_query->current_post == 0):?>active<?php endif; ?>"></li>
+
+            <?php endwhile; endif; ?>
+          </ol>
+
+          <?php rewind_posts(); ?>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+
+          <?php if ( have_posts() ) : while ($the_query->have_posts() ) : $the_query-> the_post(); ?>
+
+            <div class="item <?php if ( $the_query->current_post == 0):?>active<?php endif; ?>">
+             <?php 
+               $thumbnail_id = get_post_thumbnail_id();
+               $thumbnail_url = wp_get_attachment_image_src( $thumbnail_id, 'thumbnail-size', true);
+               $thumbnail_meta = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true);
+             ?>
+              <!-- <a href="<?php the_permalink();?>"> --><img src="<?php echo $thumbnail_url[0]; ?>" alt="<?php echo $thumbnail_meta; ?>"><!-- </a> -->
+              <div class="carousel-caption"><?php the_title(); ?>
+              </div>
+            </div>
+
+            <?php endwhile; endif; ?>
+
+          </div>
+
+          <!-- Controls -->
+ <!--          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a> -->
+        </div> 
+
+
+
+ 
         <!-- Portfolio Section -->
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-lg-12">
                 <h2 class="page-header">Portfolio Heading</h2>
             </div>
@@ -176,11 +183,11 @@
                     <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
                 </a>
             </div>
-        </div>
+        </div> -->
         <!-- /.row -->
 
         <!-- Features Section -->
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-lg-12">
                 <h2 class="page-header">Modern Business Features</h2>
             </div>
@@ -200,19 +207,65 @@
             <div class="col-md-6">
                 <img class="img-responsive" src="http://placehold.it/700x450" alt="">
             </div>
-        </div>
+        </div> -->
         <!-- /.row -->
 
         <hr>
 
         <!-- Call to Action Section -->
+    <div class="container">
         <div class="well">
             <div class="row">
                 <div class="col-md-8">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+                    <h2>Newsletter abonnieren</h2>
+                    <p>Wir halten dich auf dem Laufenden rund um die Schule DANDELION (Wir versprechen: kein Spam und keine unnötigen E-mails).</p>
                 </div>
                 <div class="col-md-4">
-                    <a class="btn btn-lg btn-default btn-block" href="#">Call to Action</a>
+                    <!-- Begin MailChimp Signup Form -->
+                   <!--  <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"> -->
+                    <style type="text/css">
+                        #mc_embed_signup{background:; clear:left; font:14px Helvetica,Arial,sans-serif; }
+                        /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+                           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                    </style>
+                    <div id="mc_embed_signup">
+                    <form action="//schule-dandelion.us14.list-manage.com/subscribe/post?u=b077009b2df832ec7205e6206&amp;id=896df0f6bc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll">
+                        
+                    <div class="mc-field-group">
+                        <label for="mce-EMAIL">E-Mail-Adresse eingeben</label>
+                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                    </div>
+                        <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b077009b2df832ec7205e6206_896df0f6bc" tabindex="-1" value=""></div>
+                        <div class="clear"><input type="submit" value="Anmelden" name="subscribe" id="mc-embedded-subscribe" class="btn btn-lg btn-default btn-block"></div>
+                        </div>
+                    </form>
+                    </div>
+                    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text'; /*
+                     * Translated default messages for the $ validation plugin.
+                     * Locale: DE
+                     */
+                    $.extend($.validator.messages, {
+                        required: "Dieses Feld ist ein Pflichtfeld.",
+                        maxlength: $.validator.format("Geben Sie bitte maximal {0} Zeichen ein."),
+                        minlength: $.validator.format("Geben Sie bitte mindestens {0} Zeichen ein."),
+                        rangelength: $.validator.format("Geben Sie bitte mindestens {0} und maximal {1} Zeichen ein."),
+                        email: "Geben Sie bitte eine gültige E-Mail Adresse ein.",
+                        url: "Geben Sie bitte eine gültige URL ein.",
+                        date: "Bitte geben Sie ein gültiges Datum ein.",
+                        number: "Geben Sie bitte eine Nummer ein.",
+                        digits: "Geben Sie bitte nur Ziffern ein.",
+                        equalTo: "Bitte denselben Wert wiederholen.",
+                        range: $.validator.format("Geben Sie bitten einen Wert zwischen {0} und {1}."),
+                        max: $.validator.format("Geben Sie bitte einen Wert kleiner oder gleich {0} ein."),
+                        min: $.validator.format("Geben Sie bitte einen Wert größer oder gleich {0} ein."),
+                        creditcard: "Geben Sie bitte ein gültige Kreditkarten-Nummer ein."
+                    });}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+                    <!--End mc_embed_signup-->
                 </div>
             </div>
         </div>
