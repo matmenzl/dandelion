@@ -53,7 +53,14 @@
                     <h4><i class="fa fa-fw fa-book"></i><?php echo get_the_title( 38 ); ?></h4>
                 </div>
                 <div class="panel-body">
-                    <p><?php echo apply_filters('the_content', get_post_field('post_content', 38)); ?></p>
+                    <?php $the_query = new WP_Query( 'page_id=38' ); ?>
+
+                    <?php while ($the_query -> have_posts()) : $the_query -> the_post();  ?>
+
+                                           <?php the_excerpt(); ?>
+
+
+                         <?php endwhile;?>
                     <a href="<?php echo get_page_link(38); ?>" title="Read the whole post" class="btn btn-primary">Mehr Informationen</a>
                 </div>
             </div>
@@ -65,7 +72,14 @@
                     <h4><i class="fa fa-fw fa-folder-open"></i><?php echo get_the_title( 36 ); ?></h4>
                 </div>
                 <div class="panel-body">
-                    <p><?php echo apply_filters('the_content', get_post_field('post_content', 36)); ?></p>
+              <p><?php $the_query = new WP_Query( 'page_id=36' ); ?>
+
+              <?php while ($the_query -> have_posts()) : $the_query -> the_post();  ?>
+
+                                     <?php the_excerpt(); ?>
+
+
+                   <?php endwhile;?></p>
                     <a href="<?php echo get_page_link(36); ?>" title="Read the whole post" class="btn btn-primary">Mehr Informationen</a>
                 </div>
             </div>
@@ -77,7 +91,14 @@
                     <h4><i class="fa fa-fw fa-check"></i><?php echo get_the_title( 33 ); ?></h4>
                 </div>
                 <div class="panel-body">
-                    <p><?php echo apply_filters('the_content', get_post_field('post_content', 38)); ?></p>
+                    <?php $the_query = new WP_Query( 'page_id=33' ); ?>
+
+                    <?php while ($the_query -> have_posts()) : $the_query -> the_post();  ?>
+
+                                           <?php the_excerpt(); ?>
+
+
+                         <?php endwhile;?>
                     <a href="<?php echo get_page_link(33); ?>" title="Read the whole post" class="btn btn-primary">Mehr Informationen</a>
                 </div>
             </div>
@@ -89,7 +110,7 @@
 
 
 
-
+<div class="container">
        <!-- Carousel -->
        <?php 
 
@@ -268,5 +289,6 @@
                 </div>
             </div>
         </div>
+
 
 <?php get_footer() ?>

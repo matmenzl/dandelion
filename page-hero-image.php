@@ -32,9 +32,9 @@ background-position:center;" >
 
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-                <div class="page-header">
+                <!-- <div class="page-header">
                     <h1><?php the_title(); ?></h1>
-                </div>
+                </div> -->
 
                 <?php the_content(); ?>
 
