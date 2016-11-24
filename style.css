@@ -57,6 +57,20 @@ div.jumbotron1 .container {
 /*Navigation Bar End*/
 
 
+/*Navigation mobile
+*/
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+  background-color:transparent;
+}
+
+.navbar-inverse .navbar-toggle {
+  border-color:transparent;
+}
+
+.navbar-collapse.collapse.in {
+  border:none;
+}
+
 /*Admin Bar Start*/
 body {
   padding-top: 50px;
@@ -254,3 +268,13 @@ div.heroimage {
   margin: 0 auto;
   height:200px;
 }
+
+h1.herotitle {
+  text-align:center;
+  color:white;
+  margin-top: 0px;
+  padding-top: 30px;
+  font-size:42px;
+}
+
+
