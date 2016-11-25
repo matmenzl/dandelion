@@ -110,7 +110,6 @@
 
 
 
-<div class="container">
        <!-- Carousel -->
        <?php 
 
@@ -250,7 +249,7 @@
                     </style>
                     <div id="mc_embed_signup">
                     <form action="//schule-dandelion.us14.list-manage.com/subscribe/post?u=b077009b2df832ec7205e6206&amp;id=896df0f6bc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                        <div id="mc_embed_signup_scroll">
+                    <div id="mc_embed_signup_scroll">
                         
                     <div class="mc-field-group">
                         <label for="mce-EMAIL">E-Mail-Adresse eingeben</label>
@@ -289,6 +288,7 @@
                 </div>
             </div>
         </div>
+        <div class="container">
 
 
 <?php get_footer() ?>
