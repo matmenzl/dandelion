@@ -34,7 +34,7 @@ div.jumbotron1 .container {
 /*Navigation Bar Start*/
 
 .navbar-inverse {
-  background: #2196f3;
+  background-color: #4caf50;
   border: none;
 }
 
@@ -47,11 +47,12 @@ div.jumbotron1 .container {
 }
 
 .navbar-inverse .navbar-nav>li>a:hover  {
-  color: #2196f3;
+  background-color: #4caf50;
 } 
 
 .navbar-inverse .navbar-nav>li>a:hover {
   background: #fff;
+  color:#4caf50;
 }
 
 /*Navigation Bar End*/
@@ -125,7 +126,7 @@ body {
 }
 
 .sub-menu>li>a:hover  {
-  color: #2196f3;
+  color: #4caf50;
 } 
 
 .sub-menu:hover {
@@ -133,7 +134,7 @@ body {
 }
 
 .current-menu-item > a, .current-menu-parent > a {
-  background: #2196f3; 
+  background: #4caf50; 
 }
 .current-menu-parent li a {
   background: inherit;
@@ -189,14 +190,15 @@ article.right {
 
 
 div.jumbotron1 {
-    background: url(./images/atlas.jpeg) 50% 0 fixed;
-    height: 500px;
-    margin: 0 auto;
-    width: 100%;
-    position: relative;
-    padding: 100px 0;
- 
-}
+  background: url(./images/colors.jpeg) fixed;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: cover;
+  height: 500px;
+  padding-top:100px;
+  text-shadow: 2px 2px 3px black;
+  }
 
 div.jumbotron {
   margin: 0 auto 20px auto;
@@ -232,17 +234,19 @@ a.btn.btn-circle.scroll {
 }
 
 .panel-default>.panel-heading {
-  background: #FFEB3B;
+  background: #4caf50;
   border:none;
+  color:white;
 }
 
 .panel-body {
-  background:#FFEB3B;
+  background:#f5f5f5;
   border:none;
 }
 
 .panel-default {
   border:none;
+  background:#f5f5f5;
 }
 
 #mc-embedded-subscribe {

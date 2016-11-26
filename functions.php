@@ -163,7 +163,13 @@ remove_filter('get_the_excerpt', 'wp_trim_excerpt');
 add_filter('get_the_excerpt', 'wpse_custom_wp_trim_excerpt');
 
 
-
+function exclude_category($query) {
+if ( $query->is_home() ) {
+$query->set('cat', '-5');
+}
+return $query;
+}
+add_filter('pre_get_posts', 'exclude_category');
 
 
 
