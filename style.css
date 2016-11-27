@@ -64,14 +64,10 @@ div.jumbotron1 .container {
   background-color:transparent;
 }
 
-.navbar-inverse .navbar-toggle {
+/*.navbar-inverse .navbar-toggle {
   border-color:transparent;
 }
-
-.navbar-collapse.collapse.in {
-  border:none;
-}
-
+*/
 /*Admin Bar Start*/
 body {
   padding-top: 50px;
@@ -116,8 +112,7 @@ body {
 }
 
 .sub-menu {
-  background:#25353a;
-  border: 1px solid #25353a;
+  background:#4caf50;
 }
 
 .sub-menu a  {
@@ -130,7 +125,7 @@ body {
 } 
 
 .sub-menu:hover {
-  background: #25353a;
+  background: #4caf50;
 }
 
 .current-menu-item > a, .current-menu-parent > a {
@@ -290,4 +285,36 @@ div.widgets {
   margin-bottom:2rem;
 }
 
+/*Navbar-toggle animation*/
+.navbar-toggle {
+  border: none;
+  background: transparent !important;
+}
+.navbar-toggle:hover {
+  background: transparent !important;
+}
+.navbar-toggle .icon-bar {
+  width: 22px;
+  transition: all 0.2s;
+}
+.navbar-toggle .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+.navbar-toggle .middle-bar {
+  opacity: 0;
+}
+.navbar-toggle .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+.navbar-toggle.collapsed .top-bar {
+  transform: rotate(0);
+}
+.navbar-toggle.collapsed .middle-bar {
+  opacity: 1;
+}
+.navbar-toggle.collapsed .bottom-bar {
+  transform: rotate(0);
+}
 
