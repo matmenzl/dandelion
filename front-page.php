@@ -30,10 +30,39 @@
         <?php the_content(); ?>
         
         <?php endwhile; endif; ?>
+
         </div>
        </div>
     </div>
 </header>
+
+
+
+<!-- widgets -->
+    <div class="widgets">
+     <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <?php if ( dynamic_sidebar( 'front-left' ) ); ?>
+            </div>
+            <div class="col-md-4">
+                <?php if ( dynamic_sidebar( 'front-center' ) ); ?>
+            </div>
+            <div class="col-md-4">
+                <?php if ( dynamic_sidebar( 'front-right' ) ); ?>
+            </div>
+            <div class="col-md-4">
+                <?php if ( dynamic_sidebar( 'bottom-front-left' ) ); ?>
+            </div>
+            <div class="col-md-4">
+                <?php if ( dynamic_sidebar( 'bottom-front-center' ) ); ?>
+            </div>
+            <div class="col-md-4">
+                <?php if ( dynamic_sidebar( 'bottom-front-right' ) ); ?>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <!-- Page Content -->

@@ -80,6 +80,9 @@ function create_widget( $name, $id, $description ) {
 create_widget( 'Front Page Left', 'front-left', 'Displays on the left of the homepage' );
 create_widget( 'Front Page Center', 'front-center', 'Displays in the center of the homepage' );
 create_widget( 'Front Page Right', 'front-right', 'Displays on the right of the homepage' );
+create_widget( 'Front Page Left Bottom Row', 'bottom-front-left', 'Displays on the right of the homepage' );
+create_widget( 'Front Page Center Bottom Row', 'bottom-front-center', 'Displays on the right of the homepage' );
+create_widget( 'Front Page Right Bottom Row', 'bottom-front-right', 'Displays on the right of the homepage' );
 
 create_widget( 'Page Sidebar', 'page', 'Page Sidebar' );
 create_widget( 'Blog Sidebar', 'blog', 'Blog Sidebar' );
@@ -172,6 +175,26 @@ return $query;
 add_filter('pre_get_posts', 'exclude_category');
 
 
+register_sidebar( array(
+  'name'          => __( 'Contact', 'dandelion' ),
+  'id'            => 'contact',
+  'description'   => '',
+  'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+  'after_widget'  => '</aside>',
+  'before_title'  => '<h4 class="widget-title">',
+  'after_title'   => '</h4>',
+) );
+
+
+register_sidebar( array(
+  'name'          => __( 'Application', 'dandelion' ),
+  'id'            => 'application',
+  'description'   => '',
+  'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+  'after_widget'  => '</aside>',
+  'before_title'  => '<h4 class="widget-title">',
+  'after_title'   => '</h4>',
+) );
 
 
 
