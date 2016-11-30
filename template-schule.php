@@ -21,10 +21,12 @@ background-position:center;" >
 
 <div class="container">
 <!-- Portfolio Section -->
-<div class="row row-eq-height">
+<div class="row">
 <!--     <div class="col-lg-12">
         <h2 class="page-header">Portfolio Heading</h2>
     </div> -->
+    <div class="row is-flex">
+
     <div class="col-md-4 col-sm-6">
         <a href="<?php echo get_page_link(38); ?>">
             <img class="img-responsive img-portfolio img-hover text" src="<?php bloginfo('url'); ?>/wp-content/uploads/2016/11/leitbild.jpg" alt="">
@@ -60,6 +62,7 @@ background-position:center;" >
             <img class="img-responsive img-portfolio img-hover" src="<?php bloginfo('url'); ?>/wp-content/uploads/2016/11/kontakt.jpg" alt="">
         </a>
         <h2 class="text"><span>Kontakt</span></h2>
+    </div>
     </div>
 </div>
 <!-- /.row -->
