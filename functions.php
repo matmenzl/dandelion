@@ -2,7 +2,8 @@
 
 show_admin_bar( false );
 
-
+// Register Custom Navigation Walker
+require_once('wp_bootstrap_navwalker.php');
 
 add_theme_support( 'post-thumbnails' );
 

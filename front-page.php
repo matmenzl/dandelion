@@ -90,7 +90,7 @@
 
 
                          <?php endwhile;?>
-                    <a href="<?php echo get_page_link(38); ?>" title="Read the whole post" class="btn btn-primary">Mehr Informationen</a>
+                    <a href="<?php echo get_page_link(38); ?>" title="Read the whole post" class="btn btn-primary center-block">Mehr Informationen</a>
                 </div>
             </div>
         </div>
@@ -109,7 +109,7 @@
 
 
                    <?php endwhile;?></p>
-                    <a href="<?php echo get_page_link(36); ?>" title="Read the whole post" class="btn btn-primary">Mehr Informationen</a>
+                    <a href="<?php echo get_page_link(36); ?>" title="Read the whole post" class="btn btn-primary center-block">Mehr Informationen</a>
                 </div>
             </div>
         </div>
@@ -128,7 +128,7 @@
 
 
                          <?php endwhile;?>
-                    <a href="<?php echo get_page_link(33); ?>" title="Read the whole post" class="btn btn-primary">Mehr Informationen</a>
+                    <a href="<?php echo get_page_link(33); ?>" title="Read the whole post" class="btn btn-primary center-block">Mehr Informationen</a>
                 </div>
             </div>
         </div>
