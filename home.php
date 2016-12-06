@@ -24,8 +24,9 @@
                     </div>
 
                     <div class="col-md-9">
-                    <?php the_excerpt(); ?>
+                    <?php the_excerpt(); ?><a href="<?php the_permalink(); ?>"><b>Mehr Lesen <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></b></a>
                     </div>
+
 
                     <hr>
 

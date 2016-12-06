@@ -29,37 +29,37 @@ background-position:center;" >
 
     <div class="col-md-4 col-sm-6">
         <a href="<?php echo get_page_link(38); ?>">
-            <img class="img-responsive img-portfolio img-hover text" src="<?php bloginfo('url'); ?>/wp-content/uploads/2016/11/leitbild.jpg" alt="">
+            <img class="img-responsive img-portfolio img-hover text" src="<?php bloginfo('url'); ?>/wp-content/uploads/2016/12/leitbild.jpg" alt="">
        </a>
        <h2 class="text"><span>Leitbild</span></h2>
     </div>
     <div class="col-md-4 col-sm-6">
         <a href="<?php echo get_page_link(102); ?>">
-            <img class="img-responsive img-portfolio img-hover" src="<?php bloginfo('url'); ?>/wp-content/uploads/2016/11/anmeldeprozess.jpg" alt="">
+            <img class="img-responsive img-portfolio img-hover" src="<?php bloginfo('url'); ?>/wp-content/uploads/2016/12/anmeldeprozess.jpg" alt="">
         </a>
         <h2 class="text"><span>Anmeldeprozess</span></h2>
     </div>
     <div class="col-md-4 col-sm-6">
         <a href="<?php echo get_page_link(36); ?>">
-            <img class="img-responsive img-portfolio img-hover" src="<?php bloginfo('url'); ?>/wp-content/uploads/2016/11/angebot.jpg" alt="">
+            <img class="img-responsive img-portfolio img-hover" src="<?php bloginfo('url'); ?>/wp-content/uploads/2016/12/angebot.jpg" alt="">
         </a>
         <h2 class="text"><span>Angebot</span></h2>
     </div>
     <div class="col-md-4 col-sm-6">
         <a href="<?php echo get_page_link(133); ?>">
-            <img class="img-responsive img-portfolio img-hover" src="<?php bloginfo('url'); ?>/wp-content/uploads/2016/11/stundenplan.jpg" alt="">
+            <img class="img-responsive img-portfolio img-hover" src="<?php bloginfo('url'); ?>/wp-content/uploads/2016/12/stundenplan.jpg" alt="">
         </a>
         <h2 class="text"><span>Stundenplan</span></h2>
     </div>
     <div class="col-md-4 col-sm-6">
         <a href="<?php echo get_page_link(33); ?>">
-            <img class="img-responsive img-portfolio img-hover" src="<?php bloginfo('url'); ?>/wp-content/uploads/2016/11/anmeldung.jpg" alt="">
+            <img class="img-responsive img-portfolio img-hover" src="<?php bloginfo('url'); ?>/wp-content/uploads/2016/12/anmeldung.jpg" alt="">
         </a>
         <h2 class="text"><span>Anmeldung</span></h2>
     </div>
     <div class="col-md-4 col-sm-6">
         <a href="<?php echo get_page_link(79); ?>">
-            <img class="img-responsive img-portfolio img-hover" src="<?php bloginfo('url'); ?>/wp-content/uploads/2016/11/kontakt.jpg" alt="">
+            <img class="img-responsive img-portfolio img-hover" src="<?php bloginfo('url'); ?>/wp-content/uploads/2016/12/kontakt.jpg" alt="">
         </a>
         <h2 class="text"><span>Kontakt</span></h2>
     </div>

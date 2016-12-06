@@ -5,7 +5,7 @@
     <div class="jumbotron1">
       <div class="container">
         
-        <?php $the_query = new WP_Query( 'page_id=43' ); ?>
+        <?php $the_query = new WP_Query( 'page_id=29' ); ?>
 
         <?php while ($the_query -> have_posts()) : $the_query -> the_post();  ?>
 
@@ -69,20 +69,21 @@
 <div class="container">
 
     <!-- Marketing Icons Section -->
-    <div class="row">
-        <div class="col-lg-12">
-<!--             <h1 class="page-header">
+    <div class="row row-eq-height">
+      <!--   <div class="col-lg-12">
+            <h1 class="page-header">
                 Schule DANDELION                
-                </h1> -->
-        </div>
+                </h1>
+        </div> -->
+        <div class="ow-eq-height">
 
-        <div class="col-md-4">
+        <div class="col-md-6">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h4><i class="fa fa-fw fa-book"></i><?php echo get_the_title( 38 ); ?></h4>
+                    <h4><i class="fa fa-child"></i> <?php echo get_the_title( 39 ); ?></h4>
                 </div>
                 <div class="panel-body">
-                    <?php $the_query = new WP_Query( 'page_id=38' ); ?>
+                    <?php $the_query = new WP_Query( 'page_id=39' ); ?>
 
                     <?php while ($the_query -> have_posts()) : $the_query -> the_post();  ?>
 
@@ -90,18 +91,18 @@
 
 
                          <?php endwhile;?>
-                    <a href="<?php echo get_page_link(38); ?>" title="Read the whole post" class="btn btn-primary center-block">Mehr Informationen</a>
+                    <a href="<?php echo get_page_link(58); ?>" title="Read the whole post" class="btn btn-primary center-block">Mehr Informationen</a>
                 </div>
             </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-6">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h4><i class="fa fa-fw fa-folder-open"></i><?php echo get_the_title( 36 ); ?></h4>
+                    <h4><i class="fa fa-clock-o"></i> <?php echo get_the_title( 45 ); ?></h4>
                 </div>
                 <div class="panel-body">
-              <p><?php $the_query = new WP_Query( 'page_id=36' ); ?>
+              <p><?php $the_query = new WP_Query( 'page_id=45' ); ?>
 
               <?php while ($the_query -> have_posts()) : $the_query -> the_post();  ?>
 
@@ -109,18 +110,18 @@
 
 
                    <?php endwhile;?></p>
-                    <a href="<?php echo get_page_link(36); ?>" title="Read the whole post" class="btn btn-primary center-block">Mehr Informationen</a>
+                    <a href="<?php echo get_page_link(58); ?>" title="Read the whole post" class="btn btn-primary center-block">Mehr Informationen</a>
                 </div>
             </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-6">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h4><i class="fa fa-fw fa-check"></i><?php echo get_the_title( 33 ); ?></h4>
+                    <h4><i class="fa fa-globe"></i> <?php echo get_the_title( 43 ); ?></h4>
                 </div>
                 <div class="panel-body">
-                    <?php $the_query = new WP_Query( 'page_id=33' ); ?>
+                    <?php $the_query = new WP_Query( 'page_id=43' ); ?>
 
                     <?php while ($the_query -> have_posts()) : $the_query -> the_post();  ?>
 
@@ -128,9 +129,29 @@
 
 
                          <?php endwhile;?>
-                    <a href="<?php echo get_page_link(33); ?>" title="Read the whole post" class="btn btn-primary center-block">Mehr Informationen</a>
+                    <a href="<?php echo get_page_link(58); ?>" title="Read the whole post" class="btn btn-primary center-block">Mehr Informationen</a>
                 </div>
             </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><i class="fa fa-dot-circle-o"></i> <?php echo get_the_title( 41 ); ?></h4>
+                </div>
+                <div class="panel-body">
+                    <?php $the_query = new WP_Query( 'page_id=41' ); ?>
+
+                    <?php while ($the_query -> have_posts()) : $the_query -> the_post();  ?>
+
+                                           <?php the_excerpt(); ?>
+
+
+                         <?php endwhile;?>
+                    <a href="<?php echo get_page_link(58); ?>" title="Read the whole post" class="btn btn-primary center-block">Mehr Informationen</a>
+                </div>
+            </div>
+        </div>
         </div>
     </div><!-- /.row -->
 
