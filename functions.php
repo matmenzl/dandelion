@@ -43,6 +43,7 @@ function theme_js() {
   wp_enqueue_script( 'main_js', get_template_directory_uri() . '/main.js', array('jquery','bootstrap_js'), '', true );
   wp_enqueue_script( 'theme_js', get_template_directory_uri() . '/js/theme.js', array('jquery', 'bootstrap_js'), '', true );
   wp_enqueue_script( 'jquery-easing', get_template_directory_uri() . '/js/jquery.easing.1.3.js', array() );
+  wp_enqueue_script( 'map', get_template_directory_uri() . '/js/map.js', array() );
 }
 
 add_action( 'wp_enqueue_scripts', 'theme_js' );

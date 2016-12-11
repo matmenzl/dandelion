@@ -2,27 +2,10 @@
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
 
-    <div class="jumbotron1">
-      <div class="container">
-        
-        <?php $the_query = new WP_Query( 'page_id=29' ); ?>
-
-        <?php while ($the_query -> have_posts()) : $the_query -> the_post();  ?>
-
-        <?php the_excerpt(); ?>
-
-        <?php endwhile;?>
-
-        <a href="#intro" class="btn btn-circle scroll">
-            <i class="animated bounce fa fa-angle-double-down fa-4"></i>
-        </a>
-
-      </div>
-    </div>
     
     <div id="intro" data-speed="4" data-type="background">
 
-     <div class="jumbotron">
+     <div class="jumbotron1">
        <div class="container">
          
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -38,31 +21,6 @@
 
 
 
-<!-- widgets -->
-    <div class="widgets">
-     <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <?php if ( dynamic_sidebar( 'front-left' ) ); ?>
-            </div>
-            <div class="col-md-4">
-                <?php if ( dynamic_sidebar( 'front-center' ) ); ?>
-            </div>
-            <div class="col-md-4">
-                <?php if ( dynamic_sidebar( 'front-right' ) ); ?>
-            </div>
-            <div class="col-md-4">
-                <?php if ( dynamic_sidebar( 'bottom-front-left' ) ); ?>
-            </div>
-            <div class="col-md-4">
-                <?php if ( dynamic_sidebar( 'bottom-front-center' ) ); ?>
-            </div>
-            <div class="col-md-4">
-                <?php if ( dynamic_sidebar( 'bottom-front-right' ) ); ?>
-            </div>
-        </div>
-    </div>
-</div>
 
 
 <!-- Page Content -->
@@ -77,7 +35,7 @@
         </div> -->
         <div class="ow-eq-height">
 
-        <div class="col-md-6">
+        <div class="col-md-4">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4><i class="fa fa-child"></i> <?php echo get_the_title( 39 ); ?></h4>
@@ -87,16 +45,16 @@
 
                     <?php while ($the_query -> have_posts()) : $the_query -> the_post();  ?>
 
-                                           <?php the_excerpt(); ?>
+                                           <?php the_content(); ?>
 
 
                          <?php endwhile;?>
-                    <a href="<?php echo get_page_link(58); ?>" title="Read the whole post" class="btn btn-primary center-block">Mehr Informationen</a>
+                    <a href="<?php echo get_page_link(89); ?>" title="Read the whole post" class="btn btn-primary center-block">Persönliches Gespräch vereinbaren</a>
                 </div>
             </div>
         </div>
 
-        <div class="col-md-6">
+        <div class="col-md-4">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4><i class="fa fa-clock-o"></i> <?php echo get_the_title( 45 ); ?></h4>
@@ -110,15 +68,15 @@
 
 
                    <?php endwhile;?></p>
-                    <a href="<?php echo get_page_link(58); ?>" title="Read the whole post" class="btn btn-primary center-block">Mehr Informationen</a>
+                    <a href="<?php echo get_page_link(89); ?>" title="Read the whole post" class="btn btn-primary center-block">Anmelden zum Schnuppern</a>
                 </div>
             </div>
         </div>
 
-        <div class="col-md-6">
+        <div class="col-md-4">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h4><i class="fa fa-globe"></i> <?php echo get_the_title( 43 ); ?></h4>
+                    <h4><i class="fa fa-graduation-cap"></i> <?php echo get_the_title( 43 ); ?></h4>
                 </div>
                 <div class="panel-body">
                     <?php $the_query = new WP_Query( 'page_id=43' ); ?>
@@ -129,156 +87,63 @@
 
 
                          <?php endwhile;?>
-                    <a href="<?php echo get_page_link(58); ?>" title="Read the whole post" class="btn btn-primary center-block">Mehr Informationen</a>
+                    <a href="<?php echo get_page_link(79); ?>" title="Read the whole post" class="btn btn-primary center-block">Zur Kostenübersicht</a>
                 </div>
             </div>
         </div>
 
-        <div class="col-md-6">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4><i class="fa fa-dot-circle-o"></i> <?php echo get_the_title( 41 ); ?></h4>
-                </div>
-                <div class="panel-body">
-                    <?php $the_query = new WP_Query( 'page_id=41' ); ?>
-
-                    <?php while ($the_query -> have_posts()) : $the_query -> the_post();  ?>
-
-                                           <?php the_excerpt(); ?>
-
-
-                         <?php endwhile;?>
-                    <a href="<?php echo get_page_link(58); ?>" title="Read the whole post" class="btn btn-primary center-block">Mehr Informationen</a>
-                </div>
-            </div>
-        </div>
         </div>
     </div><!-- /.row -->
 
 </div><!-- /.container -->
 
 
+<div class="container">
+<h3>
+Aktuelle Veranstaltungen
+</h3>
 
+<?php 
 
-       <!-- Carousel -->
-       <?php 
+$num_posts = ( is_front_page() ) ? 4 : -1;
 
-         $args = array(
-           'post_type'     => 'post',
-           'category_name' => 'Slider'
-           );
+$args = array(
+    'post_type' => 'post',
+    'posts_per_page' => $num_posts
+  );
+  $query = new WP_Query( $args );
+?>
+  <?php if ( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
+  <div class="col-md-4">
 
-           $the_query = new WP_Query( $args );
+  <div class="thumbnail">
+    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large'); ?></a>
+    <h4><?php the_excerpt(); ?></h4>
+    <a href="<?php the_permalink(); ?>"><button class="btn btn-default">Mehr Lesen</button></a>
+  </div>
+  </div>
 
-       ?>
+  <?php endwhile; endif; wp_reset_postdata(); ?>
 
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-             <?php if ( have_posts() ) : while ($the_query->have_posts() ) : $the_query-> the_post(); ?>
+</div>
+<hr>
 
-            <li data-target="#carousel-example-generic" data-slide-to="<?php echo $the_query->current_post; ?>" class="<?php if ( $the_query->current_post == 0):?>active<?php endif; ?>"></li>
+<!-- Map Section -->
+<div class="container">
+<div class="row">
+<h2>Die Schule DANDELION befindet sich zur Zeit in Gründung in Zürich Albisrieden/Altstetten.</h2>
+</div>
+</div>
+<div id="map">
 
-            <?php endwhile; endif; ?>
-          </ol>
-
-          <?php rewind_posts(); ?>
-
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner" role="listbox">
-
-          <?php if ( have_posts() ) : while ($the_query->have_posts() ) : $the_query-> the_post(); ?>
-
-            <div class="item <?php if ( $the_query->current_post == 0):?>active<?php endif; ?>">
-             <?php 
-               $thumbnail_id = get_post_thumbnail_id();
-               $thumbnail_url = wp_get_attachment_image_src( $thumbnail_id, 'thumbnail-size', true);
-               $thumbnail_meta = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true);
-             ?>
-              <!-- <a href="<?php the_permalink();?>"> --><img src="<?php echo $thumbnail_url[0]; ?>" alt="<?php echo $thumbnail_meta; ?>"><!-- </a> -->
-              <div class="carousel-caption"><?php the_title(); ?>
-              </div>
-            </div>
-
-            <?php endwhile; endif; ?>
-
-          </div>
-
-          <!-- Controls -->
- <!--          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a> -->
-        </div> 
-
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALR-fKOehBUz5vQTl33w6pAYzSAzT6cjU&sensor=false"></script>
+</div>
+</div>
+</div>
 
 
  
-        <!-- Portfolio Section -->
-        <!-- <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">Portfolio Heading</h2>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-        </div> -->
-        <!-- /.row -->
-
-        <!-- Features Section -->
-        <!-- <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">Modern Business Features</h2>
-            </div>
-            <div class="col-md-6">
-                <p>The Modern Business template by Start Bootstrap includes:</p>
-                <ul>
-                    <li><strong>Bootstrap v3.3.7</strong>
-                    </li>
-                    <li>jQuery v1.11.1</li>
-                    <li>Font Awesome v4.2.0</li>
-                    <li>Working PHP contact form with validation</li>
-                    <li>Unstyled page elements for easy customization</li>
-                    <li>17 HTML pages</li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
-            </div>
-            <div class="col-md-6">
-                <img class="img-responsive" src="http://placehold.it/700x450" alt="">
-            </div>
-        </div> -->
-        <!-- /.row -->
 
         <hr>
 

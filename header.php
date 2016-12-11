@@ -36,7 +36,7 @@
                     <span class="icon-bar middle-bar"></span>
                     <span class="icon-bar bottom-bar"></span>
                 </button>
-                <a class="navbar-brand" href="<?php bloginfo( 'url' ); ?>"><?php bloginfo( 'name' ); ?><img src="/dandelion/wp-content/themes/dandelion/images/dandelion_logo_white_text-shadow.png" alt=""  height="50" width="150"></a>
+                <a class="navbar-brand" href="<?php bloginfo( 'url' ); ?>"><?php bloginfo( 'name' ); ?></a>
                 </button>                
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->

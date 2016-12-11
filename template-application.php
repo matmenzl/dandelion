@@ -148,10 +148,8 @@ get_header(); ?>
                                   <div class="form-group <?php if(isset($offerError)) { echo "has-error has-feedback"; }?>">
                                           <label class="control-label" for="offer"><?php _e('Gewünschtes Angebot für das Kind', 'dandelion'); ?></label>
                                           <select class="form-control" type="select" name="offer" id="offer" value="" />>
-                                            <option>Primarstufe 1 (1750 CHF)</option>
-                                            <option>Primarstufe 2 (1750 CHF)</option>
-                                            <option>Primarstufe 1 mit Abendbetreuung (1850 CHF)</option>
-                                            <option>Primarstufe 2 mit Abendbetreuung (1850 CHF)</option>
+                                            <option>Primarstufe 1 (1780 CHF)</option>
+                                            <option>Primarstufe 2 (1780 CHF)</option>
                                           </select>
                                           <?php if(isset($offerError)) { ?>
                                               <span class="glyphicon glyphicon-remove form-control-feedback"></span>
