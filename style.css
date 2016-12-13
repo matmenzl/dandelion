@@ -115,9 +115,9 @@ body {
   margin-bottom: 0;
 }
 
-/*.sub-menu {
+.sub-menu {
   background:#fff;
-}*/
+}
 
 .sub-menu a  {
   color: #000;
@@ -550,6 +550,7 @@ h2 span {
 
   .sub-menu {
     margin-top:10px;
+    background:transparent;
   }
 
   div.jumbotron1 {
