@@ -33,37 +33,40 @@ div.jumbotron1 .container {
 
 /*Navigation Bar Start*/
 
+.navbar-inverse .navbar-brand:hover {
+  color:#000;
+}
 
 .navbar-inverse {
-  background-color: black;/*#4caf50*/
+  background-color: rgba(255,255,255, 0.9);
   border: none;
 }
 
 .navbar-inverse .navbar-brand {
-  color: white;
-  font-family: Vidaloka;
-}
+  color: #000;
+/*  font-family: Vidaloka;
+*/}
 .navbar-inverse .navbar-nav>li>a {
-  color: white;
+  color: #000;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover  {
   background-color: #000;
 } 
 
-.navbar-inverse .navbar-nav>li>a:hover {
-  background: #fff;
-  color:#000;
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color:#000;
 }
+
 
 /*Navigation Bar End*/
 
 
 /*Navigation mobile
 */
-.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+/*.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
   background-color:transparent;
-}
+}*/
 
 /*.navbar-inverse .navbar-toggle {
   border-color:transparent;
@@ -112,29 +115,34 @@ body {
   margin-bottom: 0;
 }
 
-.sub-menu {
-  background:#000;
-}
+/*.sub-menu {
+  background:#fff;
+}*/
 
 .sub-menu a  {
-  color: #fff;
+  color: #000;
   text-decoration: none;
 }
 
-.sub-menu>ul>li>a:hover  {
-  background-color:#de4d4d;
-} 
-
-
-.current-menu-item > a, .current-menu-parent > a {
-  background: #de4d4d; 
+.sub-menu a:hover  {
+  color: #000;
+  text-decoration: underline;
 }
+
+/*.sub-menu>ul>li>a:hover  {
+  background-color:#000;
+} 
+*/
+
+/*.current-menu-item > a, .current-menu-parent > a {
+  background: #fff; 
+}*/
 .current-menu-parent li a {
   background: inherit;
 }
 .current-menu-parent .current-menu-item a {
-  color: #de4d4d;
-  font-weight: bold;
+  color: #000;
+  font-weight: black;
 }
 
 .sidebar {
@@ -177,6 +185,56 @@ article.right {
   width:66%;
 }
 
+
+
+.char1 {
+  color: #ff5c5c; 
+}
+.char2 {
+  color: #ffbd4a;
+}
+.char3 {
+  color: #35b729;
+}
+.char4 {
+  color: #5291aa;
+}
+.char5 {
+  color: #70bb9d;
+}
+.char6 {
+  color: #ff63b1;
+}
+.char7 {
+  color: #44d9e6;
+}
+.char8 {
+  color: #5271ff;
+}
+.char9 {
+  color: #ff2d30;
+}
+.char10 {
+  color: #70bb9d;
+}
+.char11 {
+  color: #ff63b1;
+}
+.char12 {
+  color: #44d9e6;
+}
+.char13 {
+  color: #5271ff;
+}
+.char14 {
+  color: #ff2d30;
+}
+.char15 {
+  color: #70bb9d;
+}
+
+
+
 /*Article Post Ende*/
 
 
@@ -188,10 +246,11 @@ div.jumbotron1 {
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
   background-size: cover;
-  height: 200px;
+  height: 350px;
   padding-top:50px;
   text-shadow: 2px 2px 3px black;
   }
+
 
 div.jumbotron {
   margin: 0 auto 0 auto;

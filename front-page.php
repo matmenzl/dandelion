@@ -3,21 +3,39 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
 
     
-    <div id="intro" data-speed="4" data-type="background">
+    <div class="jumbotron1">
+          <div class="container">
+            
+            <?php $the_query = new WP_Query( 'page_id=29' ); ?>
 
-     <div class="jumbotron1">
-       <div class="container">
-         
-        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+            <?php while ($the_query -> have_posts()) : $the_query -> the_post();  ?>
 
-        <?php the_content(); ?>
-        
-        <?php endwhile; endif; ?>
+            <?php the_excerpt(); ?>
 
+            <?php endwhile;?>
+
+            <a href="#intro" class="btn btn-circle scroll">
+                <i class="animated bounce fa fa-angle-double-down fa-4"></i>
+            </a>
+
+          </div>
         </div>
-       </div>
-    </div>
-</header>
+        
+        <div id="intro" data-speed="4" data-type="background">
+
+         <div class="jumbotron">
+           <div class="container">
+             
+            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+            <?php the_content(); ?>
+            
+            <?php endwhile; endif; ?>
+
+            </div>
+           </div>
+        </div>
+    </header>
 
 
 
@@ -38,7 +56,7 @@
         <div class="col-md-4">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h4><i class="fa fa-child"></i> <?php echo get_the_title( 39 ); ?></h4>
+                    <h4 class="fancy_title"><i class="fa fa-child"></i> <?php echo get_the_title( 39 ); ?></h4>
                 </div>
                 <div class="panel-body">
                     <?php $the_query = new WP_Query( 'page_id=39' ); ?>
@@ -57,7 +75,7 @@
         <div class="col-md-4">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h4><i class="fa fa-clock-o"></i> <?php echo get_the_title( 45 ); ?></h4>
+                    <h4 class="fancy_title"><i class="fa fa-clock-o"></i> <?php echo get_the_title( 45 ); ?></h4>
                 </div>
                 <div class="panel-body">
               <p><?php $the_query = new WP_Query( 'page_id=45' ); ?>
@@ -76,7 +94,7 @@
         <div class="col-md-4">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h4><i class="fa fa-graduation-cap"></i> <?php echo get_the_title( 43 ); ?></h4>
+                    <h4 class="fancy_title"><i class="fa fa-graduation-cap"></i> <?php echo get_the_title( 43 ); ?></h4>
                 </div>
                 <div class="panel-body">
                     <?php $the_query = new WP_Query( 'page_id=43' ); ?>

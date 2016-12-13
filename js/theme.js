@@ -7,5 +7,7 @@ jQuery(function ($) {
               $(this).parent().toggleClass('open');
           });
 
+  $(".fancy_title").lettering();
+
 
 });
