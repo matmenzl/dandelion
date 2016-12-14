@@ -11,6 +11,7 @@ add_theme_support( 'post-thumbnails' );
 function enqueue_our_required_stylesheets(){
   wp_enqueue_style('font-awesome', get_stylesheet_directory_uri() . '/css/font-awesome.css'); 
   wp_enqueue_style('font-awesome', get_stylesheet_directory_uri() . '/css/font-awesome.min.css'); 
+  wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Roboto:100,300,400,500,700,900', false );
 }
 add_action('wp_enqueue_scripts','enqueue_our_required_stylesheets');
 

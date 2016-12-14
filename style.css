@@ -17,6 +17,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
   font-family: 'Playfair Display';
 }
 */
+
+body {
+  font-family: 'Lato';
+}
+
 div.jumbotron1 p{
   font-weight: 900;
   font-size: 26px;
@@ -33,13 +38,12 @@ div.jumbotron1 .container {
 
 /*Navigation Bar Start*/
 
-.navbar-inverse .navbar-brand:hover {
-  color:#000;
+.navbar-brand {
+  display:none;
 }
 
-.navbar-inverse {
-  background-color: rgba(255,255,255, 0.9);
-  border: none;
+.navbar-inverse .navbar-brand:hover {
+  color:#000;
 }
 
 .navbar-inverse .navbar-brand {
@@ -58,6 +62,23 @@ div.jumbotron1 .container {
   background-color:#000;
 }
 
+
+.navbar-inverse {
+  background-color: rgba(255,255,255, 0.9);
+  border: none;
+  font-weight:bold;
+  font-size:22px;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
 
 /*Navigation Bar End*/
 
@@ -241,14 +262,18 @@ article.right {
 
 
 div.jumbotron1 {
-  background: url(./images/creativity.jpeg) fixed;
+  background: url(./images/header.png);
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   -o-background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
-  height: 350px;
-  padding-top:50px;
-  text-shadow: 2px 2px 3px black;
+  height:200px;
+  /*padding-top:50px;
+  text-shadow: 2px 2px 3px black;*/
+/* 
+  background-position:center;*/
   }
 
 

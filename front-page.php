@@ -14,9 +14,10 @@
 
             <?php endwhile;?>
 
-            <a href="#intro" class="btn btn-circle scroll">
+            <!--arrow -->
+            <!--<a href="#intro" class="btn btn-circle scroll">
                 <i class="animated bounce fa fa-angle-double-down fa-4"></i>
-            </a>
+            </a> -->
 
           </div>
         </div>
