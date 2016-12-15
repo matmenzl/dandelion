@@ -7,7 +7,9 @@ jQuery(function ($) {
               $(this).parent().toggleClass('open');
           });
 
-  $(".fancy_title").lettering();
+
+  $('h1, h2, h4, h3, a.fancy-title').jumble([248, 10, 6
+],[246, 36, 89]),true,false;
 
 
 });

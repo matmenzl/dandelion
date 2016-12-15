@@ -12,7 +12,7 @@
     </div>
     <!-- /.container -->
 
-
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALR-fKOehBUz5vQTl33w6pAYzSAzT6cjU&sensor=false"></script>
 
 
     <?php wp_footer(); ?>

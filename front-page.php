@@ -24,7 +24,7 @@
         
         <div id="intro" data-speed="4" data-type="background">
 
-         <div class="jumbotron">
+         <div class="jumbotron jumbotrontext">
            <div class="container">
              
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -57,18 +57,18 @@
         <div class="col-md-4">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h4 class="fancy_title"><i class="fa fa-child"></i> <?php echo get_the_title( 39 ); ?></h4>
+                    <h4><i class="fa fa-child"></i> <?php echo get_the_title( 211 ); ?></h4>
                 </div>
                 <div class="panel-body">
-                    <?php $the_query = new WP_Query( 'page_id=39' ); ?>
+                    <?php $the_query = new WP_Query( 'page_id=211' ); ?>
 
                     <?php while ($the_query -> have_posts()) : $the_query -> the_post();  ?>
 
-                                           <?php the_content(); ?>
+                                           <?php the_excerpt(); ?>
 
 
                          <?php endwhile;?>
-                    <a href="<?php echo get_page_link(89); ?>" title="Read the whole post" class="btn btn-primary center-block">Persönliches Gespräch vereinbaren</a>
+                    <a href="<?php echo get_page_link(211); ?>" title="Read the whole post" class="btn btn-primary center-block">Persönliches Gespräch vereinbaren</a>
                 </div>
             </div>
         </div>
@@ -76,7 +76,7 @@
         <div class="col-md-4">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h4 class="fancy_title"><i class="fa fa-clock-o"></i> <?php echo get_the_title( 45 ); ?></h4>
+                    <h4><i class="fa fa-clock-o"></i> <?php echo get_the_title( 45 ); ?></h4>
                 </div>
                 <div class="panel-body">
               <p><?php $the_query = new WP_Query( 'page_id=45' ); ?>
@@ -87,7 +87,7 @@
 
 
                    <?php endwhile;?></p>
-                    <a href="<?php echo get_page_link(89); ?>" title="Read the whole post" class="btn btn-primary center-block">Anmelden zum Schnuppern</a>
+                    <a href="<?php echo get_page_link(45); ?>" title="Read the whole post" class="btn btn-primary center-block">Anmelden zum Schnuppern</a>
                 </div>
             </div>
         </div>
@@ -95,7 +95,7 @@
         <div class="col-md-4">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h4 class="fancy_title"><i class="fa fa-graduation-cap"></i> <?php echo get_the_title( 43 ); ?></h4>
+                    <h4><i class="fa fa-graduation-cap"></i> <?php echo get_the_title( 43 ); ?></h4>
                 </div>
                 <div class="panel-body">
                     <?php $the_query = new WP_Query( 'page_id=43' ); ?>
@@ -119,8 +119,7 @@
 
 <div class="container">
 <h3>
-Aktuelle Veranstaltungen
-</h3>
+AKTUELLE VERANSTALTUNGEN</h3>
 
 <?php 
 
@@ -135,11 +134,11 @@ $args = array(
   <?php if ( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
   <div class="col-md-4">
 
-  <div class="thumbnail">
-    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+  <div class="thumbnail text">
+    <h3><a href="<?php the_permalink(); ?>"class="fancy-title"><?php the_title(); ?></a></h3>
     <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large'); ?></a>
-    <h4><?php the_excerpt(); ?></h4>
-    <a href="<?php the_permalink(); ?>"><button class="btn btn-default">Mehr Lesen</button></a>
+    <p class="text"><?php the_excerpt(); ?></p>
+    <a href="<?php the_permalink(); ?>" class="btn btn-primary center-block">Mehr Lesen</a>
   </div>
   </div>
 
@@ -151,15 +150,16 @@ $args = array(
 <!-- Map Section -->
 <div class="container">
 <div class="row">
-<h2>Die Schule DANDELION befindet sich zur Zeit in Gründung in Zürich Albisrieden/Altstetten.</h2>
+<div class="col-md-12">
+<h2>STANDORT</h2>
+<p class="text">Die Schule DANDELION befindet sich im Zürcher Freilager und ist gut mit Bus (67/78/80/89/83) und Tram (2/3) zu erreichen.</p>
+</div>
 </div>
 </div>
 <div id="map">
 
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALR-fKOehBUz5vQTl33w6pAYzSAzT6cjU&sensor=false"></script>
 </div>
-</div>
-</div>
+
 
 
  
@@ -170,7 +170,7 @@ $args = array(
     <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <h2>Newsletter abonnieren</h2>
+                    <h2>NEWSLETTER ABONNIEREN</h2>
                     <p>Wir halten dich auf dem Laufenden rund um die Schule DANDELION (Wir versprechen: kein Spam und keine unnötigen E-mails).</p>
                 </div>
                 <div class="col-md-4">
