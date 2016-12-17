@@ -89,7 +89,7 @@ create_widget( 'Front Page Right Bottom Row', 'bottom-front-right', 'Displays on
 
 create_widget( 'Page Sidebar', 'page', 'Page Sidebar' );
 create_widget( 'Blog Sidebar', 'blog', 'Blog Sidebar' );
-create_widget( 'Lernphilosophie Sidebar', 'template-lernphilosophie', 'Lernphilosophie Sidebar' );
+create_widget( 'Lernphilosophie Sidebar', 'lernphilosophie', 'Lernphilosophie Sidebar' );
 
 
 
@@ -200,6 +200,7 @@ register_sidebar( array(
   'before_title'  => '<h4 class="widget-title">',
   'after_title'   => '</h4>',
 ) );
+
 
 
 

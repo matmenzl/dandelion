@@ -186,9 +186,9 @@ body {
 }
 
 .sidebar {
-  margin-top: 40px;
+  margin: 100px 0 0 0;
   color: #444;
-  background-color: #35c46d;
+  background-color: #ffbd4a;
   color: white;
   -ms-transform: rotate(7deg);
   -webkit-transform: rotate(7deg);
@@ -520,6 +520,30 @@ a.btn.btn-primary.center-block:hover {
 
 /*panel pricing*/
 
+.btn.btn-lg.btn-block.btn-info {
+  background-color: #fff;
+  color: #00BCD4;
+  border-color: #000;
+  border-radius: 1px;
+  border: 2px solid;
+  font-size:18px;
+  white-space: normal;
+}
+
+.btn.btn-lg.btn-block.btn-info:hover {
+  background-color:#00BCD4;
+  color:white;
+}
+
+
+.panel-info {
+  border-color:#f0f0f0;
+}
+
+.list-group-item {
+  border:none;
+}
+
 .panel-pricing {
   -moz-transition: all .3s ease;
   -o-transition: all .3s ease;
@@ -530,6 +554,8 @@ a.btn.btn-primary.center-block:hover {
 }
 .panel-pricing .panel-heading {
   padding: 20px 10px;
+  background-color:#999;
+  border-color:#999;
 }
 .panel-pricing .panel-heading .fa {
   margin-top: 10px;
