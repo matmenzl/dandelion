@@ -188,6 +188,12 @@ body {
 .sidebar {
   margin-top: 40px;
   color: #444;
+  background-color: #35c46d;
+  color: white;
+  -ms-transform: rotate(7deg);
+  -webkit-transform: rotate(7deg);
+  transform: rotate(12deg);
+  border-radius:9px;
 }
 
 .sidebar h3 {
@@ -446,20 +452,22 @@ div.widgets {
 
 a.btn.btn-primary.center-block {
   background-color: #fff;
-      color: #e91e63;
-      border-color: #000;
-      border-radius: 1px;
-      border: 2px solid;
+  color: #00BCD4;
+  border-color: #000;
+  border-radius: 1px;
+  border: 2px solid;
+  font-size:18px;
+  white-space: normal;
 }
 
-a.btn.btn-primary.center-block::after {
+/*a.btn.btn-primary.center-block::after {
   font-family: FontAwesome;
   content: " \f178";
 }
-
+*/
 
 a.btn.btn-primary.center-block:hover {
-  background-color:black;
+  background-color:#00BCD4;
   color:white;
 }
 

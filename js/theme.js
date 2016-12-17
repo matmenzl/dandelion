@@ -8,8 +8,6 @@ jQuery(function ($) {
           });
 
 
-  $('h1, h2, h4, h3, a.fancy-title').jumble([248, 10, 6
-],[246, 36, 89]),true,false;
-
+  $('h1, h2, h4, h3, a.fancy-title').jumble([190,180,110],[250,20,170],false,true);
 
 });
