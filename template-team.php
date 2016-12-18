@@ -7,16 +7,18 @@
 <?php get_header() ?>
 
 
-        <div class="container">
+        <div class="container text">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Team Schule DANDELION</h2>
-                    <h3 class="section-subheading text-muted">Die Kinder werden bis 16 Uhr immer von einer Lehrperson und mindestens einem Lernbegleiter
-betreut. Nach 16Uhr sind die Lernbegleiter vor Ort.</h3>
+                    <div class="text section-subheading text-muted">Die Kinder werden bis 16 Uhr immer von einer Lehrperson und mindestens einem Lernbegleiter
+betreut. Nach 16Uhr sind die Lernbegleiter vor Ort.<div>
                 </div>
             </div>
+            </div>
+            </div>
             <div class="row">
-            <div class="col-sm-2 col-md-2">
+            <div class="col-sm-3 col-md-3">
                 <div class="team-member">
                     <img src="/dandelion/wp-content/themes/dandelion/images/brigitte.jpg" class="img-responsive img-circle" alt="">
                     <h4>Brigitte Jörg</h4>
@@ -25,7 +27,7 @@ betreut. Nach 16Uhr sind die Lernbegleiter vor Ort.</h3>
                     </ul>
                 </div>
             </div>
-            <div class="col-sm-2 col-md-2">
+            <div class="col-sm-3 col-md-3">
                 <div class="team-member">
                     <img src="/dandelion/wp-content/themes/dandelion/images/user.png" class="img-responsive img-circle" alt=""></i>
                     <h4>Renate Jörg</h4>
@@ -34,16 +36,16 @@ betreut. Nach 16Uhr sind die Lernbegleiter vor Ort.</h3>
                     </ul>
                 </div>
             </div>
-                <div class="col-sm-2 col-md-2">
+                <div class="col-sm-3 col-md-3">
                     <div class="team-member">
                         <img src="/dandelion/wp-content/themes/dandelion/images/caroline.jpg" class="img-responsive img-circle" alt="">
                         <h4>Caroline Gimpel</h4>
-                        <p class="text-muted">Lernbegleiterin, Gesellschafterin</p>
+                        <p class="text-muted">Lernbegleiterin</p>
                         <ul class="list-inline social-buttons">
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-2 col-md-2">
+                <div class="col-sm-3 col-md-3">
                     <div class="team-member">
                         <img src="/dandelion/wp-content/themes/dandelion/images/angela.jpg" class="img-responsive img-circle" alt="">
                         <h4>Angela Jörg</h4>
@@ -55,7 +57,7 @@ betreut. Nach 16Uhr sind die Lernbegleiter vor Ort.</h3>
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-2 col-md-2 col-lg-2">
+<!--                 <div class="col-sm-2 col-md-2 col-lg-2">
                     <div class="team-member">
                         <img src="/dandelion/wp-content/themes/dandelion/images/mathias.jpg" class="img-responsive img-circle" alt="">
                         <h4>Mathias Menzl</h4>
@@ -72,7 +74,7 @@ betreut. Nach 16Uhr sind die Lernbegleiter vor Ort.</h3>
                         <ul class="list-inline social-buttons">
                         </ul>
                     </div>
-                </div>
+                </div> -->
             </div>
 <!--             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">

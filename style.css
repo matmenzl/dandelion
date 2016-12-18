@@ -234,10 +234,10 @@ article.right {
 
 
 .char1 {
-  color: #ff5c5c; 
+  color: #b965e6; 
 }
 .char2 {
-  color: #ffbd4a;
+  color: #ff2d30;
 }
 .char3 {
   color: #35b729;
@@ -278,7 +278,36 @@ article.right {
 .char15 {
   color: #70bb9d;
 }
-
+.char6 {
+  color: #b965e6; 
+}
+.char17 {
+  color: #ff2d30;
+}
+.char18 {
+  color: #35b729;
+}
+.char19 {
+  color: #5291aa;
+}
+.char20 {
+  color: #70bb9d;
+}
+.char21 {
+  color: #ff63b1;
+}
+.char22 {
+  color: #44d9e6;
+}
+.char23 {
+  color: #5271ff;
+}
+.char24 {
+  color: #ff2d30;
+}
+.char25 {
+  color: #70bb9d;
+}
 
 
 /*Article Post Ende*/
@@ -339,7 +368,7 @@ a.btn.btn-circle.scroll {
   background: #fff;/*#f5f5f5*/
   border:none;
   color:black;
-  text-align:center;
+  text-align:left;
 }
 
 .panel-heading h4 {
@@ -450,25 +479,22 @@ div.widgets {
   transform: rotate(0);
 }
 
-a.btn.btn-primary.center-block {
-  background-color: #fff;
-  color: #00BCD4;
-  border-color: #000;
-  border-radius: 1px;
-  border: 2px solid;
+a.center-block {
+  color: #40c585;
   font-size:18px;
   white-space: normal;
 }
 
-/*a.btn.btn-primary.center-block::after {
+a.center-block::after {
   font-family: FontAwesome;
   content: " \f178";
 }
-*/
 
-a.btn.btn-primary.center-block:hover {
-  background-color:#00BCD4;
-  color:white;
+
+a.center-block:hover {
+  text-decoration: underline;
+  transition: all ease-in-out 1s;
+
 }
 
 
@@ -621,6 +647,22 @@ a.btn.btn-primary.center-block:hover {
 
   div.jumbotron1 p {
     font-size:22px;
+  }
+
+  .navbar-brand {
+    display:inline;
+  }
+
+  .navbar .navbar-collapse {
+    text-align: left;
+  }
+
+  h1 {
+    font-size:28px;
+  }
+
+  .sidebar {
+    margin: 50px 20px 10px 20px;
   }
 
 

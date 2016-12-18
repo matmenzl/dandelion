@@ -23,6 +23,16 @@ if(isset($_POST['submitted'])) {
     } else {
         $email = trim($_POST['email']);
     }
+
+    if(trim($_POST['phone']) === '')  {
+        $phoneError = true;
+        $hasError = true;
+    } else if (!preg_match("/^[[:alnum:]][a-z0-9_.-]*@[a-z0-9.-]+\.[a-z]{2,4}$/i", trim($_POST['email']))) {
+        $phoneError = true;
+        $hasError = true;
+    } else {
+        $phone = trim($_POST['phone']);
+    }
  
     if(trim($_POST['comments']) === '') {
         $commentError = true;
@@ -42,7 +52,7 @@ if(isset($_POST['submitted'])) {
             $emailTo = get_option('admin_email');
         }
         $subject = __('From ','dandelion').$name;
-        $body = __('Name: ','dandelion').$name."\n".__('Email: ','dandelion').$email."\n".__('Comments: ','dandelion').$comments;
+        $body = __('Name: ','dandelion').$name."\n".__('Email: ','dandelion').$email."\n".__('Phone: ','dandelion').$phone."\n".__('Comments: ','dandelion').$comments;
         $headers = __('From: ','dandelion') .$name. ' <'.$emailTo.'>' . "\r\n" . __('Reply-To:','dandelion') .$name. '<'.$email.'>';
  
         wp_mail($emailTo, $subject, $body, $headers);
@@ -59,7 +69,7 @@ get_header(); ?>
 <div class="container">
 	<div class="row">
  
-	<div id="primary" class="col-md-9 col-lg-9">
+	<div id="primary" class="col-md-9 col-lg-9 text">
 		<main id="main" class="site-main" role="main">
  
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -102,6 +112,13 @@ get_header(); ?>
 						                        <span class="glyphicon glyphicon-remove form-control-feedback"></span>
 						                    <?php } ?>
 						               
+                           <div class="form-group <?php if(isset($phoneError)) { echo "has-error has-feedback"; }?>">
+                                <label class="control-label" for="phone"><?php _e('Phone', 'dandelion'); ?></label>
+                            
+                                <input class="form-control" type="text" name="phone" id="phone" value="" />
+                                <?php if(isset($phoneError)) { ?>
+                                    <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                                <?php } ?>
 						               </div>
 						                <div class="form-group <?php if(isset($commentError)) { echo "has-error has-feedback"; }?>">
 						                    <label class="control-label" for="commentsText"><?php _e('Frage', 'dandelion'); ?></label>

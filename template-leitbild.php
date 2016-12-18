@@ -19,7 +19,7 @@ background-position:center;" >
 
 </div>
 
-<div class="container">
+<div class="container text">
   <div class="lead">
   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 

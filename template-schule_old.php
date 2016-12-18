@@ -21,7 +21,7 @@ background-position:center;" >
 
 <div class="container">
 <!-- Portfolio Section -->
-<div class="row">
+<div class="row text">
 <!--     <div class="col-lg-12">
         <h2 class="page-header">Portfolio Heading</h2>
     </div> -->

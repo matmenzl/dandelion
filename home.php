@@ -18,14 +18,14 @@
 
 
 
-                    <div class="col-md-3 img-responsive">
+                    <div class="col-md-4 img-responsive">
                     <?php the_post_thumbnail('thumbnail', array('class' => 'img-responsive')); ?>
 
                     </div>
 
-                    <div class="col-md-9 text">
+                    <div class="col-md-8 text">
                     <p class="text"><?php the_excerpt(); ?>
-                    <a href="<?php the_permalink(); ?>" class="btn btn-primary center-block"><b>Mehr Lesen <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></b></a>
+                    <a href="<?php the_permalink(); ?>" class="center-block"><b>Mehr Lesen <!-- <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> --></b></a>
                     </div></p>
 
 

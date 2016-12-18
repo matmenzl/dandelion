@@ -68,7 +68,7 @@
 
 
                          <?php endwhile;?>
-                    <a href="<?php echo get_page_link(211); ?>" title="Read the whole post" class="btn btn-primary center-block">Persönliches Gespräch vereinbaren</a>
+                    <a href="<?php echo get_page_link(211); ?>" title="Read the whole post" class="center-block">Mehr</a>
                 </div>
             </div>
         </div>
@@ -79,15 +79,15 @@
                     <h4><i class="fa fa-clock-o"></i> <?php echo get_the_title( 45 ); ?></h4>
                 </div>
                 <div class="panel-body">
-              <p><?php $the_query = new WP_Query( 'page_id=45' ); ?>
+                <?php $the_query = new WP_Query( 'page_id=45' ); ?>
 
               <?php while ($the_query -> have_posts()) : $the_query -> the_post();  ?>
 
                                      <?php the_excerpt(); ?>
 
 
-                   <?php endwhile;?></p>
-                    <a href="<?php echo get_page_link(45); ?>" title="Read the whole post" class="btn btn-primary center-block">Anmelden zum Schnuppern</a>
+                   <?php endwhile;?>
+                    <a href="<?php echo get_page_link(43); ?>" title="Read the whole post" class="center-block">Mehr</a>
                 </div>
             </div>
         </div>
@@ -106,7 +106,7 @@
 
 
                          <?php endwhile;?>
-                    <a href="<?php echo get_page_link(79); ?>" title="Read the whole post" class="btn btn-primary center-block">Zur Kostenübersicht</a>
+                    <a href="<?php echo get_page_link(43); ?>" title="Read the whole post" class="center-block">Mehr</a>
                 </div>
             </div>
         </div>
@@ -115,6 +115,8 @@
     </div><!-- /.row -->
 
 </div><!-- /.container -->
+
+
 
 
 <div class="container">
@@ -132,20 +134,24 @@ $args = array(
   $query = new WP_Query( $args );
 ?>
   <?php if ( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
-  <div class="col-md-4">
+<article class="post col-md-12">                    
+    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 
-  <div class="thumbnail text">
-    <h3><a href="<?php the_permalink(); ?>"class="fancy-title"><?php the_title(); ?></a></h3>
-    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large'); ?></a>
+    <div class="col-md-4 img-responsive">
+    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large', array('class' => 'img-responsive')); ?></a>
+    </div>
+
+    <div class="col-md-8 text">
     <p class="text"><?php the_excerpt(); ?></p>
-    <a href="<?php the_permalink(); ?>" class="btn btn-primary center-block">Mehr Lesen</a>
+    <a href="<?php the_permalink(); ?>" class="center-block">Mehr Lesen</a>
   </div>
-  </div>
+
+  </article>
+  <hr>
 
   <?php endwhile; endif; wp_reset_postdata(); ?>
 
 </div>
-<hr>
 
 <!-- Map Section -->
 <div class="container">

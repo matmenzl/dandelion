@@ -8,6 +8,10 @@ jQuery(function ($) {
           });
 
 
-  $('h1, h2, h4, h3, a.fancy-title').jumble([190,180,110],[250,20,170],false,true);
+  // $('h1, h2, h4, h3, a.fancy-title').jumble([220,180,110],[250,20,170],false,true);
+
+  $(document).ready(function() {
+    $("h1, h2, h4, h3, a.fancy-title").lettering();
+  });
 
 });
