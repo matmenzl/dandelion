@@ -9,11 +9,11 @@ if ( ! is_active_sidebar( 'contact' ) ) {
 }
 ?>
  
-<div id="secondary" class="widget-area col-md-3 col-lg-3" role="complementary">
-	<div class="well">
+<!-- <div id="secondary" class="widget-area col-md-3 col-lg-3" role="complementary">
+ -->	<div class="col-md-3 sidebarcontact">
 		<?php dynamic_sidebar( 'contact' ); ?>
 	</div>
-</div><!-- #secondary -->
+</div>#secondary
  
 </div> <!-- .row -->
 </div> <!-- .container -->

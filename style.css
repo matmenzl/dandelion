@@ -94,6 +94,8 @@ div.jumbotron1 .container {
   text-align: center;
 }
 
+
+
 /*Navigation Bar End*/
 
 
@@ -187,12 +189,18 @@ body {
 
 .sidebar {
   margin: 100px 0 0 0;
-  color: #444;
   background-color: #ffbd4a;
-  color: white;
+  color: black;
   -ms-transform: rotate(7deg);
   -webkit-transform: rotate(7deg);
   transform: rotate(12deg);
+  border-radius:9px;
+}
+
+.sidebarcontact {
+  margin: 100px 0 0 0;
+  background-color: #ffbd4a;
+  color: black;
   border-radius:9px;
 }
 
@@ -308,6 +316,81 @@ article.right {
 .char25 {
   color: #70bb9d;
 }
+.char26 {
+  color: #b965e6; 
+}
+.char27 {
+  color: #ff2d30;
+}
+.char28 {
+  color: #35b729;
+}
+.char29 {
+  color: #5291aa;
+}
+.char30 {
+  color: #70bb9d;
+}
+.char31 {
+  color: #ff63b1;
+}
+.char32 {
+  color: #44d9e6;
+}
+.char33 {
+  color: #5271ff;
+}
+.char34 {
+  color: #ff2d30;
+}
+.char35 {
+  color: #70bb9d;
+}
+.char36 {
+  color: #ff63b1;
+}
+.char37 {
+  color: #44d9e6;
+}
+.char38 {
+  color: #5271ff;
+}
+.char39 {
+  color: #ff2d30;
+}
+.char40 {
+  color: #70bb9d;
+}
+.char41 {
+  color: #b965e6; 
+}
+.char42 {
+  color: #ff2d30;
+}
+.char43 {
+  color: #35b729;
+}
+.char44 {
+  color: #5291aa;
+}
+.char45 {
+  color: #70bb9d;
+}
+.char46 {
+  color: #ff63b1;
+}
+.char47 {
+  color: #44d9e6;
+}
+.char48 {
+  color: #5271ff;
+}
+.char49 {
+  color: #ff2d30;
+}
+.char50 {
+  color: #70bb9d;
+}
 
 
 /*Article Post Ende*/
@@ -364,6 +447,10 @@ a.btn.btn-circle.scroll {
   color:white;
 }
 
+.panel {
+  box-shadow: none;
+}
+
 .panel-default>.panel-heading {
   background: #fff;/*#f5f5f5*/
   border:none;
@@ -382,7 +469,8 @@ a.btn.btn-circle.scroll {
 }
 
 .panel-default {
-  border:none;
+  border:solid 0px transparent;
+  border-style:hidden;
   background:#fff;/*#f5f5f5*/
 }
 

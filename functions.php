@@ -90,6 +90,7 @@ create_widget( 'Front Page Right Bottom Row', 'bottom-front-right', 'Displays on
 create_widget( 'Page Sidebar', 'page', 'Page Sidebar' );
 create_widget( 'Blog Sidebar', 'blog', 'Blog Sidebar' );
 create_widget( 'Lernphilosophie Sidebar', 'lernphilosophie', 'Lernphilosophie Sidebar' );
+create_widget( 'Kosten Sidebar', 'kosten', 'Kosten Sidebar' );
 
 
 

@@ -46,18 +46,18 @@
 <div class="container">
 
     <!-- Marketing Icons Section -->
-    <div class="row row-eq-height">
-      <!--   <div class="col-lg-12">
+    <div class="row">
+<!--         <div class="col-lg-12">
             <h1 class="page-header">
                 Schule DANDELION                
                 </h1>
         </div> -->
-        <div class="ow-eq-height">
-
+<!--         <div class="ow-eq-height">
+ -->
         <div class="col-md-4">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h4><i class="fa fa-child"></i> <?php echo get_the_title( 211 ); ?></h4>
+                    <h4><!-- <i class="fa fa-child"></i> --><?php echo get_the_title( 211 ); ?></h4>
                 </div>
                 <div class="panel-body">
                     <?php $the_query = new WP_Query( 'page_id=211' ); ?>
@@ -76,7 +76,7 @@
         <div class="col-md-4">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h4><i class="fa fa-clock-o"></i> <?php echo get_the_title( 45 ); ?></h4>
+                    <h4><!-- <i class="fa fa-clock-o"></i> --><?php echo get_the_title( 45 ); ?></h4>
                 </div>
                 <div class="panel-body">
                 <?php $the_query = new WP_Query( 'page_id=45' ); ?>
@@ -87,7 +87,7 @@
 
 
                    <?php endwhile;?>
-                    <a href="<?php echo get_page_link(43); ?>" title="Read the whole post" class="center-block">Mehr</a>
+                    <a href="<?php echo get_page_link(45); ?>" title="Read the whole post" class="center-block">Mehr</a>
                 </div>
             </div>
         </div>
@@ -95,7 +95,7 @@
         <div class="col-md-4">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h4><i class="fa fa-graduation-cap"></i> <?php echo get_the_title( 43 ); ?></h4>
+                    <h4><!-- <i class="fa fa-graduation-cap"> --></i> <?php echo get_the_title( 43 ); ?></h4>
                 </div>
                 <div class="panel-body">
                     <?php $the_query = new WP_Query( 'page_id=43' ); ?>
@@ -116,8 +116,7 @@
 
 </div><!-- /.container -->
 
-
-
+<hr>
 
 <div class="container">
 <h3>
@@ -137,11 +136,11 @@ $args = array(
 <article class="post col-md-12">                    
     <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 
-    <div class="col-md-4 img-responsive">
+    <div class="col-md-3 img-responsive">
     <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large', array('class' => 'img-responsive')); ?></a>
     </div>
 
-    <div class="col-md-8 text">
+    <div class="col-md-9 text">
     <p class="text"><?php the_excerpt(); ?></p>
     <a href="<?php the_permalink(); ?>" class="center-block">Mehr Lesen</a>
   </div>
@@ -152,6 +151,7 @@ $args = array(
   <?php endwhile; endif; wp_reset_postdata(); ?>
 
 </div>
+<hr>
 
 <!-- Map Section -->
 <div class="container">
