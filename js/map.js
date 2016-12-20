@@ -6,7 +6,7 @@ var map = null;
 // When the window has finished loading create our google map below
 google.maps.event.addDomListener(window, 'load', init);
 google.maps.event.addDomListener(window, 'resize', function() {
-    map.setCenter(new google.maps.LatLng(47.3800473, 8.4839301));
+    map.setCenter(new google.maps.LatLng(47.381495, 8.488121));
 });
 
 function init() {
@@ -17,7 +17,7 @@ function init() {
         zoom: 15,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(47.3800473, 8.4839301), // Zurich
+        center: new google.maps.LatLng(47.381495, 8.488121), // Zurich
 
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
@@ -36,14 +36,43 @@ function init() {
     // Create the Google Map using out element and options defined above
     map = new google.maps.Map(mapElement, mapOptions);
 
+    // Following section, you can create your info window content using html markup
+
+                    var contentString = '<div id="content">'+
+                        '<div id="siteNotice">'+
+                        '</div>'+
+                        '<h1 id="firstHeading" class="firstHeading">Schule DANDELION</h1>'+
+                        '<div id="bodyContent">'+
+                        '<p>Die <b>Schule DANDELION</b>, ist eine freie Schule in Zürich Albisrieden/Altstetten' + ' an der Rautistrasse 77' + ' in 8048 Zürich.'
+                        '</p>'+
+                        '</div>'+
+                        '</div>';
+
+
+
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
     var image = 'wp-content/themes/dandelion/images/map-marker.png';
-    var myLatLng = new google.maps.LatLng(47.3800473, 8.4839301);
+    var myLatLng = new google.maps.LatLng(47.381495, 8.488121);
     var beachMarker = new google.maps.Marker({
         position: myLatLng,
         map: map,
         icon: image
     });
+
+             // Following Lines are needed if you use the Info Window to display content when map marker is clicked
+
+               var infowindow = new google.maps.InfoWindow({
+                                content: contentString
+                            });
+
+                // Following line turns the marker, into a clickable button and when clicked, opens the info window
+
+                    google.maps.event.addListener(beachMarker, 'click', function() {
+                        infowindow.open(map, beachMarker);
+                    });  
+
+
+
 }
 
 });

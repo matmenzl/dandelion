@@ -45,7 +45,7 @@ div.jumbotron1 .container {
 }
 
 .jumbotron p {
-  font-size:30px;
+  font-size:28px;
   font-weight:bold;
 }
 
@@ -199,6 +199,7 @@ body {
 
 .sidebarcontact {
   margin: 100px 0 0 0;
+  padding:15px;
   background-color: #ffbd4a;
   color: black;
   border-radius:9px;
@@ -407,10 +408,7 @@ div.jumbotron1 {
   background-position: center center;
   background-size: cover;
   height:200px;
-  /*padding-top:50px;
-  text-shadow: 2px 2px 3px black;*/
-/* 
-  background-position:center;*/
+  width:100%;
   }
 
 
@@ -456,6 +454,7 @@ a.btn.btn-circle.scroll {
   border:none;
   color:black;
   text-align:left;
+  padding-bottom:0px;
 }
 
 .panel-heading h4 {
@@ -466,6 +465,7 @@ a.btn.btn-circle.scroll {
   background:#fff;/*#f5f5f5*/
   border:none;
   font-size:18px;
+  padding-top:0px;
 }
 
 .panel-default {
@@ -753,5 +753,28 @@ a.center-block:hover {
     margin: 50px 20px 10px 20px;
   }
 
+  .sidebarcontact {
+    margin: 50px 20px 10px 20px;
+    padding:15px;
+    background-color: #ffbd4a;
+    color: black;
+    border-radius:9px;
+  }
+
+  div.jumbotron1 {
+    background: url(./images/header.png);
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height:100px;
+    width:100%;
+    }
+
+   div.jumbotron p {
+    font-size:18px;
+   }
 
 }

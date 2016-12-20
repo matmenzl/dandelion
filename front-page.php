@@ -57,7 +57,7 @@
         <div class="col-md-4">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h4><!-- <i class="fa fa-child"></i> --><?php echo get_the_title( 211 ); ?></h4>
+                    <h4><!-- <i class="fa fa-child"></i> --><b><?php echo get_the_title( 211 ); ?></b></h4>
                 </div>
                 <div class="panel-body">
                     <?php $the_query = new WP_Query( 'page_id=211' ); ?>
