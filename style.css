@@ -18,6 +18,21 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 */
 
+/*banner normal style*/
+.banner {
+  background-color: #5ef;
+  font-size: 22px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 0 auto;
+  width:300px;
+    -vendor-animation-duration: 5s;
+    -vendor-animation-delay: 10s;
+  }
+}
+
+
+
 body {
   font-family: 'Lato';
 }
@@ -78,7 +93,7 @@ div.jumbotron1 .container {
 
 
 .navbar-inverse {
-  background-color: rgba(255,255,255, 0.9);
+  background-color: rgba(255,255,255, 1.0);
   border: none;
   font-weight:bold;
   font-size:22px;
@@ -777,4 +792,31 @@ a.center-block:hover {
     font-size:18px;
    }
 
+/*banner normal style*/
+.banner {
+  background-color: #5ef;
+  font-size: 22px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 0 auto;
+  width:300px;
+
+
+}
+
+/*banner ribbonstyle*/
+  /* .banner {
+     background-color: #5ef;
+     position: relative;
+     top: -160px;
+     left: -500px;
+     font-size: 28px;
+     margin: 0 auto;
+     border-radius: 5px;
+     -ms-transform: rotate(-50deg);
+     -webkit-transform: rotate(-50deg);
+     transform: rotate(-50deg);
+     text-align: center;
+   }
+*/
 }

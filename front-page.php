@@ -1,5 +1,7 @@
 <?php get_header() ?>
 
+
+
     <!-- Main jumbotron for a primary marketing message or call to action -->
 
     
@@ -34,6 +36,8 @@
             <?php endwhile; endif; ?>
 
             </div>
+            <div class="banner">Eröffnung März 2017</div>
+
            </div>
         </div>
     </header>

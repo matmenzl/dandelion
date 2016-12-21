@@ -14,4 +14,6 @@ jQuery(function ($) {
     $("h1, h2, h4, h3, a.fancy-title").lettering();
   });
 
+  $('.banner').addClass('animated lightSpeedIn');
+
 });
