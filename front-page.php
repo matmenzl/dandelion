@@ -20,9 +20,11 @@
             <!--<a href="#intro" class="btn btn-circle scroll">
                 <i class="animated bounce fa fa-angle-double-down fa-4"></i>
             </a> -->
+            <div class="banner">Eröffnung<br>März 2017</div>
+
+            </div>
 
           </div>
-        </div>
         
         <div id="intro" data-speed="4" data-type="background">
 
@@ -34,9 +36,6 @@
             <?php the_content(); ?>
             
             <?php endwhile; endif; ?>
-
-            </div>
-            <div class="banner">Eröffnung März 2017</div>
 
            </div>
         </div>

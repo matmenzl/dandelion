@@ -18,17 +18,33 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 */
 
-/*banner normal style*/
+/*banner ribbonstyle*/
 .banner {
-  background-color: #5ef;
-  font-size: 22px;
-  border-radius: 5px;
-  text-align: center;
-  margin: 0 auto;
-  width:300px;
-    -vendor-animation-duration: 5s;
-    -vendor-animation-delay: 10s;
-  }
+   background-color: #5ef;
+   position: relative;
+   top: 60px;
+   left: -440px;
+   font-size: 28px;
+   margin: 0 auto;
+   border-radius: 5px;
+   -ms-transform: rotate(-50deg);
+   -webkit-transform: rotate(-50deg);
+   transform: rotate(-50deg);
+   text-align: center;
+   content:'Eröffnung März 2017';
+}
+
+
+div.jumbotron1 {
+ background: url(./images/header.png);
+ -webkit-background-size: 100% 100%;
+ -moz-background-size: 100% 100%;
+ -o-background-size: 100% 100%;
+ background-repeat: no-repeat;
+ background-position: center center;
+ background-size: cover;
+height:200px;
+width: 100%;
 }
 
 
@@ -413,20 +429,6 @@ article.right {
 
 
 
-
-div.jumbotron1 {
-  background: url(./images/header.png);
-  -webkit-background-size: 100% 100%;
-  -moz-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  height:200px;
-  width:100%;
-  }
-
-
 div.jumbotron {
   margin: 0 auto 0 auto;
   text-align: center;
@@ -729,6 +731,28 @@ a.center-block:hover {
 }
 
 
+
+
+
+@media (max-width:989px) {
+
+/*banner ribbonstyle*/
+   .banner {
+     background-color: #5ef;
+     position: relative;
+     top: 90px;
+     left: -290px;
+     font-size: 28px;
+     margin: 0 auto;
+     border-radius: 5px;
+     -ms-transform: rotate(-50deg);
+     -webkit-transform: rotate(-50deg);
+     transform: rotate(-50deg);
+     text-align: center;
+   }
+ }  
+
+
 @media (max-width:768px) {
 
   div.carousel-inner {
@@ -776,41 +800,40 @@ a.center-block:hover {
     border-radius:9px;
   }
 
-  div.jumbotron1 {
-    background: url(./images/header.png);
+
+   div.jumbotron p {
+    font-size:18px;
+   }
+
+   div.jumbotron1 {
+    background: url(./images/header_mobile.png);
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    height:100px;
-    width:100%;
-    }
-
-   div.jumbotron p {
-    font-size:18px;
+   height:200px;
+   width: 100%;
    }
 
 /*banner normal style*/
-.banner {
+/*.banner {
   background-color: #5ef;
   font-size: 22px;
   border-radius: 5px;
   text-align: center;
   margin: 0 auto;
   width:300px;
-
-
-}
+}*/
 
 /*banner ribbonstyle*/
-  /* .banner {
+   .banner {
      background-color: #5ef;
      position: relative;
-     top: -160px;
-     left: -500px;
-     font-size: 28px;
+     top: 40px;
+     left: -280px;
+     font-size: 24px;
      margin: 0 auto;
      border-radius: 5px;
      -ms-transform: rotate(-50deg);
@@ -818,5 +841,26 @@ a.center-block:hover {
      transform: rotate(-50deg);
      text-align: center;
    }
-*/
-}
+
+   @media (max-width:480px) {
+
+      .banner {
+        top: 10px;
+        left: -160px;
+        font-size:12px;
+      }
+
+
+   }
+
+
+   @media (max-width:320px) {
+
+      .banner {
+        top: 10px;
+        left: -130px;
+        font-size:12px;
+      }
+
+
+   }
