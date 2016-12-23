@@ -161,7 +161,7 @@ $args = array(
 <div class="row">
 <div class="col-md-12">
 <h2>STANDORT</h2>
-<p class="text">Die Schule DANDELION befindet sich im Zürcher Freilager und ist gut mit Bus (67/78/80/89/83) und Tram (2/3) zu erreichen.</p>
+<p class="text">Die Schule DANDELION befindet sich im Zürcher Freilager und ist gut mit Bus (67/78/80/89/83) und Tram (2/3) zu erreichen.<a href="https://maps.google.com?saddr=Current+Location&daddr=77+Rautistrasse+Zurich+8048" target="_blank" class="center-block">Ihr Reiseweg zur Schule DANDELION auf Google Maps</a></p>
 </div>
 </div>
 </div>

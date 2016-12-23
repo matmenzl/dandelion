@@ -45,6 +45,12 @@ width: 100%;
       font-size: 38px;
       line-height: 3.5rem;
       padding-top: 2rem;
+      color:white;
+      -moz-transform: rotate(30deg);
+      -ms-transform: rotate(30deg);
+      -o-transform: rotate(30deg);
+      -webkit-transform: rotate(30deg);
+      transform: rotate(30deg);
   }
 
 
@@ -52,7 +58,7 @@ width: 100%;
 
 
 
-body {
+html {
   font-family: 'Lato';
 }
 
@@ -826,6 +832,7 @@ a.center-block:hover {
     line-height: 2rem;
     padding-top: 2rem;
     font-weight: bold;
+    color:white;
   }
 }
 
