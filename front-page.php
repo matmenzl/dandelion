@@ -5,7 +5,7 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
 
     
-    <div class="jumbotron1">
+    <div class="jumbotron1 wrapper">
           <div class="container">
             
             <?php $the_query = new WP_Query( 'page_id=29' ); ?>
@@ -20,9 +20,9 @@
             <!--<a href="#intro" class="btn btn-circle scroll">
                 <i class="animated bounce fa fa-angle-double-down fa-4"></i>
             </a> -->
-            <div class="banner">Eröffnung<br>März 2017</div>
 
             </div>
+            <div class="info">Start März 2017</div>
 
           </div>
         
