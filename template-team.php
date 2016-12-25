@@ -20,7 +20,7 @@ betreut. Nach 16Uhr sind die Lernbegleiter vor Ort.<div>
             <div class="row">
             <div class="col-sm-3 col-md-3">
                 <div class="team-member">
-                    <img src="/dandelion/wp-content/themes/dandelion/images/brigitte.jpg" class="img-responsive img-circle" alt="">
+                    <img src="/wp-content/themes/dandelion/images/brigitte.jpg" class="img-responsive img-circle" alt="">
                     <h4>Brigitte Jörg</h4>
                     <p class="text-muted">Lehrerin</p>
                     <ul class="list-inline social-buttons">
@@ -29,7 +29,7 @@ betreut. Nach 16Uhr sind die Lernbegleiter vor Ort.<div>
             </div>
             <div class="col-sm-3 col-md-3">
                 <div class="team-member">
-                    <img src="/dandelion/wp-content/themes/dandelion/images/user.png" class="img-responsive img-circle" alt=""></i>
+                    <img src="/wp-content/themes/dandelion/images/user.png" class="img-responsive img-circle" alt=""></i>
                     <h4>Renate Jörg</h4>
                     <p class="text-muted">Englisch-Lehrerin</p>
                     <ul class="list-inline social-buttons">
@@ -38,7 +38,7 @@ betreut. Nach 16Uhr sind die Lernbegleiter vor Ort.<div>
             </div>
                 <div class="col-sm-3 col-md-3">
                     <div class="team-member">
-                        <img src="/dandelion/wp-content/themes/dandelion/images/caroline.jpg" class="img-responsive img-circle" alt="">
+                        <img src="/wp-content/themes/dandelion/images/caroline.jpg" class="img-responsive img-circle" alt="">
                         <h4>Caroline Gimpel</h4>
                         <p class="text-muted">Lernbegleiterin</p>
                         <ul class="list-inline social-buttons">
@@ -47,7 +47,7 @@ betreut. Nach 16Uhr sind die Lernbegleiter vor Ort.<div>
                 </div>
                 <div class="col-sm-3 col-md-3">
                     <div class="team-member">
-                        <img src="/dandelion/wp-content/themes/dandelion/images/angela.jpg" class="img-responsive img-circle" alt="">
+                        <img src="/wp-content/themes/dandelion/images/angela.jpg" class="img-responsive img-circle" alt="">
                         <h4>Angela Jörg</h4>
                         <p class="text-muted">Schulleiterin & Lernbegleiterin</p>
                         <ul class="list-inline social-buttons">
