@@ -18,7 +18,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 */
 
-
+h1, h2, h3, h4 {
+  letter-spacing: 1.7px
+}
 
 div.jumbotron1 {
  background: url(./images/header.png);
@@ -169,7 +171,8 @@ body {
       position: absolute;
       background: #222;
       padding: 10px 15px;
-      width: 300px;   
+      width: 300px;  
+      text-align:center;
     }
 
     li:hover .sub-menu {
@@ -186,6 +189,7 @@ body {
 
 .sub-menu {
   width:300px;
+  text-align:left;
 }
 
 .sub-menu li {
@@ -307,7 +311,7 @@ article.right {
   color: #5271ff;
 }
 .char9 {
-  color: #ff2d30;
+  color: #d35400;
 }
 .char10 {
   color: #70bb9d;
@@ -322,16 +326,16 @@ article.right {
   color: #5271ff;
 }
 .char14 {
-  color: #ff2d30;
+  color: #3498db;
 }
 .char15 {
   color: #70bb9d;
 }
-.char6 {
+.char16 {
   color: #b965e6; 
 }
 .char17 {
-  color: #ff2d30;
+  color: #f39c12;
 }
 .char18 {
   color: #35b729;
@@ -777,6 +781,10 @@ a.center-block:hover {
 
   .navbar .navbar-collapse {
     text-align: left;
+  }
+
+  .sub-menu {
+    text-align:left;
   }
 
   h1 {

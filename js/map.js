@@ -51,7 +51,7 @@ function init() {
 
 
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
-    var image = '/dandelion/wp-content/themes/dandelion/images/map-marker.png';
+    var image = '/wp-content/themes/dandelion/images/map-marker.png';
     var myLatLng = new google.maps.LatLng(47.381495, 8.488121);
     var beachMarker = new google.maps.Marker({
         position: myLatLng,
