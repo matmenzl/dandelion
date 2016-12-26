@@ -23,6 +23,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
   filter: grayscale(100%);
 }
 
+.teampage {
+  padding-bottom:50px;
+  max-width:50% !important;
+}
+
 h1, h2, h3, h4 {
   letter-spacing: 1.7px
 }
@@ -118,6 +123,11 @@ div.jumbotron1 .container {
 .navbar-inverse .navbar-nav>li>a:hover  {
   background-color: #000;
 } 
+
+.navbar-inverse .navbar-nav>li>a:active {
+  background-color:#000;
+  color:#fff;
+}
 
 .navbar-inverse .navbar-toggle .icon-bar {
   background-color:#000;

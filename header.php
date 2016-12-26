@@ -47,11 +47,14 @@
                 <?php 
                     $args = array(
                         'menu'  => 'header-menu',
-                        'menu_class' => 'nav navbar-nav',
+                        'menu_class' => 'nav navbar-nav active',
                         'container' => 'false'
+
                     );
                     wp_nav_menu( $args );
                 ?>
+
+
 
                 
 

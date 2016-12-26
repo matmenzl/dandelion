@@ -27,20 +27,6 @@
           </div>
         </div>
         
-        <div id="intro" data-speed="4" data-type="background">
-
-         <div class="jumbotron jumbotrontext">
-           <div class="container">
-             
-            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
-            <?php the_content(); ?>
-            
-            <?php endwhile; endif; ?>
-
-            </div>
-           </div>
-        </div>
     </header>
 
 
@@ -121,42 +107,7 @@
 
 </div><!-- /.container -->
 
-<hr>
 
-<div class="container">
-<h3>
-AKTUELLE VERANSTALTUNGEN</h3>
-
-<?php 
-
-$num_posts = ( is_front_page() ) ? 4 : -1;
-
-$args = array(
-    'post_type' => 'post',
-    'posts_per_page' => $num_posts
-  );
-  $query = new WP_Query( $args );
-?>
-  <?php if ( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
-<article class="post col-md-12">                    
-    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-
-    <div class="col-md-3 img-responsive">
-    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large', array('class' => 'img-responsive')); ?></a>
-    </div>
-
-    <div class="col-md-9 text">
-    <p class="text"><?php the_excerpt(); ?></p>
-    <a href="<?php the_permalink(); ?>" class="center-block">Mehr Lesen</a>
-  </div>
-
-  </article>
-  <hr>
-
-  <?php endwhile; endif; wp_reset_postdata(); ?>
-
-</div>
-<hr>
 
 <!-- Map Section -->
 <div class="container">
