@@ -18,6 +18,15 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 */
 
+.team-member img {
+  margin:auto;
+  width: 50%;
+}
+
+.team-member {
+  text-align:center;
+}
+
 .imgteam {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
@@ -25,7 +34,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 .teampage {
   padding-bottom:50px;
-  max-width:50% !important;
+  max-width:75% !important;
 }
 
 h1, h2, h3, h4 {
@@ -449,6 +458,39 @@ article.right {
   color: #ff2d30;
 }
 .char50 {
+  color: #70bb9d;
+}
+.char51 {
+  color: #70bb9d;
+}
+.char52 {
+  color: #b965e6; 
+}
+.char53 {
+  color: #ff2d30;
+}
+.char54 {
+  color: #35b729;
+}
+.char55 {
+  color: #5291aa;
+}
+.char56 {
+  color: #70bb9d;
+}
+.char57 {
+  color: #ff63b1;
+}
+.char58 {
+  color: #44d9e6;
+}
+.char59 {
+  color: #5271ff;
+}
+.char60 {
+  color: #ff2d30;
+}
+.char61 {
   color: #70bb9d;
 }
 

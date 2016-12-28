@@ -15,6 +15,8 @@
 
 </head>
 
+<?php include_once("analyticstracking.php") ?>
+
 <body <?php body_class(); ?>>
 
 <div id="fb-root"></div>

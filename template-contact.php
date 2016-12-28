@@ -72,7 +72,7 @@ get_header(); ?>
      <div class="col-md-9 col-lg-9">
        <h2>Adresse</h2>
        <p class="text">Rautistrasse 75, 8047 Zürich<br>
-         Email: info@schule-dandelion.ch<br>
+         Email: <a href="mailto:info@schule-dandelion.ch">info@schule-dandelion.ch</a><br>
          Telefonnummer: 079 206 55 43</p>
        <p class="text">Die Schule DANDELION ist gut mit Bus (67/78/80/89/83) und Tram (2/3) zu erreichen.<a href="https://maps.google.com?saddr=Current+Location&daddr=77+Rautistrasse+Zurich+8048" target="_blank" class="center-block">Ihr Reiseweg zur Schule DANDELION auf Google Maps</a></p>
      </div>

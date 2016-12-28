@@ -20,7 +20,7 @@
 </div>
 <div class="container">
     <div class="row">
-        <div class="col-sm-4 col-md-4">
+        <div class="col-sm-4 col-md-4 col-lg-4">
             <div class="team-member">
                 <img src="/wp-content/themes/dandelion/images/angela.jpg" class="img-responsive img-circle imgteam" alt="">
                 <h4>Angela Joerg</h4>
@@ -35,9 +35,22 @@
             <div class="col-sm-4 col-md-4">
                 <div class="team-member">
                     <img src="/wp-content/themes/dandelion/images/brigitte.jpg" class="img-responsive img-circle imgteam" alt="">
-                    <h4>Brigitte Joerg</h4>
+                    <h4>Brigitte Jörg</h4>
                     <p class="text-muted">Lehrerin</p>
                     <ul class="list-inline social-buttons">
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4">
+                <div class="team-member">
+                    <img src="/wp-content/themes/dandelion/images/leonhard.jpg" class="img-responsive img-circle imgteam" alt="">
+                    <h4>Leonhard Euler</h4>
+                    <p class="text-muted">Lehrer</p>
+                    <ul class="list-inline social-buttons">
+                        <li></li>
+                        <li></li>
                     </ul>
                 </div>
             </div>
@@ -45,8 +58,10 @@
                 <div class="team-member">
                     <img src="/wp-content/themes/dandelion/images/renate.jpg" class="img-responsive img-circle imgteam" alt=""></i>
                     <h4>Renate Joerg</h4>
-                    <p class="text-muted">Englisch-Lehrerin</p>
+                    <p class="text-muted">Lernbegleiterin</p>
                     <ul class="list-inline social-buttons">
+                        <li></li>
+                        <li></li>
                     </ul>
                 </div>
             </div>
@@ -56,6 +71,8 @@
                     <h4>Caroline Gimpel Menzl</h4>
                     <p class="text-muted">Lernbegleiterin</p>
                     <ul class="list-inline social-buttons">
+                        <li></li>
+                        <li></li>
                     </ul>
                 </div>
             </div>
@@ -65,6 +82,8 @@
                     <h4>Denise Frehner</h4>
                     <p class="text-muted">Lehrerin Abenteuer-Nachmittag</p>
                     <ul class="list-inline social-buttons">
+                        <li></li>
+                        <li></li>
                     </ul>
                 </div>
             </div>
