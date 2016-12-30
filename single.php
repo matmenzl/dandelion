@@ -7,8 +7,6 @@
 
 
                 <?php if (have_posts()) : while (have_posts()) : the_post();
-                // check for Facebook Like on Single Page
-                $fblike = get_post_meta($post->ID, 'fb-like', $single = true);
                 ?>
 
                 <div class="page-header">
@@ -24,8 +22,7 @@
                 <?php the_content(); ?>
                 </p>
 
-                <div class="fb-like" data-href="<?php echo urlencode(get_permalink($post->ID)); ?>" data-layout="button" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
-
+                <div class="fb-like" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 
             <?php endwhile; else: ?>
 

@@ -18,6 +18,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 */
 
+
+
 .team-member img {
   margin:auto;
   width: 50%;
@@ -131,6 +133,7 @@ div.jumbotron1 .container {
 
 .navbar-inverse .navbar-nav>li>a:hover  {
   background-color: #000;
+  color:#fff;
 } 
 
 .navbar-inverse .navbar-nav>li>a:active {
@@ -160,6 +163,22 @@ div.jumbotron1 .container {
   text-align: center;
 }
 
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+  color:#fff;
+  background-color:#000;
+}
+
+ul.dropdown-menu {
+  border: none;
+  font-size: 18px;
+}
+
+ul.dropdown-menu.menu-item>.active>a {
+  color: #fff !important;
+  text-decoration: none;
+  background-color: #000;
+  outline: 0;
+}
 
 
 /*Navigation Bar End*/
@@ -250,9 +269,10 @@ body {
 .current-menu-parent li a {
   background: inherit;
 }
+
 .current-menu-parent .current-menu-item a {
-  color: #000;
-  font-weight: black;
+  color: #fff;
+  background-color:#000;
 }
 
 .sidebar {
