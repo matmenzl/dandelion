@@ -22,7 +22,7 @@
             </a> -->
 
             </div>
-            <div class="info animated fadeInLeftBig">Start März 2017</div>
+            <div class="info animated fadeInLeftBig">Start 2017</div>
 
           </div>
         
