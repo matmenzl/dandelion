@@ -43,7 +43,7 @@ function init() {
                         '</div>'+
                         '<h1 id="firstHeading" class="firstHeading">Schule DANDELION</h1>'+
                         '<div id="bodyContent">'+
-                        '<p>Die <b>Schule DANDELION</b>, ist eine freie Schule in Zürich Albisrieden/Altstetten' + ' an der Rautistrasse 77' + ' in 8048 Zürich.'
+                        '<p>Die <b>Schule DANDELION</b>, ist eine freie Schule in Zürich Albisrieden/Altstetten' + ' an der Rautistrasse 75' + ' in 8048 Zürich.'
                         '</p>'+
                         '</div>'+
                         '</div>';
