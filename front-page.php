@@ -60,7 +60,7 @@
         <div class="col-md-4">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h4><!-- <i class="fa fa-child"></i> --><b><?php echo get_the_title( 211 ); ?></b></h4>
+                    <a href="<?php echo get_page_link(211); ?>"><h4><!-- <i class="fa fa-child"></i> --><b><?php echo get_the_title( 211 ); ?></b></h4></a>
                 </div>
                 <div class="panel-body">
                     <?php $the_query = new WP_Query( 'page_id=211' ); ?>
@@ -79,7 +79,7 @@
         <div class="col-md-4">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h4><!-- <i class="fa fa-clock-o"></i> --><?php echo get_the_title( 45 ); ?></h4>
+                    <a href="<?php echo get_page_link(45); ?>"><h4><!-- <i class="fa fa-clock-o"></i> --><?php echo get_the_title( 45 ); ?></h4></a>
                 </div>
                 <div class="panel-body">
                 <?php $the_query = new WP_Query( 'page_id=45' ); ?>
@@ -98,7 +98,7 @@
         <div class="col-md-4">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h4><!-- <i class="fa fa-graduation-cap"> --></i> <?php echo get_the_title( 43 ); ?></h4>
+                    <a href="<?php echo get_page_link(43); ?>"><h4><!-- <i class="fa fa-graduation-cap"> --></i> <?php echo get_the_title( 43 ); ?></h4></a>
                 </div>
                 <div class="panel-body">
                     <?php $the_query = new WP_Query( 'page_id=43' ); ?>
@@ -122,8 +122,8 @@
 <hr>
 
 <div class="container">
-<h3>
-AKTUELLE VERANSTALTUNGEN</h3>
+<a href="<?php echo get_page_link(71); ?>"><h3>
+AKTUELLE VERANSTALTUNGEN</h3></a>
 
 <?php 
 
@@ -137,7 +137,7 @@ $args = array(
 ?>
   <?php if ( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
 <article class="post col-md-12">                    
-    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+    <a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
 
     <div class="col-md-3 img-responsive">
     <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large', array('class' => 'img-responsive')); ?></a>
@@ -145,7 +145,7 @@ $args = array(
 
     <div class="col-md-9 text">
     <p class="text"><?php the_excerpt(); ?></p>
-    <a href="<?php the_permalink(); ?>" class="center-block">Mehr Lesen</a>
+    <a href="<?php the_permalink(); ?>" class="center-block">Mehr lesen</a>
   </div>
 
   </article>
