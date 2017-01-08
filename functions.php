@@ -5,7 +5,14 @@ show_admin_bar( false );
 // Register Custom Navigation Walker
 require_once('wp_bootstrap_navwalker.php');
 
+add_action( 'after_setup_theme', 'custom_theme_setup' );
+
 add_theme_support( 'post-thumbnails' );
+
+/**
+ * Comments Callback.
+ */
+require get_template_directory() . '/inc/comments-callback.php';
 
 //enqueues our locally supplied font awesome stylesheet
 function enqueue_our_required_stylesheets(){
@@ -19,12 +26,12 @@ add_action('wp_enqueue_scripts','enqueue_our_required_stylesheets');
 
 function theme_styles() {
   wp_enqueue_style( 'timeline', get_template_directory_uri() . '/css/style_timeline.css' );
-
   wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/css/bootstrap.min.css');
   wp_enqueue_style( 'modern_business', get_template_directory_uri() . '/css/modern-business.css');
   wp_enqueue_style( 'main_css', get_template_directory_uri() . '/style.css');
   wp_enqueue_style( 'animate', get_template_directory_uri() . '/css/animate.css' );
-  // wp_enqueue_style( 'dropdown', get_template_directory_uri() . '/css/dropdown.css' );
+  wp_enqueue_style( 'comments', get_template_directory_uri() . '/css/comments.css' );
+
 
 }
 
