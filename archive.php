@@ -12,11 +12,9 @@
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
                 <article class="post col-md-12">                    
-                    <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                    <a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
                     <p><em>Von <?php the_author(); ?> am <?php echo the_time('l, F jS, Y');?>
                     in <?php the_category( ', '); ?></em></p>
-
-
 
                     <div class="col-md-3 img-responsive">
                     <?php the_post_thumbnail('thumbnail', array('class' => 'img-responsive')); ?>
