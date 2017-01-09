@@ -131,7 +131,7 @@ $num_posts = ( is_front_page() ) ? 4 : -1;
 
 $args = array(
     'post_type' => 'post',
-    'posts_per_page' => $num_posts
+    'posts_per_page' => $num_posts,
   );
   $query = new WP_Query( $args );
 ?>

@@ -5,7 +5,7 @@ show_admin_bar( false );
 // Register Custom Navigation Walker
 require_once('wp_bootstrap_navwalker.php');
 
-add_action( 'after_setup_theme', 'custom_theme_setup' );
+// add_action( 'after_setup_theme', 'custom_theme_setup' );
 
 add_theme_support( 'post-thumbnails' );
 
@@ -182,7 +182,7 @@ add_filter('get_the_excerpt', 'wpse_custom_wp_trim_excerpt');
 
 function exclude_category($query) {
 if ( $query->is_home() ) {
-$query->set('cat', '-2');
+$query->set('cat', '-1, -2, -5');
 }
 return $query;
 }

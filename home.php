@@ -25,7 +25,7 @@
 
                     <div class="col-md-8 text">
                     <p class="text"><?php the_excerpt(); ?>
-                    <a href="<?php the_permalink(); ?>" class="center-block"><b>Mehr Lesen <!-- <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> --></b></a>
+                    <a href="<?php the_permalink(); ?>" class="center-block"><b>Mehr lesen <!-- <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> --></b></a>
                     </div></p>
 
 
