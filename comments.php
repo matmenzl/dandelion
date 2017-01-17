@@ -56,7 +56,7 @@ if ( post_password_required() ) {
 	<?php endif; // Check for comment navigation. ?>
 
 	<?php if ( ! comments_open() ) : ?>
-	<p class="no-comments"><?php _e( 'Comments are closed.', 'twentyfifteen' ); ?></p>
+	<p class="no-comments"><?php _e( 'Comments are not.', 'twentyfifteen' ); ?></p>
 	<?php endif; ?>
 
 	<?php endif; // have_comments() ?>
@@ -69,13 +69,15 @@ if ( post_password_required() ) {
 	        // change the title of send button 
 	        'label_submit'=>'Senden',
 	        // change the title of the reply section
-	        'title_reply'=>'Einen Kommentar abgeben',
+	        'title_reply'=>__( 'Kommentar schreiben', 'textdomain' ),
 	        // remove "Text or HTML to be displayed after the set of comment fields"
+	        'cancel_reply_after' => __( '' ),
 	        'comment_notes_after' => '',
 	        // redefine your own textarea (the comment body)
 	        'comment_field' => ' <div class="form-group"><label for="comment">' . _x( 'Kommentar', 'bootstrapwp' ) . '</label><textarea class="form-control" rows="10" id="comment" name="comment" aria-required="true"></textarea></div>',
 
-	        'fields' => apply_filters( 'comment_form_default_fields', array(
+	        'fields' => apply_filters( 'comment_form
+	        	_default_fields', array(
 
 		    'author' =>
 		      '<div class="form-group">' .

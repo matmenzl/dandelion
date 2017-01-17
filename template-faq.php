@@ -1,18 +1,23 @@
+<?php
+/*
+    Template Name: FAQ
+*/
+?>
+
 <?php get_header() ?>
 
  <div class="container">
     <div class="row">
 
-        <div class="col-md-9">
+        <div class="col-md-9 text">
 
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
                 <div class="page-header">
-                    <h1><?php the_title(); ?></h1>
+                    <h1 class="fancy_title"><?php the_title(); ?></h1>
                 </div>
 
                 <?php the_content(); ?>
-                <a href="<?php the_permalink(); ?>" class="center-block"><b>Mehr lesen <!-- <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> --></b></a>
 
             <?php endwhile; else: ?>
 
@@ -26,7 +31,7 @@
 
         </div>
 
-        <?php get_sidebar(); ?>
+        <?php get_sidebar('faq'); ?>
 
     </div>
 

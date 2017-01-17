@@ -12,8 +12,11 @@
                 <div class="page-header">
                     <h1><?php the_title(); ?></h1>
                 </div>
-                <p><em>Von <?php the_author(); ?> am <?php echo the_time('l, F jS, Y');?>
-                in <?php the_category( ', '); ?></em></p>
+                <p><em>Von <?php the_author(); ?> am <?php echo the_time('j. F Y');?>
+                in <?php the_category( ', '); ?>
+                    <a href="<?php comments_link(); ?>"><?php comments_number(); ?></a>
+                </em></p>
+
 
                 <div class="img-responsive">
                 <?php the_post_thumbnail('medium_large', array('class' => 'img-responsive') ); ?>
@@ -24,7 +27,10 @@
 
                 <div class="fb-like" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 
+                <hr>
+
                 <?php comments_template(); ?>
+
 
             <?php endwhile; else: ?>
 

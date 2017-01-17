@@ -28,7 +28,7 @@
                 <p class="text-muted">Unternehmerin, Hunde-Rudelführerin & immer am
                     Backen oder Kochen</p>
                 <ul class="list-inline social-buttons">
-                    <li><i class="fa fa-envelope"></i><a href="mailto:angela.korner@schule-dandelion.ch"> Email</a>
+                    <li><i class="fa fa-envelope"></i><a href="mailto:angela.joerg@schule-dandelion.ch"> Email</a>
                         <li><i class="fa fa-phone"> </i><a href="tel:+41792065543"> Telefon</a>
                         </li>
                     </ul>
@@ -52,7 +52,7 @@
                     <img src="/wp-content/themes/dandelion/images/leonhard.jpg" class="img-responsive img-circle imgteam" alt="">
                     <h4>Leonhard Euler</h4>
                     <h5>Lehrer</h5>
-                    <p class="text-muted"></p>
+                    <p class="text-muted">Waldorflehrer, Informatiker & nicht aus der Ruhe zu bringen</p>
                     <ul class="list-inline social-buttons">
                         <li></li>
                         <li></li>
@@ -77,7 +77,7 @@
                     <img src="/wp-content/themes/dandelion/images/caroline.jpg" class="img-responsive img-circle imgteam" alt="">
                     <h4>Caroline Gimpel Menzl</h4>
                     <h5>Lernbegleiterin</h5>
-                    <p class="text-muted">Bewegungstherapeutin, Vereinsgründerin, Aufwirblerin</p><ul class="list-inline social-buttons">
+                    <p class="text-muted">Bewegungstherapeutin, Vereinsgründerin, zaubert gerne mit Farben und Musik</p><ul class="list-inline social-buttons">
                         <li></li>
                         <li></li>
                     </ul>

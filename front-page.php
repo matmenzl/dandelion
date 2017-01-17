@@ -122,7 +122,7 @@
 <hr>
 
 <div class="container">
-<a href="<?php echo get_page_link(71); ?>"><h3>
+<a href="<?php echo get_category_link(4); ?>"><h3>
 AKTUELLE VERANSTALTUNGEN</h3></a>
 
 <?php 

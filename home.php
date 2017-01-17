@@ -13,8 +13,10 @@
 
                 <article class="post col-md-12">                    
                     <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                    <p><em>Von <?php the_author(); ?> am <?php echo the_time('l, F jS, Y');?>
-                    in <?php the_category( ', '); ?></em></p>
+                    <p><em>Von <?php the_author(); ?> am <?php echo the_time('j. F Y');?>
+                    in <?php the_category( ', '); ?></em>
+                    <a href="<?php comments_link(); ?>"><?php comments_number(); ?></a>
+                    </p>
 
 
 

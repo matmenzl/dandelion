@@ -184,6 +184,24 @@ ul.dropdown-menu.menu-item>.active>a {
 /*Navigation Bar End*/
 
 
+/*FAQ*/
+
+ul.faq {
+  list-style: none;
+  padding-left: 0px;
+  font-size: 18px;
+}
+
+i.knb-icon {
+  font-style:normal;
+}
+
+i.knb-icon:before {
+  margin-right:5px;
+}
+
+
+
 /*Navigation mobile
 */
 /*.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
@@ -283,6 +301,7 @@ body {
   -webkit-transform: rotate(7deg);
   transform: rotate(12deg);
   border-radius:9px;
+  padding: 5px 15px 5px 15px;
 }
 
 .sidebarcontact {
@@ -955,6 +974,10 @@ a.center-block:hover {
     padding-top: 2rem;
     font-weight: bold;
     color:white;
+  }
+
+  .sidebar {
+    padding:5px 15px 5px 15px;
   }
 }
 

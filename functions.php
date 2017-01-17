@@ -14,6 +14,8 @@ add_theme_support( 'post-thumbnails' );
  */
 require get_template_directory() . '/inc/comments-callback.php';
 
+
+
 //enqueues our locally supplied font awesome stylesheet
 function enqueue_our_required_stylesheets(){
   wp_enqueue_style('font-awesome', get_stylesheet_directory_uri() . '/css/font-awesome.css'); 
@@ -88,17 +90,18 @@ function create_widget( $name, $id, $description ) {
 
 }
 
-create_widget( 'Front Page Left', 'front-left', 'Displays on the left of the homepage' );
-create_widget( 'Front Page Center', 'front-center', 'Displays in the center of the homepage' );
-create_widget( 'Front Page Right', 'front-right', 'Displays on the right of the homepage' );
-create_widget( 'Front Page Left Bottom Row', 'bottom-front-left', 'Displays on the right of the homepage' );
-create_widget( 'Front Page Center Bottom Row', 'bottom-front-center', 'Displays on the right of the homepage' );
-create_widget( 'Front Page Right Bottom Row', 'bottom-front-right', 'Displays on the right of the homepage' );
+// create_widget( 'Front Page Left', 'front-left', 'Displays on the left of the homepage' );
+// create_widget( 'Front Page Center', 'front-center', 'Displays in the center of the homepage' );
+// create_widget( 'Front Page Right', 'front-right', 'Displays on the right of the homepage' );
+// create_widget( 'Front Page Left Bottom Row', 'bottom-front-left', 'Displays on the right of the homepage' );
+// create_widget( 'Front Page Center Bottom Row', 'bottom-front-center', 'Displays on the right of the homepage' );
+// create_widget( 'Front Page Right Bottom Row', 'bottom-front-right', 'Displays on the right of the homepage' );
 
 create_widget( 'Page Sidebar', 'page', 'Page Sidebar' );
 create_widget( 'Blog Sidebar', 'blog', 'Blog Sidebar' );
 create_widget( 'Lernphilosophie Sidebar', 'lernphilosophie', 'Lernphilosophie Sidebar' );
 create_widget( 'Kosten Sidebar', 'kosten', 'Kosten Sidebar' );
+create_widget( 'FAQ Sidebar', 'faq', 'FAQ Sidebar' );
 
 
 
