@@ -14,8 +14,17 @@
 
                 <article class="post col-md-12">                    
                     <a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
-                    <p><em>Von <?php the_author(); ?> am <?php echo the_time('j. F Y');?>
-                    in <?php the_category( ', '); ?> <a href="<?php comments_link(); ?>"><?php comments_number(); ?></a></em></p>
+
+                    <?php if(is_category( 'veranstaltungen' )) : ?>
+
+                        <p><em>Von <?php the_author(); ?> am <?php echo the_time('j. F Y');?>
+                        in <?php the_category( ', '); ?> <a href="<?php comments_link(); ?>"><?php comments_number(); ?></a></em></p>
+
+                    <?php  else: ?>
+
+                    <?php endif; ?>
+
+
 
                     <div class="col-md-3 img-responsive">
                     <?php the_post_thumbnail('thumbnail', array('class' => 'img-responsive')); ?>
@@ -24,7 +33,17 @@
 
                     <div class="col-md-9">
                     <?php the_excerpt(); ?>
+
+                    <?php if(is_category('veranstaltungen')) : ?>
+
                     <a href="<?php the_permalink(); ?>" class="center-block"><b>Mehr lesen <!-- <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> --></b></a>
+
+                    <?php else: ?>
+
+                        <a href="<?php the_permalink(); ?>" class="center-block"><b>Weiter <!-- <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> --></b></a>
+
+                    <?php endif; ?>
+                    
                     </div>
                 </article>
 
