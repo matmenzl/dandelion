@@ -26,12 +26,12 @@
 
 
 
-                    <div class="col-md-3 img-responsive">
-                    <?php the_post_thumbnail('thumbnail', array('class' => 'img-responsive')); ?>
+                    <div class="col-md-6 img-responsive">
+                    <?php the_post_thumbnail('full', array('class' => 'img-responsive')); ?>
 
                     </div>
 
-                    <div class="col-md-9">
+                    <div class="col-md-6">
                     <?php the_excerpt(); ?>
 
                     <?php if(is_category('veranstaltungen')) : ?>
@@ -43,7 +43,7 @@
                         <a href="<?php the_permalink(); ?>" class="center-block"><b>Weiter <!-- <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> --></b></a>
 
                     <?php endif; ?>
-                    
+
                     </div>
                 </article>
 

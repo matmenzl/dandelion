@@ -19,7 +19,7 @@
 
 
                 <div class="img-responsive">
-                <?php the_post_thumbnail('medium_large', array('class' => 'img-responsive') ); ?>
+                <?php the_post_thumbnail('full', array('class' => 'img-responsive') ); ?>
                 </div>
                 <p>
                 <?php the_content(); ?>

@@ -9,6 +9,8 @@ require_once('wp_bootstrap_navwalker.php');
 
 add_theme_support( 'post-thumbnails' );
 
+add_image_size( 'video-thumb', 300, 9999 ); //300 pixels wide (and unlimited height)
+
 /**
  * Comments Callback.
  */

@@ -24,6 +24,7 @@
             </div>
             <div class="info animated fadeInLeftBig">Start 2017</div>
 
+
           </div>
         
         <div id="intro" data-speed="4" data-type="background">
@@ -122,8 +123,8 @@
 <hr>
 
 <div class="container">
-<a href="<?php echo get_category_link(4); ?>"><h3>
-AKTUELLE VERANSTALTUNGEN</h3></a>
+<a href="<?php echo get_page_link(71); ?>"><h1>
+NEWS UND VERANSTALTUNGEN</h1></a>
 
 <?php 
 
@@ -139,11 +140,11 @@ $args = array(
 <article class="post col-md-12">                    
     <a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
 
-    <div class="col-md-3 img-responsive">
-    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large', array('class' => 'img-responsive')); ?></a>
+    <div class="col-md-5 img-responsive">
+    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('full', array('class' => 'img-responsive')); ?></a>
     </div>
 
-    <div class="col-md-9 text">
+    <div class="col-md-7 text">
     <p class="text"><?php the_excerpt(); ?></p>
     <a href="<?php the_permalink(); ?>" class="center-block">Mehr lesen</a>
   </div>

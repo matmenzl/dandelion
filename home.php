@@ -21,7 +21,7 @@
 
 
                     <div class="col-md-4 img-responsive">
-                    <?php the_post_thumbnail('thumbnail', array('class' => 'img-responsive')); ?>
+                    <?php the_post_thumbnail('full', array('class' => 'img-responsive')); ?>
 
                     </div>
 
