@@ -11,6 +11,8 @@
 (function($) {
 
 
+
+
 var Plugin = function(me,rgb,rgb2,brightness,satuation){
 
 	this.el = me;
