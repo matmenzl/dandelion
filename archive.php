@@ -6,7 +6,7 @@
         <div class="col-md-9">
 
             <div class="page-header">
-                <h1><?php single_cat_title(''); ?></h1>
+                <h1 class="categorytitle"><?php single_cat_title(''); ?></h1>
                 
             </div>
 

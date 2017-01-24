@@ -199,6 +199,21 @@ i.knb-icon:before {
   margin-right:5px;
 }
 
+/*categorytitle*/
+
+.categorytitle {
+  text-transform: uppercase;
+}
+
+/*breadcrumb*/
+
+.breadcrumb {
+  padding-left: 10px;
+  background-color: #fbfbfb;
+
+}
+
+
 
 
 /*Navigation mobile

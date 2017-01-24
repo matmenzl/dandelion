@@ -11,6 +11,7 @@
                     <h1 class="fancy_title"><?php the_title(); ?></h1>
                 </div>
 
+
                 <?php the_content(); ?>
 
             <?php endwhile; else: ?>

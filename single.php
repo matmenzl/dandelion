@@ -9,8 +9,11 @@
                 <?php if (have_posts()) : while (have_posts()) : the_post();
                 ?>
 
+
                 <div class="page-header">
                     <h1><?php the_title(); ?></h1>
+                    <?php if (function_exists('nav_breadcrumb')) nav_breadcrumb(); ?>
+
                 </div>
                 <p><em>Von <?php the_author(); ?> am <?php echo the_time('j. F Y');?>
                 in <?php the_category( ', '); ?>
