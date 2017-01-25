@@ -226,7 +226,7 @@ function nav_breadcrumb() {
  
  if ( !is_home() && !is_front_page() || is_paged() ) {
  
- echo '<nav class="breadcrumb">Du bist hier: ';
+ // echo '<nav class="breadcrumb">Du bist hier: ';
  
  global $post;
  $homeLink = get_bloginfo('url');
