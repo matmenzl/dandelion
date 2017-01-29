@@ -1,144 +1,89 @@
 <?php
-/*
-    Template Name: Network
-*/
-?>
+/**
+ * Template Name: Network
+ *
+ */
 
-<?php get_header() ?>
+get_header(); ?>
+
+<div class="container">
+    <div class="row">
+
+    <div id="primary" class="col-md-12 col-lg-12">
+        <main id="main" class="site-main" role="main">
+
+            <?php
+                $terms = get_terms("network_tags");
+                $count = count($terms);
+                echo '<div id="filters" class="btn-group">';
+                echo '<button type="button" class="btn btn-default" data-filter="*">'. __('Alle', 'dandelion') .'</button>';
+                    if ( $count > 0 )
+                    {   
+                        foreach ( $terms as $term ) {
+                            $termname = strtolower($term->name);
+                            $termname = str_replace(' ', '-', $termname);
+                            echo '<button type="button" class="btn btn-default" data-filter=".'.$termname.'">'.$term->name.'</button>';
+                        }
+                    }
+                echo "</div>";
+            ?>
+
+            <?php 
+            // the query
+            $the_query = new WP_Query( array('post_type' => 'network') ); ?>
+
+            <?php if ( $the_query->have_posts() ) : ?>
+
+                <div class="row">
+                    <div id="network-items">
+
+                    <!-- the loop -->
+                    <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+                      <?php
+                        $terms = get_the_terms( $post->ID, 'network_tags' );
+                                             
+                        if ( $terms && ! is_wp_error( $terms ) ) : 
+                            $links = array();
+         
+                            foreach ( $terms as $term ) 
+                            {
+                                $links[] = $term->name;
+                            }
+                            $links = str_replace(' ', '-', $links); 
+                            $tax = join( " ", $links );     
+                        else :  
+                            $tax = '';  
+                        endif;
+                        ?>
+
+                    <div class="col-sm-6 col-md-4 item <?php echo strtolower($tax); ?>">
+                         <div class="portfolio-item">
+                            <a class="thumbnail img-responsive" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                            <?php the_post_thumbnail(); ?>
+                            </a>
+                            <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+                            <a href="<?php the_permalink(); ?>" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                    <?php endwhile; ?>
+                    <!-- end of the loop -->
+
+                </div> <!-- #network-items -->
+
+                </div> <!-- .row -->
+                
+
+                <?php wp_reset_postdata(); ?>
+
+            <?php else : ?>
+                <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+            <?php endif; ?>
+
+            
+        </main><!-- #main -->
+    </div><!-- #primary -->
 
 
-<!-- Page Content -->
-    <div class="container">
-
-        <!-- Page Header -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">Netzwerk Schule DANDELION
-                </h1>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <!-- Projects Row -->
-        <div class="row">
-            <div class="col-md-3 portfolio-item">
-                <a href="http://www.gluecksschule.ch">
-                    <img class="img-responsive" src="/dandelion/wp-content/themes/dandelion/images/gluecksschule.png" alt="">
-                </a>
-                <h3>SCHULE IM WANDEL</h3>
-                <p>Eine Bewegung für einen grundlegenden Schulwandel und Entfaltungsspielraum für jeden Menschen.<br>
-                <a href="http://www.gluecksschule.ch">www.gluecksschule.ch</a>
-                </p>
-            </div>
-            <div class="col-md-3 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="/dandelion/wp-content/themes/dandelion/images/zufuenft.png" alt="">
-                </a>
-                <h3>HOMESCHOOLING SCHWEIZ</h3>
-                <p>Unterstützung und Netzwerk für Homeschooling in Zürich.<br>
-                <a href="http://www.zufuenft.ch">www.zufuenft.ch</a>
-                </p>
-            </div>
-            <div class="col-md-3 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                </a>
-                <h3>
-                    <a href="#">Project Name</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-            <div class="col-md-3 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                </a>
-                <h3>
-                    <a href="#">Project Name</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <!-- Projects Row -->
-        <div class="row">
-            <div class="col-md-3 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                </a>
-                <h3>
-                    <a href="#">Project Name</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-            <div class="col-md-3 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                </a>
-                <h3>
-                    <a href="#">Project Name</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-            <div class="col-md-3 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                </a>
-                <h3>
-                    <a href="#">Project Name</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-            <div class="col-md-3 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                </a>
-                <h3>
-                    <a href="#">Project Name</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-        </div>
-
-        <!-- Projects Row -->
-        <div class="row">
-            <div class="col-md-3 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                </a>
-                <h3>
-                    <a href="#">Project Name</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-            <div class="col-md-3 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                </a>
-                <h3>
-                    <a href="#">Project Name</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-            <div class="col-md-3 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                </a>
-                <h3>
-                    <a href="#">Project Name</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-            <div class="col-md-3 portfolio-item">
-                <a href="#">
-                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                </a>
-                <h3>
-                    <a href="#">Project Name</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-        </div>
-        <!-- /.row -->
-
-<?php get_footer() ?>
+    </div><!-- .row -->
+<?php get_footer(); ?>

@@ -1,5 +1,26 @@
-jQuery(document).ready(function($) {
+jQuery(function ($) {
 
+// initialize Isotope after all images have loaded
+var $container = $('#network-items').imagesLoaded( function() {
+  $container.isotope({
+    itemSelector: '.item',
+    layoutMode: 'fitRows'
+  });
+  });
+
+
+// filter items on button click
+$('#filters').on( 'click', 'button', function() {
+  var filterValue = $(this).attr('data-filter');
+  $container.isotope({ filter: filterValue });
+});   
+
+
+  // filter items on button click
+  $('#filters').on( 'click', 'button', function() {
+    var filterValue = $(this).attr('data-filter');
+    $container.isotope({ filter: filterValue });
+  });  
 
 $('.carousel').carousel({
         interval: 5000 //changes the speed
@@ -15,5 +36,6 @@ $(function() {
         event.preventDefault();
     });
 });
+
 
 });
