@@ -23,6 +23,8 @@
 
             </div>
             <div class="info animated fadeInLeftBig">Start 2017</div>
+            <div class="inforight animated fadeInRightBig"><a href="http://www.schule-dandelion.ch/2017/01/18/besucht-uns-beim-umbau/">Besucht uns!<br> 4.2. / 8.2.</a></div>
+
 
 
           </div>

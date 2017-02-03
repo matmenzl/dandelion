@@ -59,17 +59,12 @@ get_header(); ?>
 
                     <div class="col-sm-6 col-md-4 item <?php echo strtolower($tax); ?>">
                          <div class="portfolio-item">
-                            <div class="thumbnail img-responsive networkimage">
+                            <a class="thumbnail img-responsive" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
                             <?php the_post_thumbnail(); ?>
-                            </div>
-                            </div>
-
-                            <div class="networkinfo">
-                             <span class="networkinfotext"><h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-                            <?php the_content(); ?></span>
-
-                          <!--  <a href="<?php the_permalink(); ?>" class="center-block">Weiter</a>
- -->                        </div> 
+                            </a>
+                            <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+                            <a href="<?php the_permalink(); ?>" class="center-block">Weiter</a>
+                        </div>
                     </div>
                     <?php endwhile; ?>
                     <!-- end of the loop -->

@@ -4,7 +4,7 @@ $network = new CPT(array(
     'post_type_name' => 'network',
     'singular' => __('Network', 'dandelion'),
     'plural' => __('Network', 'dandelion'),
-    'slug' => 'network'
+    'slug' => 'netzwerk'
 ),
   array(
     'supports' => array('title', 'editor', 'thumbnail', 'comments'),

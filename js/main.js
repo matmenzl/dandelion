@@ -4,9 +4,13 @@ jQuery(function ($) {
 var $container = $('#network-items').imagesLoaded( function() {
   $container.isotope({
     itemSelector: '.item',
-    layoutMode: 'fitRows'
+    masonry: {
+        columnWidth: 5
+      }
   });
   });
+
+
 
 
 // filter items on button click
@@ -14,13 +18,6 @@ $('#filters').on( 'click', 'button', function() {
   var filterValue = $(this).attr('data-filter');
   $container.isotope({ filter: filterValue });
 });   
-
-
-  // filter items on button click
-  $('#filters').on( 'click', 'button', function() {
-    var filterValue = $(this).attr('data-filter');
-    $container.isotope({ filter: filterValue });
-  });  
 
 $('.carousel').carousel({
         interval: 5000 //changes the speed

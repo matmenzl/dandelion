@@ -18,6 +18,39 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 */
 
+/*network isotope masonry style*/
+
+.networkinfo {
+  position: relative;
+  bottom: 6.5em;
+  width: 100%;
+  display: block;
+  background: rgba(0, 0, 0, .6);
+  color: white;
+  bottom: 9.8rem;
+}
+
+.networkinfotext {
+  padding-left: 10px;
+  display: inline-block;
+}
+
+.networkinfo a {
+  color:white;
+}
+
+.networkimage {
+  padding-left:0px;
+  padding-right:0px;
+}
+
+div.item {
+  height:215px;
+}
+
+/* END network isotope masonry style*/
+
+
 p {
   font-size:18px;
 }
@@ -77,6 +110,31 @@ width: 100%;
       -webkit-transform: rotate(30deg);
       transform: rotate(30deg);
   }
+
+  .inforight {
+        background-color: #DB0A5B;
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        top: 14%;
+        left: 70%;
+        text-align: center;
+        border-radius: 100px;
+        font-size: 30px;
+        line-height: 3.5rem;
+        padding-top: 2.2rem;
+        color:white;
+        -moz-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+        -o-transform: rotate(30deg);
+        -webkit-transform: rotate(30deg);
+        transform: rotate(30deg);
+    }
+
+    .inforight a {
+      color:white;
+      font-size:30px;
+    }
 
 
 
@@ -989,6 +1047,31 @@ a.center-block:hover {
     font-weight: bold;
     color:white;
   }
+
+  .inforight {
+    background-color: #DB0A5B;
+        position: absolute;
+        width: 90px;
+        height: 90px;
+        top: 12%;
+        left: 70%;
+        text-align: center;
+        border-radius: 100px;
+        font-size: 18px;
+        line-height: 1.1rem;
+        padding-top: 2.5rem;
+        color: white;
+        -moz-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+        -o-transform: rotate(30deg);
+        -webkit-transform: rotate(30deg);
+        transform: rotate(30deg);
+  }
+
+  .inforight a {
+    font-size:18px;
+  }
+
 
   .sidebar {
     padding:5px 15px 5px 15px;
