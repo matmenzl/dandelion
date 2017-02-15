@@ -117,7 +117,7 @@ width: 100%;
         width: 150px;
         height: 150px;
         top: 14%;
-        left: 70%;
+        left: 80%;
         text-align: center;
         border-radius: 100px;
         font-size: 30px;
@@ -169,6 +169,31 @@ div.jumbotron1 .container {
   font-weight:bold;
 }
 
+div.text.section-subheading.text-muted {
+  padding-bottom:30px;
+}
+
+.teambutton {
+    background: black;
+    border:2px solid;
+    border-radius:5px;
+    color:white;
+    width:75%;
+  }
+
+.teambutton:hover {
+    background: white;
+    border:2px solid;
+    border-radius:5px;
+    color:black;
+    width:75%;
+}
+
+
+/*knwodledgebase*/
+.wpknb.wpknb-category.wpknb-inner.wpknb-lists{
+  padding-bottom:20px !important;
+}
 
 /*Navigation Bar Start*/
 
@@ -1030,8 +1055,12 @@ a.center-block:hover {
     top:6%;
    }
 
+   .inforight {
+    top:6%;
+    left:75%;
+   }
 
-   @media (max-width:420px) {
+   @media (max-width:480px) {
   .info {
     background-color: #DB0A5B;
     position: absolute;
@@ -1054,11 +1083,11 @@ a.center-block:hover {
         width: 90px;
         height: 90px;
         top: 12%;
-        left: 70%;
+        left: 80%;
         text-align: center;
         border-radius: 100px;
         font-size: 18px;
-        line-height: 1.1rem;
+        line-height: 1.6rem;
         padding-top: 2.5rem;
         color: white;
         -moz-transform: rotate(30deg);

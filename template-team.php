@@ -16,6 +16,14 @@
             </div>
         </div>
     </div>
+    </div>
+     <div class="jumbotron jumbotrontext">
+       <div class="container">
+        <div class="text section-subheading text-muted">Da wir wissen, dass es ein ganzes Dorf braucht, um ein Kind bei seinem Weg zu begleiten, laden wir regelmässig Experten zu uns in die Schule ein. Du besuchst unseren Schulalltag während 1- 4 Tagen und begeisterst die Kinder für dein Thema. Das kann alles Mögliche sein: Ameisen, Bastelideen, Sprachen, Yoga, Wasserpflanzen...
+        Interessieren sich die Kinder dafür, wiederholen wir dein Stage. Wenn nicht, lernen wir Erwachsene etwas. Wir freuen uns über deine Kontaktaufnahme.</div>
+        <a href="http://www.schule-dandelion.ch/kontakt/"><button class="teambutton">Kontakt</button></a>
+       </div>
+    </div>
 </div>
 </div>
 <div class="container">

@@ -23,11 +23,10 @@ jQuery(function ($) {
               $(this).parent().toggleClass('open');
           });
 
-
-  // $('h1, h2, h4, h3, a.fancy-title').jumble([220,180,110],[250,20,170],false,true);
+  $(".wpknb .wpknb-category .wpknb-inner ul.wpknb-lists i.knb-icon:before").jumble([180,160,90],[230,20,130],false,false);
 
   $(document).ready(function() {
-    $("h1, h2, h4, h3, a.fancy-title").lettering();
+    $("h1, h2, h4, h3, a.fancy-title, i.knb-icon").lettering();
   });
 
   $('.banner').addClass('animated lightSpeedIn');
