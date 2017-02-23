@@ -23,8 +23,8 @@
 
             </div>
             <div class="info animated fadeInLeftBig">Start 2017</div>
-                <div class="inforight animated fadeInRightBig"><a href="http://www.schule-dandelion.ch/2017/02/12/besuchstag-samstag-18-2/">Besucht uns!<br> 18.2.</a>
-                </div>
+                <!-- div class="inforight animated fadeInRightBig"><a href="http://www.schule-dandelion.ch/2017/02/12/besuchstag-samstag-18-2/">Besucht uns!<br> 18.2.</a>
+                </div> -->
             </div>
         
         <div id="intro" data-speed="4" data-type="background">

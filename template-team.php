@@ -2,10 +2,25 @@
 /*
     Template Name: Team
 */
-?>
 
+?>
 <?php get_header() ?>
 
+<?php
+
+    the_post();
+
+    // Get 'team' posts
+    $team_posts = get_posts( array(
+        'post_type' => 'team',
+        'posts_per_page' => -1, // Unlimited posts
+        'orderby' => 'title', // Order alphabetically by name
+        'order' => 'ASC',
+    ) );
+
+    if ( $team_posts ):
+
+?>
 
 <div class="container text teampage">
     <div class="row">
@@ -17,93 +32,57 @@
         </div>
     </div>
     </div>
+</div style="padding-bottom:20px;">
+
+
+<div class="container">
+<div class="row">
+
+
+<?php
+    foreach ( $team_posts as $post ): 
+    setup_postdata($post);
+    
+    // Resize and CDNize thumbnails using Automattic Photon service
+    $thumb_src = null;
+    if ( has_post_thumbnail($post->ID) ) {
+        $src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'team-thumb' );
+        $thumb_src = $src[0];
+    }
+?>
+
+        <div class="col-sm-4 col-md-4 equalize">
+            <div class="team-member">
+                <?php if ( $thumb_src ): ?>
+                            <img src="<?php echo $thumb_src; ?>" alt="<?php the_title(); ?>, <?php the_field('team_position'); ?>" class="img-responsive img-circle imgteam">
+                            <?php endif; ?>
+                <h4><?php the_title(); ?></h4>
+                <h5><?php the_field('position'); ?></h5>
+                <p class="text-muted"><?php the_field('description'); ?></p>
+                <ul class="list-inline social-buttons">
+                <?php if ( get_field('email') ): ?>
+                    <li><i class="fa fa-envelope"></i><a href="mailto:<?php the_field('email'); ?>"> Email</a></li>
+                <?php endif; ?>
+                <?php if ( get_field('telephone') ): ?>
+                        <li><i class="fa fa-phone"> </i><a href="tel:<?php the_field('telephone'); ?>"> Telefon</a>
+                        </li>
+                <?php endif; ?>
+                    </ul>
+                </div style="padding-bottom:20px;">
+                </div><!-- col-sm-4 col-md-4 -->
+
+                <?php endforeach; ?>
+
+            </div><!-- row -->
+
+        <?php endif; ?>
+
      <div class="jumbotron jumbotrontext">
        <div class="container">
         <div class="text section-subheading text-muted">Da wir wissen, dass es ein ganzes Dorf braucht, um ein Kind bei seinem Weg zu begleiten, laden wir regelmässig Experten zu uns in die Schule ein. Du besuchst unseren Schulalltag während 1- 4 Tagen und begeisterst die Kinder für dein Thema. Das kann alles Mögliche sein: Ameisen, Bastelideen, Sprachen, Yoga, Wasserpflanzen...
-        Interessieren sich die Kinder dafür, wiederholen wir dein Stage. Wenn nicht, lernen wir Erwachsene etwas. Wir freuen uns über deine Kontaktaufnahme.</div>
+        Wir freuen uns über deine Kontaktaufnahme.</div>
         <a href="http://www.schule-dandelion.ch/kontakt/"><button class="teambutton">Kontakt</button></a>
        </div>
     </div>
-</div>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-sm-4 col-md-4">
-            <div class="team-member equalize">
-                <img src="/wp-content/themes/dandelion/images/angela.jpg" class="img-responsive img-circle imgteam" alt="">
-                <h4>Angela Joerg</h4>
-                <h5>Schulleiterin & Lernbegleiterin</h5>
-                <p class="text-muted">Unternehmerin, Hunde-Rudelführerin & immer am
-                    Backen oder Kochen</p>
-                <ul class="list-inline social-buttons">
-                    <li><i class="fa fa-envelope"></i><a href="mailto:angela.joerg@schule-dandelion.ch"> Email</a></li>
-                        <li><i class="fa fa-phone"> </i><a href="tel:+41792065543"> Telefon</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-4 col-md-4">
-                <div class="team-member equalize">
-                    <img src="/wp-content/themes/dandelion/images/brigitte.jpg" class="img-responsive img-circle imgteam" alt="">
-                    <h4>Brigitte Jörg</h4>
-                    <h5>Lehrerin</h5>
-                    <p class="text-muted">Heilpädagogin, Primar-/Oberstufenlehrerin &
-                    insektenbegeistert</p>
-                    <ul class="list-inline social-buttons">
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-4 col-md-4">
-                <div class="team-member equalize">
-                    <img src="/wp-content/themes/dandelion/images/leonhard.jpg" class="img-responsive img-circle imgteam" alt="">
-                    <h4>Leonhard Euler</h4>
-                    <h5>Lehrer</h5>
-                    <p class="text-muted">Waldorflehrer, Informatiker und durch nichts aus der Ruhe zu bringen</p>
-                    <ul class="list-inline social-buttons">
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-4 col-md-4">
-                <div class="team-member equalize">
-                    <img src="/wp-content/themes/dandelion/images/renate.jpg" class="img-responsive img-circle imgteam" alt=""></i>
-                    <h4>Renate Joerg</h4>
-                    <h5>Lernbegleiterin</h5>
-                    <p class="text-muted">Spiel-und Märlitante, Verwandlungsgenie & für (fast)
-                    alles zu haben</p>
-                    <ul class="list-inline social-buttons">
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-4 col-md-4">
-                <div class="team-member equalize">
-                    <img src="/wp-content/themes/dandelion/images/caroline.jpg" class="img-responsive img-circle imgteam" alt="">
-                    <h4>Caroline Gimpel Menzl</h4>
-                    <h5>Lernbegleiterin</h5>
-                    <p class="text-muted">Bewegungstherapeutin, Vereinsgründerin, zaubert gerne mit Farben und Musik</p>
-                    <ul class="list-inline social-buttons">
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-4 col-md-4">
-                <div class="team-member equalize">
-                    <img src="/wp-content/themes/dandelion/images/denise.jpg" class="img-responsive img-circle imgteam" alt="">
-                    <h4>Denise Frehner</h4>
-                    <h5>Lehrerin Abenteuer-Nachmittag</h5>
-                    <p class="text-muted">Geographin, Gymnasiallehrerin & fast wasserfest</p>
-                    <ul class="list-inline social-buttons">
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
 
 <?php get_footer() ?>

@@ -23,6 +23,11 @@ $('.carousel').carousel({
         interval: 5000 //changes the speed
     })
 
+//same height for columns
+$(function() {
+    $('.team-member').matchHeight();
+});
+
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
     $('a.scroll').bind('click', function(event) {
