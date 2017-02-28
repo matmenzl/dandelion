@@ -6,7 +6,7 @@
 
     
     <div class="jumbotron1 wrapper">
-          <div class="container">
+        <div class="container">
             
             <?php $the_query = new WP_Query( 'page_id=29' ); ?>
 
@@ -21,11 +21,14 @@
                 <i class="animated bounce fa fa-angle-double-down fa-4"></i>
             </a> -->
 
-            </div>
-            <div class="info animated fadeInLeftBig">Start 2017</div>
+        </div><!--container-->
+
+                <!--badges-->
+                <!-- <div class="info animated fadeInLeftBig">Start 2017</div> -->
                 <!-- div class="inforight animated fadeInRightBig"><a href="http://www.schule-dandelion.ch/2017/02/12/besuchstag-samstag-18-2/">Besucht uns!<br> 18.2.</a>
                 </div> -->
-            </div>
+
+    </div><!--jumbotron1-->
         
         <div id="intro" data-speed="4" data-type="background">
 
