@@ -34,6 +34,10 @@ div#filters.network-button {
   margin: 15px 0 15px 0;
 }
 
+button:focus {
+  outline:0;
+}
+
 button[type="button"].network-button {
   color: #40c585;
   font-size:18px;
