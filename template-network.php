@@ -15,14 +15,14 @@ get_header(); ?>
             <?php
                 $terms = get_terms("network_tags");
                 $count = count($terms);
-                echo '<div id="filters" class="btn-group">';
-                echo '<button type="button" class="btn btn-default" data-filter="*">'. __('Alle', 'dandelion') .'</button>';
+                echo '<div id="filters" class="network-button">';
+                echo '<button type="button" class="network-button" data-filter="*">'. __('Alle', 'dandelion') .'</button>';
                     if ( $count > 0 )
                     {   
                         foreach ( $terms as $term ) {
                             $termname = strtolower($term->name);
                             $termname = str_replace(' ', '-', $termname);
-                            echo '<button type="button" class="btn btn-default" data-filter=".'.$termname.'">'.$term->name.'</button>';
+                            echo '<button type="button" class="network-button" data-filter=".'.$termname.'">'.$term->name.'</button>';
                         }
                     }
                 echo "</div>";
@@ -57,7 +57,7 @@ get_header(); ?>
                         endif;
                         ?>
 
-                    <div class="col-sm-6 col-md-4 item <?php echo strtolower($tax); ?>">
+                    <div class="col-md-4 item <?php echo strtolower($tax); ?>">
                          <div class="portfolio-item">
                             <div class="thumbnail img-responsive networkimage">
                             <?php the_post_thumbnail(); ?>

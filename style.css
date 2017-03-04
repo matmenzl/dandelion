@@ -30,6 +30,26 @@ Use it to make something cool, have fun, and share what you've learned with othe
   bottom: 9.8rem;
 }
 
+button[type="button"].network-button {
+  color: #40c585;
+  font-size:18px;
+  white-space: normal;
+  background: none;
+  border: none;
+}
+
+
+button[type="button"].network-button::after {
+  font-family: FontAwesome;
+  content: " \f178";
+}
+
+
+button[type="button"].network-button:hover {
+  text-decoration: underline;
+  transition: all ease-in-out 1s;
+
+}
 
 div.manifest-image {
   margin-top:-50px;
