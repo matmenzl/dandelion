@@ -12,7 +12,7 @@
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-6">
                   <div class="footerright">
-                    Website by <a href="http://www.mathiasmenzl.ch"><i class="fa fa-heart" aria-hidden="true"></i>|<i class="fa fa-code" aria-hidden="true"></i>|<i class="fa fa-headphones" aria-hidden="true"></i></a>
+                    Website by <a href="http://www.mathiasmenzl.ch" target="_blank"><i class="fa fa-heart" aria-hidden="true"></i>|<i class="fa fa-code" aria-hidden="true"></i>|<i class="fa fa-headphones" aria-hidden="true"></i></a>
                   </div>
                 </div>
                 </div>
