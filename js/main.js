@@ -10,6 +10,14 @@ var $container = $('#network-items').imagesLoaded( function() {
   });
   });
 
+// put is-checked class on buttons of isotope filter
+$('.network-button').each( function( i, buttonGroup ) {
+  var $buttonGroup = $( buttonGroup );
+  $buttonGroup.on( 'click', 'button', function() {
+    $buttonGroup.find('.is-checked').removeClass('is-checked');
+    $( this ).addClass('is-checked');
+  });
+});
 
 
 

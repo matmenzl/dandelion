@@ -23,6 +23,7 @@ require get_template_directory() . '/inc/post-types/CPT.php';
 //Network Custom Post Type
 require get_template_directory() . '/inc/post-types/register-network.php';
 
+
 //enqueues our locally supplied font awesome stylesheet
 function enqueue_our_required_stylesheets(){
   wp_enqueue_style('font-awesome', get_stylesheet_directory_uri() . '/css/font-awesome.css'); 

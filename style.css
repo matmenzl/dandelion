@@ -32,31 +32,40 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 div#filters.network-button {
   margin: 15px 0 15px 0;
+  text-align:center;
 }
 
 button:focus {
   outline:0;
 }
 
-button[type="button"].network-button {
-  color: #40c585;
-  font-size:18px;
+.network-button {
+  border:none;
+  background:none;
+  font-size:20px;
+  font-weight:200;
+}
+
+button.network-button.is-checked {
+  font-weight:900;
+  background:black;
+  color:white;
+}
+
+/*change active state of arrows*/ 
+button.network-button:after {
+  font-family: FontAwesome;
+  content: " \f078";
   white-space: normal;
-  background: none;
   border: none;
 }
 
-
-button[type="button"].network-button::after {
+button.network-button.is-checked:after {
   font-family: FontAwesome;
-  content: " \f178";
-}
-
-
-button[type="button"].network-button:hover {
-  text-decoration: underline;
-  transition: all ease-in-out 1s;
-
+  content: " \f077";
+  white-space: normal;
+  border: none;
+  font-weight:bold;
 }
 
 div.manifest-image {
@@ -116,8 +125,12 @@ div.manifest-text {
   padding-right:0px;
 }
 
+div.caption {
+  margin-top:-15px;
+}
+
 div.item {
-  height:215px;
+  margin-bottom:30px;
 }
 
 /* END network isotope masonry style*/
