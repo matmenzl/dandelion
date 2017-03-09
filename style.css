@@ -1097,6 +1097,12 @@ a.center-block:hover {
 
 @media (max-width:768px) {
 
+  .sidebar {
+    -ms-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+
   div.carousel-inner {
     height:250px;
   }
