@@ -42,12 +42,23 @@
 
                         <a href="<?php the_permalink(); ?>" class="center-block"><b>Weiter <!-- <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> --></b></a>
 
-                    <?php endif; ?>
 
                     </div>
-                </article>
+                    <?php endif; ?>
 
-                <hr>
+                </article>
+                <hr style="  border: 0;
+  clear:both;
+  display:block;
+  width: 96%;               
+  background-color:#eee;
+  height: 1px;">
+
+
+
+
+
+
 
                 <?php comments_template(); ?>
 

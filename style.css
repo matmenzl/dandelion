@@ -200,10 +200,10 @@ width: 100%;
   .inforight {
         background-color: #DB0A5B;
         position: absolute;
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
         top: 14%;
-        left: 80%;
+        left: 68%;
         text-align: center;
         border-radius: 100px;
         font-size: 30px;
@@ -221,6 +221,19 @@ width: 100%;
       color:white;
       font-size:30px;
     }
+
+    .inforight a:focus {
+      text-decoration: none;
+    }
+    .info a {
+      color:white;
+      font-size:30px;
+    }
+
+    .info a:focus {
+      text-decoration: none;
+    }
+
 
 
 
@@ -1175,7 +1188,7 @@ a.center-block:hover {
    }
 
    .inforight {
-    top:6%;
+    top:12%;
     left:75%;
    }
 
@@ -1205,9 +1218,9 @@ a.center-block:hover {
         left: 80%;
         text-align: center;
         border-radius: 100px;
-        font-size: 18px;
+        font-size: 12px;
         line-height: 1.6rem;
-        padding-top: 2.5rem;
+        padding-top: 0.5rem;
         color: white;
         -moz-transform: rotate(30deg);
         -ms-transform: rotate(30deg);

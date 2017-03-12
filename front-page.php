@@ -14,7 +14,7 @@
 
             <?php the_excerpt(); ?>
 
-            <?php endwhile;?>
+            <?php endwhile; ?>
 
             <!--arrow -->
             <!--<a href="#intro" class="btn btn-circle scroll">
@@ -23,10 +23,44 @@
 
         </div><!--container-->
 
-                <!--badges-->
-                <!-- <div class="info animated fadeInLeftBig">Start 2017</div> -->
-                <!-- div class="inforight animated fadeInRightBig"><a href="http://www.schule-dandelion.ch/2017/02/12/besuchstag-samstag-18-2/">Besucht uns!<br> 18.2.</a>
-                </div> -->
+        <!--badges-->
+        <?php
+
+            the_post();
+
+            // Get 'badge' posts
+            $badge_posts = get_posts( array(
+                'post_type' => 'badge',
+            ) );
+
+        if ( $badge_posts ):
+
+        ?>
+
+        <!-- badge links -->
+        <?php
+            foreach ( $badge_posts as $post ): 
+            setup_postdata($post);
+        ?>
+
+        <?php if ( get_field('badge_left') ): ?>
+            <div class="info animated fadeInLeftBig"><a href="<?php the_field('badge_left_link'); ?>" target="_blank"><?php the_field('badge_left'); ?></a></div>
+        <?php endif; ?>
+
+
+
+        <!-- badge rechts -->
+        <?php if ( get_field('badge_right') ): ?>
+        <div class="inforight animated fadeInRightBig"><a href="<?php the_field('badge_right_link'); ?>" target="_blank"><?php the_field('badge_right'); ?></a>
+        </div>
+        <?php endif; ?>
+
+
+        <?php endforeach; ?>
+        <?php endif; ?>
+
+        <!--badges ENDE-->
+
 
     </div><!--jumbotron1-->
         
@@ -34,12 +68,15 @@
 
          <div class="jumbotron jumbotrontext">
            <div class="container">
-             
-            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-            <?php the_content(); ?>
-            
-            <?php endwhile; endif; ?>
+           <?php $the_query = new WP_Query( 'page_id=2' ); ?>
+
+           <?php while ($the_query -> have_posts()) : $the_query -> the_post();  ?>
+
+           <?php the_content(); ?>
+
+           <?php endwhile; ?>
+             
 
            </div>
         </div>
