@@ -1,12 +1,5 @@
 <?php 
 
-// force comments on category-page
-add_filter('wp_head','sb_force_comment');
-function sb_force_comment( ) {
-global $withcomments;
-    if(is_category())
-        $withcomments = true; //force to show the comment on category page
-  }
 
 // hide admin-bar
 show_admin_bar( false );

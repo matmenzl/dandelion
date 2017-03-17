@@ -44,15 +44,25 @@
         ?>
 
         <?php if ( get_field('badge_left') ): ?>
-            <div class="info animated fadeInLeftBig"><a href="<?php the_field('badge_left_link'); ?>" target="_blank"><?php the_field('badge_left'); ?></a></div>
+
+            <a href="<?php the_field('badge_left_link'); ?>" target="_blank"><button type="button" class="roundleft animated fadeInLeftBig"><?php the_field('badge_left'); ?></button></a>
+
+
+           <!--  <div class="info animated fadeInLeftBig"><a href="<?php the_field('badge_left_link'); ?>" target="_blank"><?php the_field('badge_left'); ?></a></div>
+ -->
+
         <?php endif; ?>
 
 
 
         <!-- badge rechts -->
         <?php if ( get_field('badge_right') ): ?>
-        <div class="inforight animated fadeInRightBig"><a href="<?php the_field('badge_right_link'); ?>" target="_blank"><?php the_field('badge_right'); ?></a>
-        </div>
+
+        <a href="<?php the_field('badge_right_link'); ?>" target="_blank"><button type="button" class="round animated fadeInRightBig"><?php the_field('badge_right'); ?></button></a>
+
+        <!-- <div class="inforight animated fadeInRightBig"><a href="<?php the_field('badge_right_link'); ?>" target="_blank"><?php the_field('badge_right'); ?></a>
+        </div> -->
+
         <?php endif; ?>
 
 

@@ -18,7 +18,7 @@
                 </div>
                 <p><em>Von <?php the_author(); ?> am <?php echo the_time('j. F Y');?>
                 in <?php the_category( ', '); ?>
-                    <a href="<?php comments_link(); ?>"><?php comments_number(); ?></a>
+                    <!-- <a href="<?php comments_link(); ?>"><?php comments_number(); ?></a> -->
                 </em></p>
 
                 <div class="col-md-6">    
@@ -41,7 +41,6 @@
 
                 <div class="fb-like" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 
-                <?php comments_template(); ?>
             </div>
 
             <?php endwhile; else: ?>
@@ -56,8 +55,8 @@
 
         </div>
 
-<!--         <?php get_sidebar( 'blog' ); ?>
- -->
+<!--         <?php get_sidebar( 'blog' ); ?>-->
+ 
     </div>
 
 <?php get_footer() ?>
