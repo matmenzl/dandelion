@@ -28,7 +28,6 @@ require get_template_directory() . '/inc/post-types/register-network.php';
 //Badge Custom Post Type
 require get_template_directory() . '/inc/post-types/register-badge.php';
 
-
 //enqueues our locally supplied font awesome stylesheet
 function enqueue_our_required_stylesheets(){
   wp_enqueue_style('font-awesome', get_stylesheet_directory_uri() . '/css/font-awesome.css'); 
@@ -208,6 +207,13 @@ return $query;
 }
 add_filter('pre_get_posts', 'exclude_category');
 
+
+// show only posts with certain tag on front-page
+// add_action( 'pre_get_posts', function ( $query ) {
+//     if ( $query->is_home() ) {
+//         $query->set( 'tag', 'front' );
+//     }
+// });
 
 
 /**
@@ -403,7 +409,10 @@ function nav_breadcrumb() {
  echo '</nav>';
  
  } 
-} 
+}
+
+ 
+ 
 
 
 ?>

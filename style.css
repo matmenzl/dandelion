@@ -919,7 +919,7 @@ input[type="submit"]::after {
 }
 
 div.carousel-inner {
-  height:450px;
+  height:500px;
 }
 
 .carousel-indicators {
@@ -1147,7 +1147,7 @@ a.center-block:hover {
   }
 
   div.carousel-inner {
-    height:250px;
+    height:auto;
   }
 
   div.carousel-caption {
@@ -1285,6 +1285,10 @@ a.center-block:hover {
 
   .sidebar {
     padding:5px 15px 5px 15px;
+  }
+
+  div.carousel-inner {
+    height:180px;
   }
 }
 
