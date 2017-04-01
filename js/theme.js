@@ -14,7 +14,10 @@ jQuery(function ($) {
   // $('#filters').on( 'click', 'button', function() {
   //   var filterValue = $(this).attr('data-filter');
   //   $container.isotope({ filter: filterValue });
-  // });   
+  // });  
+
+
+
 
   $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
               event.preventDefault(); 

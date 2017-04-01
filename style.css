@@ -20,6 +20,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 /*network isotope masonry style*/
 
+
+div.content { 
+  max-width: 100%; 
+}
+
+
 .networkinfo {
   position: relative;
   bottom: 6.5em;

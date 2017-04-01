@@ -21,14 +21,14 @@
                     <!-- <a href="<?php comments_link(); ?>"><?php comments_number(); ?></a> -->
                 </em></p>
 
-                <div class="col-md-6">    
+                <div class="col-md-12">    
 
                 <div class="img-responsive">
                 <?php the_post_thumbnail('full', array('class' => 'img-responsive') ); ?>
                 </div>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-12 content">
                 <p>
                 <?php the_content(); ?>
                 </p>
