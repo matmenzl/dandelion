@@ -14,30 +14,11 @@ add_theme_support( 'post-thumbnails' );
 add_image_size( 'video-thumb', 300, 9999 ); //300 pixels wide (and unlimited height)
 
 // add responsive class to all image-uploads
-function add_responsive_class($content){
-
-        $content = mb_convert_encoding($content, 'HTML-ENTITIES', "UTF-8");
-        $document = new DOMDocument();
-        libxml_use_internal_errors(true);
-        $document->loadHTML(utf8_decode($content));
-
-        $imgs = $document->getElementsByTagName('img');
-        foreach ($imgs as $img) {           
-           $img->setAttribute('class','img-responsive');
-        }
-
-        $iframe = $document->getElementsByTagName('iframe');
-        foreach ($iframe as $iframe) {           
-           $iframe->setAttribute('class','img-responsive');
-        }
-
-
-
-        $html = $document->saveHTML();
-        return $html;   
+function image_tag_class($class) {
+    $class .= ' img-responsive';
+    return $class;
 }
-
-add_filter ('the_content', 'add_responsive_class');
+add_filter('get_image_tag_class', 'image_tag_class' );
 
 
 /**

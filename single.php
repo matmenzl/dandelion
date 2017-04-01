@@ -28,7 +28,7 @@
                 </div>
             </div>
 
-            <div class="col-md-12 content">
+            <div class="col-md-12">
                 <p>
                 <?php the_content(); ?>
                 </p>
