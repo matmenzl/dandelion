@@ -70,10 +70,13 @@ get_header(); ?>
  <div class="container">
    <div class="row">
      <div class="col-md-9 col-lg-9">
-       <h2>Adresse</h2>
+       <h1>Adresse</h1>
        <p class="text">Rautistrasse 75, 8047 Zürich<br>
          Email: <a href="mailto:info@schule-dandelion.ch">info@schule-dandelion.ch</a><br>
          Telefonnummer: 079 206 55 43</p>
+        <p class="text">Bankverbindung:</br>
+        Zürcher Kantonalbank</br>
+        IBAN: CH06 0070 0110 0064 5129 4</p>
        <p class="text">Die Schule DANDELION ist gut mit Bus (67/78/80/89/83) und Tram (2/3) zu erreichen.<a href="https://maps.google.com?saddr=Current+Location&daddr=77+Rautistrasse+Zurich+8048" target="_blank" class="center-block">Ihr Reiseweg zur Schule DANDELION auf Google Maps</a></p>
      </div>
    </div>
