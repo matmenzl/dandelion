@@ -48,16 +48,11 @@
 
                 </article>
                 <hr style="  border: 0;
-  clear:both;
-  display:block;
-  width: 96%;               
-  background-color:#eee;
-  height: 1px;">
-
-
-
-
-
+                  clear:both;
+                  display:block;
+                  width: 96%;               
+                  background-color:#eee;
+                  height: 1px;">
 
 
                 <?php comments_template(); ?>
