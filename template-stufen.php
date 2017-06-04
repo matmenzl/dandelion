@@ -5,8 +5,18 @@
 ?>
 <?php get_header() ?>
 
-
-
+<div class="container">
+    <div class="row">
+    <div class="col-md-12">
+        <div class="page-header">
+            <h1><?php the_title(); ?></h1>
+        </div>
+        
+            <p>Die Schule DANDELION spielt, lernt und arbeitet stufendurchmischt. Die Kinder arbeiten und spielen je nach Thema, Stimmung und Interesse mit älteren, jüngeren oder gleichaltrigen Kindern zusammen.
+            </p>
+        </div>
+    </div>
+</div>
 
 <!-- Page Content -->
 <div class="container">
@@ -30,7 +40,7 @@
 
 
                          <?php endwhile;?>
-                    <a href="<?php echo get_page_link(211); ?>" title="Read the whole post" class="center-block">Mehr</a>
+                  
                 </div>
             </div>
         </div>
@@ -48,11 +58,11 @@
 
               <?php while ($the_query -> have_posts()) : $the_query -> the_post();  ?>
 
-                                     <?php the_excerpt(); ?>
+                                     <?php the_content(); ?>
 
 
                    <?php endwhile;?>
-                    <a href="<?php echo get_page_link(45); ?>" title="Read the whole post" class="center-block">Mehr</a>
+                    
                 </div>
             </div>
         </div>
@@ -70,11 +80,11 @@
 
                     <?php while ($the_query -> have_posts()) : $the_query -> the_post();  ?>
 
-                                           <?php the_excerpt(); ?>
+                                           <?php the_content(); ?>
 
 
                          <?php endwhile;?>
-                    <a href="<?php echo get_page_link(43); ?>" title="Read the whole post" class="center-block">Mehr</a>
+                    
                 </div>
             </div>
         </div>
