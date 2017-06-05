@@ -43,10 +43,11 @@
 
                     <?php while ($the_query -> have_posts()) : $the_query -> the_post();  ?>
 
-                                           <?php the_content(); ?>
+                                           <?php the_excerpt(); ?>
 
-
+                                         
                          <?php endwhile;?>
+                         <a href="<?php echo get_page_link(1197); ?>" title="Read the whole post" class="center-block">Mehr</a>  
                   
                 </div>
             </div>
@@ -65,11 +66,11 @@
 
               <?php while ($the_query -> have_posts()) : $the_query -> the_post();  ?>
 
-                                     <?php the_content(); ?>
+                                     <?php the_excerpt(); ?>
 
 
                    <?php endwhile;?>
-                    
+                    <a href="<?php echo get_page_link(1199); ?>" title="Read the whole post" class="center-block">Mehr</a>
                 </div>
             </div>
         </div>
@@ -87,11 +88,11 @@
 
                     <?php while ($the_query -> have_posts()) : $the_query -> the_post();  ?>
 
-                                           <?php the_content(); ?>
+                                           <?php the_excerpt(); ?>
 
 
                          <?php endwhile;?>
-                    
+                        <a href="<?php echo get_page_link(1201); ?>" title="Read the whole post" class="center-block">Mehr</a>  
                 </div>
             </div>
         </div>

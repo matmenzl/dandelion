@@ -108,7 +108,9 @@
         </div> -->
 <!--         <div class="ow-eq-height">
  -->
-        <div class="col-md-4">
+        <div class="col-md-4 equalize">
+        <div class="sameheight">
+
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <a href="<?php echo get_page_link(211); ?>"><h4><!-- <i class="fa fa-child"></i> --><b><?php echo get_the_title( 211 ); ?></b></h4></a>
@@ -125,9 +127,13 @@
                     <a href="<?php echo get_page_link(211); ?>" title="Read the whole post" class="center-block">Mehr</a>
                 </div>
             </div>
+
+        </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 equalize">
+        <div class="sameheight">
+
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <a href="<?php echo get_page_link(45); ?>"><h4><!-- <i class="fa fa-clock-o"></i> --><?php echo get_the_title( 45 ); ?></h4></a>
@@ -144,9 +150,13 @@
                     <a href="<?php echo get_page_link(45); ?>" title="Read the whole post" class="center-block">Mehr</a>
                 </div>
             </div>
+
+        </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 equlize">
+        <div class="sameheight">
+
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <a href="<?php echo get_page_link(43); ?>"><h4><!-- <i class="fa fa-graduation-cap"> --></i> <?php echo get_the_title( 43 ); ?></h4></a>
@@ -163,6 +173,74 @@
                     <a href="<?php echo get_page_link(43); ?>" title="Read the whole post" class="center-block">Mehr</a>
                 </div>
             </div>
+        </div>
+        </div>
+
+        <div class="col-md-4 equalize">
+        <div class="sameheight">
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <a href="<?php echo get_page_link(443); ?>"><h4><!-- <i class="fa fa-graduation-cap"> --></i> <?php echo get_the_title( 443 ); ?></h4></a>
+                </div>
+                <div class="panel-body">
+                    <?php $the_query = new WP_Query( 'page_id=443' ); ?>
+
+                    <?php while ($the_query -> have_posts()) : $the_query -> the_post();  ?>
+
+                                           <?php the_excerpt(); ?>
+
+
+                         <?php endwhile;?>
+                    <a href="<?php echo get_page_link(443); ?>" title="Read the whole post" class="center-block">Mehr</a>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="col-md-4 equalize">
+        <div class="sameheight">
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <a href="<?php echo get_page_link(445); ?>"><h4><!-- <i class="fa fa-graduation-cap"> --></i> <?php echo get_the_title( 445 ); ?></h4></a>
+                </div>
+                <div class="panel-body">
+                    <?php $the_query = new WP_Query( 'page_id=445' ); ?>
+
+                    <?php while ($the_query -> have_posts()) : $the_query -> the_post();  ?>
+
+                                           <?php the_excerpt(); ?>
+
+
+                         <?php endwhile;?>
+                    <a href="<?php echo get_page_link(445); ?>" title="Read the whole post" class="center-block">Mehr</a>
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+        <div class="col-md-4 equalize">
+        <div class="sameheight">
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <a href="<?php echo get_page_link(447); ?>"><h4><!-- <i class="fa fa-graduation-cap"> --></i> <?php echo get_the_title( 447 ); ?></h4></a>
+                </div>
+                <div class="panel-body">
+                    <?php $the_query = new WP_Query( 'page_id=447' ); ?>
+
+                    <?php while ($the_query -> have_posts()) : $the_query -> the_post();  ?>
+
+                                           <?php the_excerpt(); ?>
+
+
+                         <?php endwhile;?>
+                    <a href="<?php echo get_page_link(447); ?>" title="Read the whole post" class="center-block">Mehr</a>
+                </div>
+            </div>
+        </div>
         </div>
 
         </div>

@@ -33,7 +33,7 @@ $('.carousel').carousel({
 
 //same height for columns
 $(function() {
-    $('.team-member').matchHeight();
+    $('.team-member, .sameheight').matchHeight();
 });
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
