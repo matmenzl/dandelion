@@ -26,9 +26,6 @@
     <div class="row">
         <div class="col-lg-12 text-center">
             <h2 class="section-heading">Team Schule DANDELION</h2>
-            <div class="text section-subheading text-muted">Die Kinder werden bis 16 Uhr immer von einer Lehrperson und mindestens einem Lernbegleiter
-                betreut. Nach 16 Uhr sind die Lernbegleiterinnen vor Ort.<div>
-            </div>
         </div>
     </div>
     </div>

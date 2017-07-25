@@ -181,10 +181,10 @@
 
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <a href="<?php echo get_page_link(443); ?>"><h4><!-- <i class="fa fa-graduation-cap"> --></i> <?php echo get_the_title( 443 ); ?></h4></a>
+                    <a href="<?php echo get_page_link(1197); ?>"><h4><!-- <i class="fa fa-graduation-cap"> --></i> <?php echo get_the_title( 1197 ); ?></h4></a>
                 </div>
                 <div class="panel-body">
-                    <?php $the_query = new WP_Query( 'page_id=443' ); ?>
+                    <?php $the_query = new WP_Query( 'page_id=1197' ); ?>
 
                     <?php while ($the_query -> have_posts()) : $the_query -> the_post();  ?>
 
@@ -192,7 +192,7 @@
 
 
                          <?php endwhile;?>
-                    <a href="<?php echo get_page_link(443); ?>" title="Read the whole post" class="center-block">Mehr</a>
+                    <a href="<?php echo get_page_link(1197); ?>" title="Read the whole post" class="center-block">Mehr</a>
                 </div>
             </div>
         </div>
@@ -203,10 +203,10 @@
 
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <a href="<?php echo get_page_link(445); ?>"><h4><!-- <i class="fa fa-graduation-cap"> --></i> <?php echo get_the_title( 445 ); ?></h4></a>
+                    <a href="<?php echo get_page_link(1199); ?>"><h4><!-- <i class="fa fa-graduation-cap"> --></i> <?php echo get_the_title( 1199 ); ?></h4></a>
                 </div>
                 <div class="panel-body">
-                    <?php $the_query = new WP_Query( 'page_id=445' ); ?>
+                    <?php $the_query = new WP_Query( 'page_id=1199' ); ?>
 
                     <?php while ($the_query -> have_posts()) : $the_query -> the_post();  ?>
 
@@ -214,7 +214,7 @@
 
 
                          <?php endwhile;?>
-                    <a href="<?php echo get_page_link(445); ?>" title="Read the whole post" class="center-block">Mehr</a>
+                    <a href="<?php echo get_page_link(1199); ?>" title="Read the whole post" class="center-block">Mehr</a>
                 </div>
             </div>
 
@@ -226,10 +226,10 @@
 
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <a href="<?php echo get_page_link(447); ?>"><h4><!-- <i class="fa fa-graduation-cap"> --></i> <?php echo get_the_title( 447 ); ?></h4></a>
+                    <a href="<?php echo get_page_link(1201); ?>"><h4><!-- <i class="fa fa-graduation-cap"> --></i> <?php echo get_the_title( 1201 ); ?></h4></a>
                 </div>
                 <div class="panel-body">
-                    <?php $the_query = new WP_Query( 'page_id=447' ); ?>
+                    <?php $the_query = new WP_Query( 'page_id=1201' ); ?>
 
                     <?php while ($the_query -> have_posts()) : $the_query -> the_post();  ?>
 
@@ -237,7 +237,7 @@
 
 
                          <?php endwhile;?>
-                    <a href="<?php echo get_page_link(447); ?>" title="Read the whole post" class="center-block">Mehr</a>
+                    <a href="<?php echo get_page_link(1201); ?>" title="Read the whole post" class="center-block">Mehr</a>
                 </div>
             </div>
         </div>

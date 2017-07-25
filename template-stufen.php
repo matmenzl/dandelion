@@ -30,7 +30,7 @@
 
     <!-- Marketing Icons Section -->
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 equalize">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4><!-- <i class="fa fa-child"></i> --><b><?php echo get_the_title( 1197 ); ?></b></h4>
@@ -53,7 +53,7 @@
             </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 equalize">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4><!-- <i class="fa fa-clock-o"></i> --><?php echo get_the_title( 1199 ); ?></h4>
@@ -75,7 +75,7 @@
             </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 equalize">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4><!-- <i class="fa fa-graduation-cap"> --></i> <?php echo get_the_title( 1201 ); ?></h4>

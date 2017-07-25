@@ -45,7 +45,9 @@
         </div> -->
 <!--         <div class="ow-eq-height">
  -->
-        <div class="col-md-4">
+        <div class="col-md-4 equalize">
+        <div class="sameheight">
+
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4><!-- <i class="fa fa-child"></i> --><b><?php echo get_the_title( 211 ); ?></b></h4>
@@ -63,8 +65,11 @@
                 </div>
             </div>
         </div>
+        </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 equalize">
+        <div class="sameheight">
+
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4><!-- <i class="fa fa-clock-o"></i> --><?php echo get_the_title( 45 ); ?></h4>
@@ -82,8 +87,11 @@
                 </div>
             </div>
         </div>
+        </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 equalize">
+        <div class="sameheight">
+
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4><!-- <i class="fa fa-graduation-cap"> --></i> <?php echo get_the_title( 43 ); ?></h4>
@@ -100,6 +108,74 @@
                     <a href="<?php echo get_page_link(43); ?>" title="Read the whole post" class="center-block">Mehr</a>
                 </div>
             </div>
+        </div>
+        </div>
+
+        <div class="col-md-4 equalize">
+        <div class="sameheight">
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <a href="<?php echo get_page_link(1197); ?>"><h4><!-- <i class="fa fa-graduation-cap"> --></i> <?php echo get_the_title( 1197 ); ?></h4></a>
+                </div>
+                <div class="panel-body">
+                    <?php $the_query = new WP_Query( 'page_id=1197' ); ?>
+
+                    <?php while ($the_query -> have_posts()) : $the_query -> the_post();  ?>
+
+                                           <?php the_excerpt(); ?>
+
+
+                         <?php endwhile;?>
+                    <a href="<?php echo get_page_link(1197); ?>" title="Read the whole post" class="center-block">Mehr</a>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="col-md-4 equalize">
+        <div class="sameheight">
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <a href="<?php echo get_page_link(1199); ?>"><h4><!-- <i class="fa fa-graduation-cap"> --></i> <?php echo get_the_title( 1199 ); ?></h4></a>
+                </div>
+                <div class="panel-body">
+                    <?php $the_query = new WP_Query( 'page_id=1199' ); ?>
+
+                    <?php while ($the_query -> have_posts()) : $the_query -> the_post();  ?>
+
+                                           <?php the_excerpt(); ?>
+
+
+                         <?php endwhile;?>
+                    <a href="<?php echo get_page_link(1199); ?>" title="Read the whole post" class="center-block">Mehr</a>
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+        <div class="col-md-4 equalize">
+        <div class="sameheight">
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <a href="<?php echo get_page_link(1201); ?>"><h4><!-- <i class="fa fa-graduation-cap"> --></i> <?php echo get_the_title( 1201 ); ?></h4></a>
+                </div>
+                <div class="panel-body">
+                    <?php $the_query = new WP_Query( 'page_id=1201' ); ?>
+
+                    <?php while ($the_query -> have_posts()) : $the_query -> the_post();  ?>
+
+                                           <?php the_excerpt(); ?>
+
+
+                         <?php endwhile;?>
+                    <a href="<?php echo get_page_link(1201); ?>" title="Read the whole post" class="center-block">Mehr</a>
+                </div>
+            </div>
+        </div>
         </div>
 
         </div>
