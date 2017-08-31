@@ -209,7 +209,7 @@ add_filter('get_the_excerpt', 'wpse_custom_wp_trim_excerpt');
 
 function exclude_category($query) {
 if ( $query->is_home() ) {
-$query->set('cat', '-1, -2, -5');
+$query->set('cat', '-2, -5');
 }
 return $query;
 }
