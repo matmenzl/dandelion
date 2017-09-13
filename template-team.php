@@ -74,6 +74,52 @@
 
         <?php endif; ?>
 
+
+    <div class="row">
+
+    <div class="col-sm-4 col-md-4 equalize">
+        <div class="team-member">
+            <img src="https://www.schule-dandelion.ch/wp-content/uploads/2017/03/Bildschirmfoto-2017-03-09-um-16.28.57.png" alt="Shamila" class="img-responsive img-circle imgteam">
+            <h4>Schulhund Shamila</h4>
+            <h5>Oft vor Ort</h5>
+            <p class="text-muted">Braucht täglich ihr Spiel mit Bällen und eine exklusive weiche Unterlage</p>
+            <!-- <ul class="list-inline social-buttons">
+                <li><i class="fa fa-envelope"></i><a href="mailto:<?php the_field('email'); ?>"> Email</a></li>
+                <li><i class="fa fa-phone"> </i><a href="tel:<?php the_field('telephone'); ?>"> Telefon</a>
+                    </li>
+                </ul> -->
+        </div>
+      </div><!-- col-sm-4 col-md-4 -->
+      <div class="col-sm-4 col-md-4 equalize">
+          <div class="team-member">
+              <img src="https://www.schule-dandelion.ch/wp-content/uploads/2017/03/Bildschirmfoto-2017-03-09-um-16.31.43.png" alt="Kisha" class="img-responsive img-circle imgteam">
+              <h4>Schulhund Kisha</h4>
+              <h5>Oft vor Ort</h5>
+              <p class="text-muted">Ruhig, kuschelfreudig und immer auf der Suche nach Futter</p>
+              <!-- <ul class="list-inline social-buttons">
+                  <li><i class="fa fa-envelope"></i><a href="mailto:<?php the_field('email'); ?>"> Email</a></li>
+                  <li><i class="fa fa-phone"> </i><a href="tel:<?php the_field('telephone'); ?>"> Telefon</a>
+                      </li>
+                  </ul> -->
+          </div>
+        </div><!-- col-sm-4 col-md-4 -->
+        <div class="col-sm-4 col-md-4 equalize">
+            <div class="team-member">
+                <img src="https://www.schule-dandelion.ch/wp-content/uploads/2017/03/Bildschirmfoto-2017-03-09-um-16.39.36.png" alt="Mia" class="img-responsive img-circle imgteam">
+                <h4>Schulhund Mia</h4>
+                <h5>Oft vor Ort</h5>
+                <p class="text-muted">Ungestüm, voller Liebe und gerne in Bewegung</p>
+                <!-- <ul class="list-inline social-buttons">
+                    <li><i class="fa fa-envelope"></i><a href="mailto:<?php the_field('email'); ?>"> Email</a></li>
+                    <li><i class="fa fa-phone"> </i><a href="tel:<?php the_field('telephone'); ?>"> Telefon</a>
+                        </li>
+                    </ul> -->
+            </div>
+          </div><!-- col-sm-4 col-md-4 -->
+
+    </div>
+
+
      <div class="jumbotron jumbotrontext">
        <div class="container">
         <div class="text section-subheading text-muted">Da wir wissen, dass es ein ganzes Dorf braucht, um ein Kind bei seinem Weg zu begleiten, laden wir regelmässig Experten zu uns in die Schule ein. Du besuchst unseren Schulalltag während 1- 4 Tagen und begeisterst die Kinder für dein Thema. Das kann alles Mögliche sein: Ameisen, Bastelideen, Sprachen, Yoga, Wasserpflanzen...
