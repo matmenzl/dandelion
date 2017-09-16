@@ -159,7 +159,7 @@ h1, h2, h3, h4 {
 }
 
 div.jumbotron1 {
- background: url(./images/header.png);
+ background: url(./images/header_2017.png);
  -webkit-background-size: 100% 100%;
  -moz-background-size: 100% 100%;
  -o-background-size: 100% 100%;
@@ -168,6 +168,10 @@ div.jumbotron1 {
  background-size: cover;
 height:200px;
 width: 100%;
+}
+
+.jumbotron {
+  background-color:#4bc4be;
 }
 
 
@@ -237,6 +241,7 @@ width: 100%;
      position:absolute;
      left:75%;
      top:15%;
+     padding:25px;
     }
 
     .round a {
@@ -250,8 +255,9 @@ width: 100%;
      color:white;
      border:none;
      position:absolute;
-     left:15%;
+     left:12%;
      top:15%;
+     padding:25px;
     }
 
     .roundleft a {
@@ -317,6 +323,10 @@ div.text.section-subheading.text-muted {
 }
 
 /*Navigation Bar Start*/
+
+#bs-example-navbar-collapse-1 {
+  border-color:white;
+}
 
 .navbar-brand {
   display:none;
@@ -1450,6 +1460,10 @@ a.center-block:hover {
     font-size:22px;
   }
 
+  .navbar-inverse .navbar-nav>.active>a {
+    width:500px;
+  }
+
   .navbar-brand {
     display:inline;
   }
@@ -1484,7 +1498,7 @@ a.center-block:hover {
    }
 
    div.jumbotron1 {
-    background: url(./images/header_mobile.png);
+    background: url(./images/header_mobile_2017.png);
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
@@ -1497,21 +1511,22 @@ a.center-block:hover {
 
 
    .info {
-    top:6%;
+    top:20%;
    }
 
    .inforight {
-    top:8%;
+    top:20%;
     left:75%;
    }
 
    .round {
-     top:8%;
+     top:20%;
      left:75%;
    }
 
    .roundleft {
-     top:8%;
+     top:20%;
+     left:2%;
    }
 
    @media (max-width:480px) {
@@ -1520,7 +1535,7 @@ a.center-block:hover {
     position: absolute;
     width: 80px;
     height: 80px;
-    top: 12%;
+    top: 20%;
     left: 0%;
     text-align: center;
     border-radius: 100px;
@@ -1536,7 +1551,7 @@ a.center-block:hover {
     position: absolute;
     width: 120px;
     height: 120px;
-    top: 8%;
+    top: 20%;
     left: 70%;
     text-align: center;
     border-radius: 50%;
@@ -1562,7 +1577,7 @@ a.center-block:hover {
 
   .roundleft {
     top:8%;
-    left:0%;
+    left:2%;
   }
 
 

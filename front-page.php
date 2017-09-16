@@ -21,7 +21,7 @@
                 <i class="animated bounce fa fa-angle-double-down fa-4"></i>
             </a> -->
 
-        </div><!--container-->
+        </div><!--container jumbotron1-->
 
         <!--badges-->
         <?php
